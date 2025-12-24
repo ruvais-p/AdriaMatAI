@@ -52,26 +52,25 @@ const HeaderLinks: React.FC<{ item: HeaderItem }> = ({ item }) => {
         )}
       </Link>
 
-      {/* Adaptive Glossy Dropdown */}
+      {/* Dropdown */}
       {item.submenu && (
         <div
           className={`
             absolute left-0 top-10 mt-2 w-60 rounded-xl
-            backdrop-blur-xl
-            border
+            backdrop-blur-xl border
             shadow-[0_8px_32px_rgba(0,0,0,0.35)]
             overflow-hidden z-50
-
             transition-all duration-300 ease-out
             ${
               scrolled
                 ? "bg-black/60 border-white/10"
                 : "bg-white/15 border-white/20"
             }
-
-            ${submenuOpen
-              ? "opacity-100 scale-100 visible"
-              : "opacity-0 scale-95 invisible"}
+            ${
+              submenuOpen
+                ? "opacity-100 scale-100 visible"
+                : "opacity-0 scale-95 invisible"
+            }
           `}
         >
           {/* Gloss highlight */}
@@ -86,7 +85,7 @@ const HeaderLinks: React.FC<{ item: HeaderItem }> = ({ item }) => {
             `}
           />
 
-          {item.submenu.map((subItem: any, index: number) => (
+          {item.submenu.map((subItem, index) => (
             <Link
               key={index}
               href={subItem.href}

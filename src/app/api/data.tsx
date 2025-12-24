@@ -1,153 +1,185 @@
-// import { text } from "stream/consumers";
+export type SolutionItem = {
+  title: string;
+  icon: string;
+  description: string;
+};
+
+export type CompanyItem = {
+  image: string;
+};
+
+export type ProjectItem = {
+  category: string;
+  title: string;
+  description: string;
+  image: string;
+  link: string;
+};
+
+export type TestimonialItem = {
+  id: number;
+  text: string;
+  name: string;
+  position: string;
+  image: string;
+};
+
+export type FooterLink = {
+  link: string;
+};
+
+export type SubMenuItem = {
+  label: string;
+  href: string;
+};
+
+export type HeaderItem = {
+  label: string;
+  href: string;
+  submenu?: SubMenuItem[];
+};
 
 
-// solution
-export const solutionData = [
-    {
-        title: "Training & Development",
-        icon: "mdi:school",
-        description: "Equip your teams with skills and knowledge tailored to your corporate goals.",
-    },
-    {
-        title: "Business Strategy",
-        icon: "mdi:briefcase-outline",
-        description: "Develop actionable strategies to drive growth and stay ahead in your industry.",
-    },
-    {
-        title: "Sustainability & ESG",
-        icon: "mdi:leaf",
-        description: "Implement strategies for long-term value, sustainability, and corporate responsibility.",
-    },
-    {
-        title: "AI Solutions",
-        icon: "mdi:brain",
-        description: "Develop actionable strategies to drive growth and stay ahead in your industry.",
-    },
-    {
-        title: "Customer Engagement",
-        icon: "mdi:account-group-outline",
-        description: "Enhance customer journeys to boost satisfaction, loyalty, and long-term retention.",
-    },
+// =======================
+// Solutions
+// =======================
 
-    {
-        title: "Training & Development",
-        icon: "mdi:school",
-        description: "Equip your teams with skills and knowledge tailored to your corporate goals.",
-    },
+export const solutionData: SolutionItem[] = [
+  {
+    title: "Training & Development",
+    icon: "mdi:school",
+    description:
+      "Equip your teams with skills and knowledge tailored to your corporate goals.",
+  },
+  {
+    title: "Business Strategy",
+    icon: "mdi:briefcase-outline",
+    description:
+      "Develop actionable strategies to drive growth and stay ahead in your industry.",
+  },
+  {
+    title: "Sustainability & ESG",
+    icon: "mdi:leaf",
+    description:
+      "Implement strategies for long-term value, sustainability, and corporate responsibility.",
+  },
+  {
+    title: "AI Solutions",
+    icon: "mdi:brain",
+    description:
+      "Develop actionable strategies to drive growth and stay ahead in your industry.",
+  },
+  {
+    title: "Customer Engagement",
+    icon: "mdi:account-group-outline",
+    description:
+      "Enhance customer journeys to boost satisfaction, loyalty, and long-term retention.",
+  },
+  {
+    title: "Training & Development",
+    icon: "mdi:school",
+    description:
+      "Equip your teams with skills and knowledge tailored to your corporate goals.",
+  },
 ];
 
-// companies
+// =======================
+// Companies
+// =======================
 
-export const companies = [
-    {
-        image: "/images/companies/brand-1.webp"
-    },
-    {
-        image: "/images/companies/brand-2.webp"
-    },
-    {
-        image: "/images/companies/brand-3.webp"
-    },
-    {
-        image: "/images/companies/brand-4.webp"
-    },
-    {
-        image: "/images/companies/brand-5.webp"
-    },
-    {
-        image: "/images/companies/brand-2.webp"
-    },
-    {
-        image: "/images/companies/brand-4.webp"
-    },
-]
-
-// Project 
-
-export const projects = [
-    {
-        category: "Innovation",
-        title: "AI-Powered Analytics Suite",
-        description: "Transform raw data into meaningful insights with predictive AI dashboards that help businesses make faster and smarter decisions.",
-        image: "/images/projects/project-01.jpg",
-        link: "/about",
-    },
-    {
-        category: "Collaboration",
-        title: "Remote Team Workspace",
-        description: "A modern digital hub that connects remote teams, enabling real-time communication, seamless file sharing, and productive workflows.",
-        image: "/images/projects/project-02.jpg",
-        link: "/about",
-    },
-    {
-        category: "Growth",
-        title: "E-Commerce Acceleration Platform",
-        description: "Boost online sales with optimized storefronts, automated marketing campaigns, and customer engagement tools built for scale.",
-        image: "/images/projects/project-03.jpg",
-        link: "/about",
-    },
-    {
-        category: "Strategy",
-        title: "Smart Event Management System",
-        description: "Plan, manage, and analyze events effortlessly with AI-driven tools for scheduling, attendee engagement, and real-time insights.",
-        image: "/images/projects/project-04.jpg",
-        link: "/about",
-    },
+export const companies: CompanyItem[] = [
+  { image: "/images/companies/brand-1.webp" },
+  { image: "/images/companies/brand-2.webp" },
+  { image: "/images/companies/brand-3.webp" },
+  { image: "/images/companies/brand-4.webp" },
+  { image: "/images/companies/brand-5.webp" },
+  { image: "/images/companies/brand-2.webp" },
+  { image: "/images/companies/brand-4.webp" },
 ];
 
+// =======================
+// Projects
+// =======================
+
+export const projects: ProjectItem[] = [
+  {
+    category: "Innovation",
+    title: "AI-Powered Analytics Suite",
+    description:
+      "Transform raw data into meaningful insights with predictive AI dashboards that help businesses make faster and smarter decisions.",
+    image: "/images/projects/project-01.jpg",
+    link: "/about",
+  },
+  {
+    category: "Collaboration",
+    title: "Remote Team Workspace",
+    description:
+      "A modern digital hub that connects remote teams, enabling real-time communication, seamless file sharing, and productive workflows.",
+    image: "/images/projects/project-02.jpg",
+    link: "/about",
+  },
+  {
+    category: "Growth",
+    title: "E-Commerce Acceleration Platform",
+    description:
+      "Boost online sales with optimized storefronts, automated marketing campaigns, and customer engagement tools built for scale.",
+    image: "/images/projects/project-03.jpg",
+    link: "/about",
+  },
+  {
+    category: "Strategy",
+    title: "Smart Event Management System",
+    description:
+      "Plan, manage, and analyze events effortlessly with AI-driven tools for scheduling, attendee engagement, and real-time insights.",
+    image: "/images/projects/project-04.jpg",
+    link: "/about",
+  },
+];
+
+// =======================
 // Testimonials
+// =======================
 
-export const testimonial = [
-    {
-        id: 1,
-        text: "Working with Bexon has been a game-changer for our business. Their team’s professionalism, attention to detail, and innovative solutions have helped us streamline operations and achieve our goals faster than we imagined. We truly feel like a valued partner.",
-        name: "Ralph Edwards",
-        position: "Co. Founder",
-        image: "/images/testimonials/user.jpg"
-    },
-    {
-        id: 2,
-        text: "The results we’ve seen after partnering with Bexon are beyond our expectations. They not only understood our vision but also brought new ideas to the table that have taken our business to the next level. Their expertise and commitment to success make them a trusted partner.",
-        name: "Guy Hawkins",
-        position: "Co. Founder",
-        image: "/images/testimonials/user2.jpg"
-    },
-    {
-        id: 3,
-        text: "We’ve been working with Bexon for years, and they continue to deliver outstanding results. Their team is proactive, responsive, and always goes the extra mile to ensure our needs are met. They’ve become a key contributor to our growth and success.",
-        name: "Devon Lane",
-        position: "Co. Founder",
-        image: "/images/testimonials/user3.jpg"
-    }
-]
+export const testimonial: TestimonialItem[] = [
+  {
+    id: 1,
+    text:
+      "Working with Bexon has been a game-changer for our business. Their team’s professionalism, attention to detail, and innovative solutions have helped us streamline operations and achieve our goals faster than we imagined. We truly feel like a valued partner.",
+    name: "Ralph Edwards",
+    position: "Co. Founder",
+    image: "/images/testimonials/user.jpg",
+  },
+  {
+    id: 2,
+    text:
+      "The results we’ve seen after partnering with Bexon are beyond our expectations. They not only understood our vision but also brought new ideas to the table that have taken our business to the next level.",
+    name: "Guy Hawkins",
+    position: "Co. Founder",
+    image: "/images/testimonials/user2.jpg",
+  },
+  {
+    id: 3,
+    text:
+      "We’ve been working with Bexon for years, and they continue to deliver outstanding results. Their team is proactive, responsive, and always goes the extra mile.",
+    name: "Devon Lane",
+    position: "Co. Founder",
+    image: "/images/testimonials/user3.jpg",
+  },
+];
 
-
+// =======================
 // Footer Links
-export const footerLinks: { link: string }[] = [
-    {
-        link: "Customer Experience",
-    },
-    {
-        link: "Training Programs",
-    },
-    {
-        link: "Business Strategy",
-    },
-    {
-        link: "Training Program",
-    },
-    {
-        link: "ESG Consulting",
-    },
-    {
-        link: "Development Hub",
-    },
-    {
-        link: "Contact us",
-    },
-    {
-        link: "Team Member",
-    },
+// =======================
+
+export const footerLinks: FooterLink[] = [
+  { link: "Customer Experience" },
+  { link: "Training Programs" },
+  { link: "Business Strategy" },
+  { link: "Training Program" },
+  { link: "ESG Consulting" },
+  { link: "Development Hub" },
+  { link: "Contact us" },
+  { link: "Team Member" },
     {
         link: "Recognitions",
     },
