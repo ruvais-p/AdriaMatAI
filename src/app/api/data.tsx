@@ -180,62 +180,62 @@ export const footerLinks: FooterLink[] = [
   { link: "Development Hub" },
   { link: "Contact us" },
   { link: "Team Member" },
-    {
-        link: "Recognitions",
-    },
-    {
-        link: "Careers",
-    },
-    {
-        link: "News",
-    },
-    {
-        link: "Feedback",
-    },
-    {
-        link: "Privacy",
-    },
-    {
-        link: "Security",
-    },
-    {
-        link: "Disclaimer",
-    },
+  {
+    link: "Recognitions",
+  },
+  {
+    link: "Careers",
+  },
+  {
+    link: "News",
+  },
+  {
+    link: "Feedback",
+  },
+  {
+    link: "Privacy",
+  },
+  {
+    link: "Security",
+  },
+  {
+    link: "Disclaimer",
+  },
 ];
 
 // blogs
 
 export const blogs = [
-    {
-        id: 1,
-        slug: "harnessing-digital-transform",
-        title: "Harnessing Digital Transform: A Roadmap for Businesses",
-        category: "Business",
-        author: "Ellinien Loma",
-        date: "18 Jun",
-        image: "/images/blog/blog-1.jpg",
-        description: "Discover how to leverage digital transformation to boost efficiency and growth."
-    },
-    {
-        id: 2,
-        slug: "mastering-change-management",
-        title: "Mastering Change Management: Lessons for Businesses",
-        category: "Corporate",
-        author: "Ellinien Loma",
-        date: "14 Jun",
-        image: "/images/blog/blog-2.jpg",
-        description: "Learn proven change management strategies for adapting to evolving business challenges."
-    },
-    {
-        id: 3,
-        slug: "entrepreneur-mindset-success",
-        title: "Entrepreneur Mindset: Habits That Drive Success",
-        category: "Innovation",
-        author: "Ellinien Loma",
-        date: "01 Oct, 2025",
-        image: "/images/blog/blog-3.jpg",
-        description: "Explore the key habits and strategies that shape a successful entrepreneur mindset."
-    },
+  {
+    id: 1,
+    slug: "harnessing-digital-transform",
+    title: "Harnessing Digital Transform: A Roadmap for Businesses",
+    category: "Business",
+    author: "Ellinien Loma",
+    date: "18 Jun",
+    image: "/images/blog/blog-1.jpg",
+    description: "Discover how to leverage digital transformation to boost efficiency and growth."
+  },
+  {
+    id: 2,
+    slug: "mastering-change-management",
+    title: "Mastering Change Management: Lessons for Businesses",
+    category: "Corporate",
+    author: "Ellinien Loma",
+    date: "14 Jun",
+    image: "/images/blog/blog-2.jpg",
+    description: "Learn proven change management strategies for adapting to evolving business challenges."
+  },
+  {
+    id: 3,
+    slug: "entrepreneur-mindset-success",
+    title: "Entrepreneur Mindset: Habits That Drive Success",
+    category: "Innovation",
+    author: "Ellinien Loma",
+    date: "01 Oct, 2025",
+    image: "/images/blog/blog-3.jpg",
+    description: "Explore the key habits and strategies that shape a successful entrepreneur mindset."
+  },
 ];
 
 import service01 from "@/../public/images/servicedetails/service-01.webp";
@@ -245,157 +245,159 @@ import service04 from "@/../public/images/servicedetails/service-01.webp";
 import service05 from "@/../public/images/servicedetails/service-01.webp";
 import service06 from "@/../public/images/servicedetails/service-01.webp";
 
+import { StaticImageData } from "next/image";
+
 export type Service = {
-    id: number;
-    slug: string;
-    title: string;
-    description: string;
-    icon: string;
-    href?: string;
-    image: any; // StaticImageData
-    gallery?: any[];
-    features?: string[];
+  id: number;
+  slug: string;
+  title: string;
+  description: string;
+  icon: string;
+  href?: string;
+  image: StaticImageData;
+  gallery?: StaticImageData[];
+  features?: string[];
 };
 
 export const services: Service[] = [
-    {
-        id: 1,
-        slug: "business-strategy-development",
-        title: "Business Strategy Development",
-        description: "Through a combination of data-driven insights and innovative approaches, we work closely with you to develop customized solutions.",
-        icon: "bxs:business",
-        href: "/services/business-strategy-development",
-        image: service01,
-        gallery: [service01, service02, service03],
-        features: ["Innovation", "Scalable Systems", "Customer-Centric Approach", "Resilience"],
-    },
-    {
-        id: 2,
-        slug: "customer-experience-solutions",
-        title: "Customer Experience Solutions",
-        description: "Developing personalized customer journeys to increase satisfaction and loyalty.",
-        icon: "raphael:customer",
-        href: "/services/customer-experience-solutions",
-        image: service02,
-        gallery: [service02, service03],
-        features: ["Customer-Centric Approach", "Operational Efficiency", "Continuous Learning"],
-    },
-    {
-        id: 3,
-        slug: "sustainability-and-esg-consulting",
-        title: "Sustainability and ESG Consulting",
-        description: "Provide tailored strategies that not only drive long-term value but also build trust with stakeholders, investors.",
-        icon: "carbon:sustainability",
-        href: "/services/sustainability-and-esg-consulting",
-        image: service03,
-    },
-    {
-        id: 4,
-        slug: "training-and-development-programs",
-        title: "Training and Development Programs",
-        description: "Training and Development Programs are designed to empower employees with the skills, knowledge, and tools they need.",
-        icon: "carbon:development",
-        href: "/services/training-and-development-programs",
-        image: service04,
-    },
-    {
-        id: 5,
-        slug: "it-support-and-maintenance",
-        title: "IT Support & Maintenance",
-        description: "Our IT Support & Maintenance services ensure that your technology infrastructure is running smoothly and securely.",
-        icon: "pajamas:work-item-maintenance",
-        href: "/services/it-support-and-maintenance",
-        image: service05,
-    },
-    {
-        id: 6,
-        slug: "marketing-strategy-and-campaigns",
-        title: "Marketing Strategy & Campaigns",
-        description: "Effective marketing is key to driving business growth. Our Marketing Strategy & Campaigns service.",
-        icon: "streamline-freehand:creativity-idea-strategy",
-        href: "/services/marketing-strategy-and-campaigns",
-        image: service06,
-    },
+  {
+    id: 1,
+    slug: "business-strategy-development",
+    title: "Business Strategy Development",
+    description: "Through a combination of data-driven insights and innovative approaches, we work closely with you to develop customized solutions.",
+    icon: "bxs:business",
+    href: "/services/business-strategy-development",
+    image: service01,
+    gallery: [service01, service02, service03],
+    features: ["Innovation", "Scalable Systems", "Customer-Centric Approach", "Resilience"],
+  },
+  {
+    id: 2,
+    slug: "customer-experience-solutions",
+    title: "Customer Experience Solutions",
+    description: "Developing personalized customer journeys to increase satisfaction and loyalty.",
+    icon: "raphael:customer",
+    href: "/services/customer-experience-solutions",
+    image: service02,
+    gallery: [service02, service03],
+    features: ["Customer-Centric Approach", "Operational Efficiency", "Continuous Learning"],
+  },
+  {
+    id: 3,
+    slug: "sustainability-and-esg-consulting",
+    title: "Sustainability and ESG Consulting",
+    description: "Provide tailored strategies that not only drive long-term value but also build trust with stakeholders, investors.",
+    icon: "carbon:sustainability",
+    href: "/services/sustainability-and-esg-consulting",
+    image: service03,
+  },
+  {
+    id: 4,
+    slug: "training-and-development-programs",
+    title: "Training and Development Programs",
+    description: "Training and Development Programs are designed to empower employees with the skills, knowledge, and tools they need.",
+    icon: "carbon:development",
+    href: "/services/training-and-development-programs",
+    image: service04,
+  },
+  {
+    id: 5,
+    slug: "it-support-and-maintenance",
+    title: "IT Support & Maintenance",
+    description: "Our IT Support & Maintenance services ensure that your technology infrastructure is running smoothly and securely.",
+    icon: "pajamas:work-item-maintenance",
+    href: "/services/it-support-and-maintenance",
+    image: service05,
+  },
+  {
+    id: 6,
+    slug: "marketing-strategy-and-campaigns",
+    title: "Marketing Strategy & Campaigns",
+    description: "Effective marketing is key to driving business growth. Our Marketing Strategy & Campaigns service.",
+    icon: "streamline-freehand:creativity-idea-strategy",
+    href: "/services/marketing-strategy-and-campaigns",
+    image: service06,
+  },
 ];
 
 export const protfolio = [
-    {
-        id: 1,
-        category: "Business",
-        title: "Event Management Platform",
-        slug: "event-management-platform",
-        image: "/images/protfolio/project-1.webp",
-    },
-    {
-        id: 2,
-        category: "Connect",
-        title: "Digital Marketing Campaign",
-        slug: "digital-marketing-campaign",
-        image: "/images/protfolio/project-2.webp",
-    },
-    {
-        id: 3,
-        category: "Empower",
-        title: "Interactive Learning Platform",
-        slug: "interactive-learning-platform",
-        image: "/images/protfolio/project-3.webp",
-    },
-    {
-        id: 4,
-        category: "Support",
-        title: "Environmental Impact Dashboard",
-        slug: "environmental-impact-dashboard",
-        image: "/images/protfolio/project-4.webp",
-    },
+  {
+    id: 1,
+    category: "Business",
+    title: "Event Management Platform",
+    slug: "event-management-platform",
+    image: "/images/protfolio/project-1.webp",
+  },
+  {
+    id: 2,
+    category: "Connect",
+    title: "Digital Marketing Campaign",
+    slug: "digital-marketing-campaign",
+    image: "/images/protfolio/project-2.webp",
+  },
+  {
+    id: 3,
+    category: "Empower",
+    title: "Interactive Learning Platform",
+    slug: "interactive-learning-platform",
+    image: "/images/protfolio/project-3.webp",
+  },
+  {
+    id: 4,
+    category: "Support",
+    title: "Environmental Impact Dashboard",
+    slug: "environmental-impact-dashboard",
+    image: "/images/protfolio/project-4.webp",
+  },
 ];
 
 export const team = [
-    {
-        id: 1,
-        name: "Eade Marren",
-        post: "Chief Executive",
-        image: "/images/team/team-1.webp"
-    },
-    {
-        id: 2,
-        name: "Savannah Nguyen",
-        post: "Operations Head",
-        image: "/images/team/team-2.webp"
-    },
-    {
-        id: 3,
-        name: "Kristin Watson",
-        post: "Marketing Lead",
-        image: "/images/team/team-3.webp"
-    },
-    {
-        id: 4,
-        name: "Darlene Robertson",
-        post: "Business Director",
-        image: "/images/team/team-4.webp"
-    },
-    {
-        id: 5,
-        name: "Eade Marren",
-        post: "Chief Executive",
-        image: "/images/team/team-5.webp"
-    },
-    {
-        id: 6,
-        name: "Darlene Robertson",
-        post: "Business Director",
-        image: "/images/team/team-7.webp"
-    },
-    {
-        id: 7,
-        name: "Kristin Watson",
-        post: "Marketing Lead",
-        image: "/images/team/team-6.webp"
-    },
-    {
-        id: 8,
-        name: "Savannah Nguyen",
-        post: "Operations Head",
-        image: "/images/team/team-8.webp"
-    },
+  {
+    id: 1,
+    name: "Eade Marren",
+    post: "Chief Executive",
+    image: "/images/team/team-1.webp"
+  },
+  {
+    id: 2,
+    name: "Savannah Nguyen",
+    post: "Operations Head",
+    image: "/images/team/team-2.webp"
+  },
+  {
+    id: 3,
+    name: "Kristin Watson",
+    post: "Marketing Lead",
+    image: "/images/team/team-3.webp"
+  },
+  {
+    id: 4,
+    name: "Darlene Robertson",
+    post: "Business Director",
+    image: "/images/team/team-4.webp"
+  },
+  {
+    id: 5,
+    name: "Eade Marren",
+    post: "Chief Executive",
+    image: "/images/team/team-5.webp"
+  },
+  {
+    id: 6,
+    name: "Darlene Robertson",
+    post: "Business Director",
+    image: "/images/team/team-7.webp"
+  },
+  {
+    id: 7,
+    name: "Kristin Watson",
+    post: "Marketing Lead",
+    image: "/images/team/team-6.webp"
+  },
+  {
+    id: 8,
+    name: "Savannah Nguyen",
+    post: "Operations Head",
+    image: "/images/team/team-8.webp"
+  },
 ]

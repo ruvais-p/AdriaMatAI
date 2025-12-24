@@ -47,6 +47,11 @@ const faqData: FAQItem[] = [
 const ServiceDetails = ({ params }: Props) => {
     // Unwrap params Promise using React.use()
     const { slug } = React.use(params);
+    const [openIndex, setOpenIndex] = useState<number | null>(0);
+
+    const toggle = (index: number) => {
+        setOpenIndex(openIndex === index ? null : index);
+    };
 
     const service = services.find((s) => s.slug === slug);
     if (!service) return notFound();
@@ -55,12 +60,6 @@ const ServiceDetails = ({ params }: Props) => {
         { href: "/", text: "Home" },
         { href: "/services", text: "Service Details" },
     ];
-
-    const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-    const toggle = (index: number) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
 
     return (
         <>
