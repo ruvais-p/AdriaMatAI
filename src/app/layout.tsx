@@ -9,24 +9,28 @@ const chakraPetch = Chakra_Petch({
   variable: "--font-chakrapetch",
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
+  preload: false,
 });
 
 const mona = Mona_Sans({
   variable: "--font-mona",
   weight: ["300", "400", "500", "600"],
   subsets: ["latin"],
+  preload: false,
 });
 
 const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
+  preload: false,
 });
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
   weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
+  preload: false,
 });
 
 export const metadata: Metadata = {
