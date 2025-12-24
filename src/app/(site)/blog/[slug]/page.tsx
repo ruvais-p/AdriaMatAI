@@ -37,10 +37,11 @@ export const metadata: Metadata = {
 };
 
 type Props = {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 };
 
-const BlogDetails = ({ params }: Props) => {
+const BlogDetails = async (props: Props) => {
+    const params = await props.params;
     const blog = blogs.find((b) => b.slug === params.slug);
 
     if (!blog) return notFound();

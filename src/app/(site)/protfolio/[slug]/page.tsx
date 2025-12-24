@@ -14,9 +14,9 @@ import protfolio2 from "@/../public/images/protfoliodetails/project-gallery-2.we
 import protfolio3 from "@/../public/images/protfoliodetails/project-gallery-3.webp";
 
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 const projectData = [
@@ -28,7 +28,7 @@ const projectData = [
 ];
 
 const ProtfolioDetails = ({ params }: Props) => {
-  const { slug } = params;
+  const { slug } = React.use(params);
 
   const item = protfolio.find((p) => p.slug === slug);
   if (!item) {
@@ -50,7 +50,7 @@ const ProtfolioDetails = ({ params }: Props) => {
 
       <section className="py-15">
         <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 flex flex-col lg:flex-row gap-5">
-          
+
           {/* Left Content */}
           <div className="lg:w-[60%] w-full">
             <div className="bg-white p-5 rounded-2xl space-y-6">
@@ -118,7 +118,7 @@ const ProtfolioDetails = ({ params }: Props) => {
 
           {/* Right Sidebar */}
           <div className="lg:w-[40%] w-full lg:self-start lg:sticky top-20 space-y-5 py-5">
-            
+
             <div className="bg-white shadow-lg p-6 rounded-lg">
               <h4 className="text-black pb-5 font-semibold">
                 Project Info

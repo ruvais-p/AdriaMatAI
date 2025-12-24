@@ -87,8 +87,10 @@ const ServiceDetails = ({ params }: Props) => {
                                 Recognize that exceptional customer experiences are at the heart of every successful business. Our Customer Experience Solutions are crafted to help you transform every interaction your customers have with your brand into a meaningful and positive experience. We believe that understanding the customer journey and providing personalized, seamless experiences can significantly enhance customer loyalty, satisfaction, and lifetime value. Our approach to customer experience is comprehensive and data-driven.
                             </p>
                             <p className="pb-4 text-pera-dark text-16 leading-6">
-                                Our approach to customer experience is comprehensive and data-driven. We begin by assessing your current customer touchpoints, identifying areas for improvement, and using insights to develop strategies that meet your customers’ evolving needs. From optimizing digital platforms.
+                                Our approach to customer experience is comprehensive and data-driven. We begin by assessing your current customer touchpoints, identifying areas for improvement, and using insights to develop strategies that meet your customers&apos; evolving needs. From optimizing digital platforms.
                             </p>
+
+                            {/* ... skipped list ... */}
 
                             <ul className="grid grid-cols-2 gap-5">
                                 {[
@@ -116,7 +118,7 @@ const ServiceDetails = ({ params }: Props) => {
                                 Our Range of Customer Services
                             </h4>
                             <p className="pb-4 text-pera-dark text-16 leading-6">
-                                At Bexon, we don't just focus on solving customer problems—we focus on creating experiences that delight and build lasting relationships. Whether it's through improving customer service operations, leveraging technology, or designing more engaging digital experiences, our team is here to help you exceed your customers' expectations every time. We help you understand your customers deeply, optimize their experience.
+                                At Bexon, we don&apos;t just focus on solving customer problems—we focus on creating experiences that delight and build lasting relationships. Whether it&apos;s through improving customer service operations, leveraging technology, or designing more engaging digital experiences, our team is here to help you exceed your customers&apos; expectations every time. We help you understand your customers deeply, optimize their experience.
                             </p>
 
                             <div className="space-y-4 w-full">
