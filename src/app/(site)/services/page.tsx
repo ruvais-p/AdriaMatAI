@@ -3,9 +3,10 @@ import React from "react";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { services } from "@/app/api/data";
+import { useData } from "@/hooks/useData";
 
-const Page = () => {
+const ServicesPage = () => {
+    const { services } = useData();
     const breadcrumbLinks = [
         { href: "/", text: "Home" },
         { href: "/services", text: "Services" },
@@ -58,4 +59,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default ServicesPage;

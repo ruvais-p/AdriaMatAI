@@ -3,13 +3,14 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { team } from "@/app/api/data";
+import { useData } from "@/hooks/useData";
 
 interface TeamProps {
     limit?: number; // 👈 add limit prop
 }
 
 const Team: React.FC<TeamProps> = ({ limit }) => {
+    const { team } = useData();
     const displayedTeam = limit ? team.slice(0, limit) : team;
 
     return (

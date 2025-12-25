@@ -1,10 +1,12 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import { footerLinks } from "@/app/api/data";
+import { useData } from "@/hooks/useData";
 import Logo from "../Header/Logo";
 
 const Footer = () => {
+    const { footerLinks } = useData();
     return (
         <footer className="pt-10 relative bg-white">
             <div className="container mx-auto px-4 max-w-screen-xl">

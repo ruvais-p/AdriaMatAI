@@ -1,36 +1,33 @@
 import type { Metadata } from "next";
-import { Chakra_Petch, Poppins, Unbounded, Mona_Sans } from "next/font/google";
+import localFont from "next/font/local";
 
 import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
+import { LanguageProvider } from "@/contexts/LanguageContext";
 
-const chakraPetch = Chakra_Petch({
+const chakraPetch = localFont({
+  src: "../fonts/ChakraPetch-Regular.ttf",
   variable: "--font-chakrapetch",
-  weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
-  preload: false,
+  weight: "100 900",
 });
 
-const mona = Mona_Sans({
-  variable: "--font-mona",
-  weight: ["300", "400", "500", "600"],
-  subsets: ["latin"],
-  preload: false,
+const mona = localFont({
+  src: "../fonts/SpaceMono-Regular.ttf",
+  variable: "--font-mono",
+  weight: "100 900",
 });
 
-const poppins = Poppins({
+const poppins = localFont({
+  src: "../fonts/Poppins-Regular.ttf",
   variable: "--font-poppins",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-  preload: false,
+  weight: "100 900",
 });
 
-const unbounded = Unbounded({
+const unbounded = localFont({
+  src: "../fonts/Unbounded-Regular.ttf",
   variable: "--font-unbounded",
-  weight: ["300", "400", "500", "600", "700"],
-  subsets: ["latin"],
-  preload: false,
+  weight: "100 900",
 });
 
 export const metadata: Metadata = {
@@ -48,9 +45,11 @@ export default function RootLayout({
       <body
         className={`${chakraPetch.variable} ${mona.variable} ${poppins.variable} ${unbounded.variable}`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <LanguageProvider>
+          <Header />
+          {children}
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

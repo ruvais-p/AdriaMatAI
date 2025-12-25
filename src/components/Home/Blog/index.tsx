@@ -1,10 +1,12 @@
+"use client";
 import { Icon } from '@iconify/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
-import { blogs } from '@/app/api/data';
+import { useData } from '@/hooks/useData';
 
 const Blog: React.FC = () => {
+    const { blogs } = useData();
     return (
         <>
             <section className="bg-light overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">

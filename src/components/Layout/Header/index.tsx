@@ -5,12 +5,11 @@ import { headerData } from "./Navigation/menuData";
 import HeaderLinks from "./Navigation/headerLinks";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import Sidebar from "./Sidebar";
 import MobileHeaderLink from "./Navigation/mobileheaderLinks";
+import LanguageChanger from "./LanguageChanger";
 
 const Header: React.FC = () => {
   const [sticky, setSticky] = useState(false);
-  const [isOpenSidebar, setIsOpenSidebar] = useState(false);
   const [navbarOpen, setNavbarOpen] = useState(false);
 
   const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -45,6 +44,7 @@ const Header: React.FC = () => {
           </nav>
 
           <div className="nav-right gap-4 hidden lg:flex items-center">
+            <LanguageChanger />
             <Link
               href="/contact"
               className="text-white bg-dark h-[50px] rounded-full font-chakrapetch font-semibold flex gap-2 ps-4 pe-2 py-2 w-auto justify-center items-center tracking-wider group"
@@ -57,16 +57,6 @@ const Header: React.FC = () => {
                 className="bg-prim text-white rounded-full h-full w-[35px] p-1.5 group-hover:-rotate-45 transition duration-300"
               />
             </Link>
-
-            <button
-              onClick={() => setIsOpenSidebar(true)}
-              className="block p-2 cursor-pointer group"
-              aria-label="Toggle mobile menu"
-            >
-              <span className="block w-6 h-0.5 bg-white"></span>
-              <span className="block w-4 h-0.5 bg-white mt-1.5 transition-all duration-300 ease-in-out group-hover:w-6"></span>
-              <span className="block w-6 h-0.5 bg-white mt-1.5"></span>
-            </button>
           </div>
 
           <button
@@ -133,11 +123,6 @@ const Header: React.FC = () => {
             <Icon icon="ei:search" width="50" height="30" />
           </button>
         </form>
-
-        <Sidebar
-          isOpenSidebar={isOpenSidebar}
-          setIsOpenSidebar={setIsOpenSidebar}
-        />
       </div>
     </>
   );

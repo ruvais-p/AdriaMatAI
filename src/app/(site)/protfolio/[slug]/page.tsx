@@ -7,11 +7,14 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 import HeroSub from "@/components/SharedComponents/HeroSub";
-import { protfolio } from "@/app/api/data";
+import { useData } from "@/hooks/useData";
 
 import protfolio1 from "@/../public/images/protfoliodetails/project-gallery-1.webp";
 import protfolio2 from "@/../public/images/protfoliodetails/project-gallery-2.webp";
 import protfolio3 from "@/../public/images/protfoliodetails/project-gallery-3.webp";
+
+const PortfolioDetails = ({ params }: { params: { slug: string } }) => {
+    const { protfolio } = useData();
 
 type Props = {
   params: Promise<{
@@ -27,10 +30,10 @@ const projectData = [
   { label: "Complete date", value: "Jul 20, 2025" },
 ];
 
-const ProtfolioDetails = ({ params }: Props) => {
-  const { slug } = React.use(params);
+const ProtfolioDetails = ({ params }: { params: { slug: string } }) => {
+  const { protfolio } = useData();
 
-  const item = protfolio.find((p) => p.slug === slug);
+  const item = protfolio.find((p) => p.slug === params.slug);
   if (!item) {
     notFound();
   }

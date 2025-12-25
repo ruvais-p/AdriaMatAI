@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import HeroSub from "@/components/SharedComponents/HeroSub";
-import { protfolio } from "@/app/api/data";
+import { useData } from "@/hooks/useData";
 
 type PortfolioItem = {
   id: number;
@@ -13,7 +13,8 @@ type PortfolioItem = {
   category: string;
 };
 
-const Page = () => {
+const PortfolioPage = () => {
+    const { protfolio } = useData();
   const breadcrumbLinks = [
     { href: "/", text: "Home" },
     { href: "/protfolio", text: "Protfolio" },
@@ -89,4 +90,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default PortfolioPage;

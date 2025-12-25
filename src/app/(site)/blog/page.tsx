@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import HeroSub from "@/components/SharedComponents/HeroSub";
-import { blogs } from "@/app/api/data";
+import { useData } from "@/hooks/useData";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
@@ -10,6 +10,9 @@ import { Icon } from "@iconify/react";
 import blog1 from "@/../public/images/blog/service-1.webp";
 import blog2 from "@/../public/images/blog/service-2.webp";
 import blog3 from "@/../public/images/blog/service-3.webp";
+
+const BlogPage: React.FC = () => {
+    const { blogs } = useData();
 
 const recentPosts = [
     {
@@ -29,7 +32,8 @@ const recentPosts = [
     },
 ];
 
-const Page = () => {
+const BlogPage = () => {
+    const { blogs } = useData();
     const breadcrumbLinks = [
         { href: "/", text: "Home" },
         { href: "/blog", text: "Blog" },
@@ -177,4 +181,5 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default BlogPage;
+

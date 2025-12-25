@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 import { Icon } from "@iconify/react";
-import { services } from "@/app/api/data";
+import { useData } from "@/hooks/useData";
 import service1 from '@/../public/images/services/service-02.webp';
 import service2 from '@/../public/images/services/service-03.webp';
 import Link from "next/link";
@@ -13,6 +13,9 @@ type FAQItem = {
     question: string;
     answer: string;
 };
+
+const ServiceDetails = ({ params }: { params: { slug: string } }) => {
+    const { services } = useData();
 
 type Props = { params: Promise<{ slug: string }> }; // params is a Promise now
 
@@ -44,7 +47,8 @@ const faqData: FAQItem[] = [
     },
 ];
 
-const ServiceDetails = ({ params }: Props) => {
+const ServiceDetails = ({ params }: { params: { slug: string } }) => {
+    const { services } = useData();
     // Unwrap params Promise using React.use()
     const { slug } = React.use(params);
     const [openIndex, setOpenIndex] = useState<number | null>(0);

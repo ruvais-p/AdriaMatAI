@@ -1,15 +1,20 @@
-import { blogs } from "@/app/api/data";
+"use client";
+import { useData } from "@/hooks/useData";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 import React, { useState } from "react";
-import { Metadata } from "next";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 import blog1 from "@/../public/images/blog/service-1.webp";
 import blog2 from "@/../public/images/blog/service-2.webp";
 import blog3 from "@/../public/images/blog/service-3.webp";
+import blog01 from "@/../public/images/blogdetails/blog-1.webp";
+import blog02 from "@/../public/images/blogdetails/blog-2.webp";
+
+const BlogDetails = ({ params }: { params: { slug: string } }) => {
+    const { blogs } = useData();
 
 const recentPosts = [
     {
@@ -29,19 +34,12 @@ const recentPosts = [
     },
 ];
 
-import blog01 from "@/../public/images/blogdetails/blog-1.webp"
-import blog02 from "@/../public/images/blogdetails/blog-2.webp"
-
-export const metadata: Metadata = {
-    title: "Blog Details | Axora",
-};
-
 type Props = {
-    params: Promise<{ slug: string }>;
+    params: { slug: string };
 };
 
-const BlogDetails = async (props: Props) => {
-    const params = await props.params;
+const BlogDetails = ({ params }: Props) => {
+    const { blogs } = useData();
     const blog = blogs.find((b) => b.slug === params.slug);
 
     if (!blog) return notFound();

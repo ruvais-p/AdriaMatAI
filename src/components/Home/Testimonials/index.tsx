@@ -5,9 +5,10 @@ import Image from 'next/image';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
-import { testimonial } from '@/app/api/data';
+import { useData } from '@/hooks/useData';
 
 const Testimonials: React.FC = () => {
+    const { testimonial } = useData();
     return (
         <>
             <section className=" overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">

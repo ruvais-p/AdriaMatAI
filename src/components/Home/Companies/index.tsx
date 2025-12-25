@@ -6,9 +6,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import Image from "next/image";
-import { companies } from "@/app/api/data";
+import { useData } from "@/hooks/useData";
 
 const Companies: React.FC = () => {
+    const { companies } = useData();
     return (
         <>
             <section className="bg-light overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">
