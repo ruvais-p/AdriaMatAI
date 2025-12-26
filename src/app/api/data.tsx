@@ -653,7 +653,7 @@ export const companiesHeader: SectionHeader = {
 
 export const projectsHeader: SectionHeader = {
   subtitle: "Our Projects",
-  title: "Start Your Intelligence Transformation with MAT.ai"
+  title: "Start Your Intelligence Transformation with MAT.AI"
 };
 
 export const solutionHeader: SectionHeader = {
