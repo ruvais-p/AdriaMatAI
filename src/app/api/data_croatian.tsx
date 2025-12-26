@@ -745,7 +745,7 @@ export const faqPageData: FAQPageData = {
     breadcrumbLinkText: "Česta pitanja"
   },
   faqSection: {
-    image: "/images/faq/faq-image-01.webp",
+    image: "/images/faq/faq-image-01.jpg",
     items: [
       {
         question: "Koliko brzo vaša organizacija može transformirati složene operativne izazove u skalabilne inovacije?",

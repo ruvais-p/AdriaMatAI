@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
 
                 <div className='solution-box absolute lg:block hidden lg:bottom-5 bottom-0 lg:right-5 right-0 bg-white/10 backdrop-blur-sm p-8 max-w-md rounded-md z-10'>
                     <Icon icon="tdesign:quote-filled" width="60" height="60" className='text-white' />
-                    <p className='text-white pt-3 pb-8'>
+                    <p className='text-white pt-3 pb-7'>
                         {heroData.quote}
                     </p>
                     <div className="hero-counter text-7xl font-medium text-white font-unbounded">

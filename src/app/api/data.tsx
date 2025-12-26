@@ -773,7 +773,7 @@ export const faqPageData: FAQPageData = {
     breadcrumbLinkText: "Faq"
   },
   faqSection: {
-    image: "/images/faq/faq-image-01.webp",
+    image: "/images/faq/faq-image-01.jpg",
     items: [
       {
         question: "How quickly can your organization transform complex operational hurdles into scalable innovation?",

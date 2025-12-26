@@ -114,7 +114,7 @@ const Page = () => {
                         </Link>
                     </div>
                     <div className="image lg:w-[45%] w-full rounded-lg overflow-hidden">
-                        <Image src="/images/about/about-01.webp" alt="about-image" width={300} height={300} className="w-full h-full" />
+                        <Image src="/images/about/about-01.jpg" alt="about-image" width={300} height={300} className="w-full h-full" />
                     </div>
                 </div>
             </div>
