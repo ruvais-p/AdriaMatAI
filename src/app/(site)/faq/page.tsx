@@ -4,45 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 import { Icon } from "@iconify/react";
-
-
-type FAQItem = {
-    question: string;
-    answer: string;
-};
-const faqData: FAQItem[] = [
-    {
-        question: "What services does Bexon offer to clients?",
-        answer:
-            "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
-    },
-    {
-        question: "How do I get started with Corporate Business?",
-        answer:
-            "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
-    },
-    {
-        question: "How do you ensure the success of a project?",
-        answer:
-            "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
-    },
-    {
-        question: "How long will it take to complete my project?",
-        answer:
-            "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
-    },
-    {
-        question: "Can I track the progress of my project?",
-        answer:
-            "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery.",
-    },
-];
-
+import { useData } from "@/hooks/useData";
 
 const Page = () => {
+    const { faqPageData } = useData();
+
     const breadcrumbLinks = [
         { href: "/", text: "Home" },
-        { href: "/faq", text: "Faq" },
+        { href: "/faq", text: faqPageData.header.breadcrumbLinkText },
     ];
 
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -53,16 +22,16 @@ const Page = () => {
 
     return (
         <>
-            <HeroSub title="Faq" description="" breadcrumbLinks={breadcrumbLinks} />
+            <HeroSub title={faqPageData.header.title} description="" breadcrumbLinks={breadcrumbLinks} />
 
             <div className="bg-light overflow-hidden py-14 lg:py-18 xl:py-22">
                 <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 flex lg:flex-nowrap flex-wrap gap-5">
                     <div className="lg:w-[50%] w-full">
-                        <Image src="/images/faq/faq-image-01.webp" alt="faq-image" width={300} height={300} className="w-full h-full rounded-xl" />
+                        <Image src={faqPageData.faqSection.image} alt="faq-image" width={300} height={300} className="w-full h-full rounded-xl" />
                     </div>
                     <div className="lg:w-[50%] w-full">
                         <div className="space-y-4 w-full">
-                            {faqData.map((item, index) => (
+                            {faqPageData.faqSection.items.map((item, index) => (
                                 <div
                                     key={index}
                                     className={`border rounded-lg overflow-hidden transition-all duration-300 ${openIndex === index ? "bg-prim text-white" : "bg-white text-black"}`}
@@ -90,12 +59,12 @@ const Page = () => {
                 <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 gap-5">
                     <div className="w-full text-center mb-10">
                         <span className='sub-title text-14 bg-prim text-white py-1 rounded-xl relative font-chakrapetch capitalize ps-5 pe-3'>
-                            Common Questions
+                            {faqPageData.commonQuestionsSection.subtitle}
                         </span>
-                        <h2 className='mt-4 font-chakrapetch lg:text-35 font-semibold'>Need Help? Start Here...</h2>
+                        <h2 className='mt-4 font-chakrapetch lg:text-35 font-semibold'>{faqPageData.commonQuestionsSection.title}</h2>
                     </div>
                     <div className="space-y-4 lg:w-[70%] lg:mx-auto w-full">
-                        {faqData.map((item, index) => (
+                        {faqPageData.commonQuestionsSection.items.map((item, index) => (
                             <div
                                 key={index}
                                 className={`border rounded-lg overflow-hidden transition-all duration-300 ${openIndex === index ? "bg-prim text-white" : "bg-white text-black"}`}

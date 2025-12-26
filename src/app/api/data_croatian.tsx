@@ -256,6 +256,12 @@ export type Service = {
   image: StaticImageData;
   gallery?: StaticImageData[];
   features?: string[];
+  detailsParagraph1?: string;
+  detailsParagraph2?: string;
+  benefits?: string[];
+  rangeOfServicesTitle?: string;
+  rangeOfServicesDescription?: string;
+  faqs?: FAQItem[];
 };
 
 export const services: Service[] = [
@@ -400,3 +406,403 @@ export const team = [
     image: "/images/team/team-8.webp"
   },
 ]
+
+export type HeroData = {
+  title: string;
+  buttonText: string;
+  quote: string;
+  counter: string;
+  counterSuffix: string;
+};
+
+export type SectionHeader = {
+  subtitle: string;
+  title: string;
+  description?: string;
+  buttonText?: string;
+};
+
+export type CommitmentData = {
+  header: SectionHeader;
+  card1: {
+    title: string;
+    stat: string;
+    text: string;
+  };
+  card2: {
+    title: string;
+  };
+  card3: {
+    title: string;
+    text: string;
+    tags: string[];
+  };
+};
+
+export type PricingPlan = {
+  title: string;
+  monthlyPrice: string;
+  yearlyPrice: string;
+  description: string;
+  features: string[];
+  buttonText: string;
+};
+
+export type PricingData = {
+  header: SectionHeader;
+  plans: {
+    basic: PricingPlan;
+    standard: PricingPlan;
+    premium: PricingPlan;
+  };
+  toggleText: {
+    monthly: string;
+    yearly: string;
+  };
+};
+
+export type ProcessStep = {
+  stepNumber: string;
+  title: string;
+  description: string;
+};
+
+export type ProcessData = {
+  header: SectionHeader;
+  steps: ProcessStep[];
+};
+// =======================
+// Hero
+// =======================
+
+export const heroData: HeroData = {
+  title: "Pretvaramo ideje u stvarnost",
+  buttonText: "Započnite odmah",
+  quote: "Posvećeni smo preciznom inženjerstvu i trajnoj suradnji; potičemo uspjeh kroz transparentne inovacije i zajedničku viziju industrijske umjetne inteligencije.",
+  counter: "",
+  counterSuffix: ""
+};
+
+// =======================
+// Commitment
+// =======================
+
+export const commitmentData: CommitmentData = {
+  header: {
+    subtitle: "Odaberite najbolje",
+    title:
+      "Posvećeni pružanju inteligentnih rješenja koja potiču industrijsku preciznost, s naglaskom na tehničku izvrsnost.",
+    buttonText: "Saznajte više"
+  },
+  card1: {
+    title: "Strategija rebrandinga za rastuću tvrtku",
+    stat: "200",
+    text: "Zadovoljnih klijenata surađuje s našim AdriaMat AI rješenjima."
+  },
+  card2: {
+    title: "Strategija rebrandinga za rastuću tvrtku"
+  },
+  card3: {
+    title: "Strategija rebrandinga za rastuću tvrtku",
+    text:
+      "Naš tim je uvijek dostupan kako bi odgovorio na vaše potrebe i pružio brza i učinkovita rješenja.",
+    tags: ["Rast", "Uspjeh", "Inovacija", "Vodstvo", "Utjecaj", "Fokus", "Tehnologija"]
+  }
+};
+
+// =======================
+// Pricing
+// =======================
+
+export const pricingData: PricingData = {
+  header: {
+    subtitle: "FLEKSIBILNE CIJENE",
+    title: "Naši cjenovni paketi"
+  },
+  toggleText: {
+    monthly: "Mjesečno",
+    yearly: "Godišnje"
+  },
+  plans: {
+    basic: {
+      title: "Osnovni paket",
+      monthlyPrice: "99",
+      yearlyPrice: "299",
+      description:
+        "Kombinacijom analitike temeljene na podacima i inovativnih pristupa.",
+      buttonText: "Odaberi paket",
+      features: [
+        "Pristup osnovnim uslugama",
+        "Ograničena korisnička podrška (e-mail)",
+        "1 projekt mjesečno",
+        "Osnovna izvješća i analitika",
+        "Standardni predlošci i alati",
+        "Osnovno praćenje učinkovitosti"
+      ]
+    },
+    standard: {
+      title: "Standardni paket",
+      monthlyPrice: "249",
+      yearlyPrice: "599",
+      description:
+        "Kombinacijom analitike temeljene na podacima i inovativnih pristupa.",
+      buttonText: "Odaberi paket",
+      features: [
+        "Sve značajke osnovnog paketa",
+        "Prioritetna korisnička podrška",
+        "Do 3 projekta mjesečno",
+        "Mjesečni pregledi učinkovitosti",
+        "Alati za timsku suradnju",
+        "Prilagođeni predlošci"
+      ]
+    },
+    premium: {
+      title: "Premium paket",
+      monthlyPrice: "499",
+      yearlyPrice: "899",
+      description:
+        "Kombinacijom analitike temeljene na podacima i inovativnih pristupa.",
+      buttonText: "Odaberi paket",
+      features: [
+        "Sve značajke standardnog paketa",
+        "Dodijeljeni voditelj računa",
+        "Prilagođene strateške sesije",
+        "Kvartalne revizije učinkovitosti",
+        "Prioritetna podrška",
+        "24/7 hitna podrška"
+      ]
+    }
+  }
+};
+
+// =======================
+// Process
+// =======================
+
+export const processData: ProcessData = {
+  header: {
+    subtitle: "Naš proces",
+    title: "Prilagođene AI arhitekture za uspjeh na industrijskoj razini",
+    description:
+      "Razvijamo personalizirana korisnička iskustva kako bismo povećali zadovoljstvo i lojalnost.",
+    buttonText: "Zatraži poziv"
+  },
+  steps: [
+    {
+      stepNumber: "01",
+      title: "Otkrivanje i planiranje",
+      description:
+        "Prvi korak je razumijevanje vaših poslovnih potreba, ciljeva i izazova."
+    },
+    {
+      stepNumber: "02",
+      title: "Provedba i isporuka",
+      description:
+        "Nakon definiranja plana, naš tim prelazi na provedbu strategije i realizaciju ciljeva."
+    },
+    {
+      stepNumber: "03",
+      title: "Pregled i podrška",
+      description:
+        "Nakon završetka projekta provodimo detaljnu analizu kako bismo osigurali usklađenost s vašim ciljevima."
+    }
+  ]
+};
+
+// =======================
+// Section Headers
+// =======================
+
+export const blogHeader: SectionHeader = {
+  subtitle: "Naši blogovi",
+  title: "Strategije i uvidi."
+};
+
+export const companiesHeader: SectionHeader = {
+  subtitle: "Naši partneri",
+  title: "Start Your Intelligence Transformation with MAT.ai"
+};
+
+export const projectsHeader: SectionHeader = {
+  subtitle: "Naši projekti",
+  title: "Započnite svoju transformaciju inteligencije s MAT.ai"
+};
+
+export const solutionHeader: SectionHeader = {
+  subtitle: "Naša rješenja",
+  title: "Prilagođena poslovna rješenja za moderne korporacije",
+  buttonText: "Istraži više"
+};
+
+export const testimonialsHeader = {
+  title: "Iskustva naših klijenata.",
+  rating: "4.9",
+  reviewCount: "(50+ recenzija klijenata)"
+};
+
+// =======================
+// About
+// =======================
+
+export type AboutData = {
+  header: {
+    title: string;
+    subtitle: string;
+    description: string;
+    buttonText: string;
+  };
+  aboutItems: {
+    icon: string;
+    title: string;
+    description: string;
+  }[];
+  getToKnowUs: {
+    subtitle: string;
+    title: string;
+    mission: {
+      title: string;
+      description: string;
+      points: string[];
+    };
+    vision: {
+      title: string;
+      description: string;
+      points: string[];
+    };
+    buttonText: string;
+  };
+};
+
+export const aboutData: AboutData = {
+  header: {
+    title: "O nama",
+    subtitle: "Odaberite najbolje",
+    description: "Osnaživanje poslovanja stručnošću.",
+    buttonText: "Zatraži poziv"
+  },
+  aboutItems: [
+    {
+      icon: "famicons:bulb-outline",
+      title: "Inovativna rješenja",
+      description: "Ostajemo ispred krivulje, koristeći najsuvremenije tehnologije i strategije kako bismo vas održali konkurentnima na tržištu."
+    },
+    {
+      icon: "la:award",
+      title: "Nagrađivana stručnost",
+      description: "Priznat od strane lidera industrije, naš nagrađivani tim ima dokazano iskustvo u isporuci izvrsnosti u svim projektima."
+    },
+    {
+      icon: "streamline-plump:customer-support-3",
+      title: "Posvećena podrška",
+      description: "Naš tim je uvijek dostupan za rješavanje vaših problema, pružajući brza i učinkovita rješenja za održavanje vašeg poslovanja."
+    }
+  ],
+  getToKnowUs: {
+    subtitle: "Upoznajte nas",
+    title: "Poticanje inovacija i izvrsnosti za održivi korporativni uspjeh širom svijeta.",
+    mission: {
+      title: "Naša misija",
+      description: "naša misija je osnažiti tvrtke kroz inovativna najbolja rješenja, iznimnu uslugu.",
+      points: ["Inovacija i izvrsnost", "Iznimni kupac", "Poslovni rast"]
+    },
+    vision: {
+      title: "Naša vizija",
+      description: "Naša vizija je postati globalni lider u pružanju transformativnih poslovnih rješenja.",
+      points: ["Globalno vodstvo", "Transformativni učinak", "Održivi uspjeh"]
+    },
+    buttonText: "Saznajte više o nama"
+  }
+};
+
+// =======================
+// FAQ
+// =======================
+
+export type FAQItem = {
+  question: string;
+  answer: string;
+};
+
+export type FAQPageData = {
+  header: {
+    title: string;
+    breadcrumbLinkText: string;
+  };
+  faqSection: {
+    image: string;
+    items: FAQItem[];
+  };
+  commonQuestionsSection: {
+    subtitle: string;
+    title: string;
+    items: FAQItem[];
+  };
+};
+
+export const faqPageData: FAQPageData = {
+  header: {
+    title: "Česta pitanja",
+    breadcrumbLinkText: "Česta pitanja"
+  },
+  faqSection: {
+    image: "/images/faq/faq-image-01.webp",
+    items: [
+      {
+        question: "Koje usluge Bexon nudi klijentima?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      },
+      {
+        question: "Kako započeti s korporativnim poslovanjem?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      },
+      {
+        question: "Kako osiguravate uspjeh projekta?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      },
+      {
+        question: "Koliko će trajati završetak mog projekta?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      },
+      {
+        question: "Mogu li pratiti napredak svog projekta?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      }
+    ]
+  },
+  commonQuestionsSection: {
+    subtitle: "Uobičajena pitanja",
+    title: "Trebate pomoć? Započnite ovdje...",
+    items: [
+      {
+        question: "Koje usluge Bexon nudi klijentima?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      },
+      {
+        question: "Kako započeti s korporativnim poslovanjem?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      },
+      {
+        question: "Kako osiguravate uspjeh projekta?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      },
+      {
+        question: "Koliko će trajati završetak mog projekta?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      },
+      {
+        question: "Mogu li pratiti napredak svog projekta?",
+        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+      }
+    ]
+  }
+};
+
+// =======================
+// Service Details Sidebar
+// =======================
+
+export const serviceDetailsSidebar = {
+  moreServicesTitle: "Više usluga",
+  tagsTitle: "Oznake",
+  tags: ["Brendiranje", "Posao", "Savjetovanje", "Dizajn", "Inovacije", "Vodstvo", "Marketing"]
+};

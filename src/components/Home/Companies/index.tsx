@@ -9,16 +9,16 @@ import Image from "next/image";
 import { useData } from "@/hooks/useData";
 
 const Companies: React.FC = () => {
-    const { companies } = useData();
+    const { companies, companiesHeader } = useData();
     return (
         <>
             <section className="bg-light overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">
                 <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 space-y-14">
                     <div className="companies-content text-center">
                         <span className='sub-title text-14 bg-prim text-white py-1 rounded-xl relative font-chakrapetch capitalize ps-5 pe-3'>
-                            Our Partners
+                            {companiesHeader.subtitle}
                         </span>
-                        <h2 className='mt-4 font-chakrapetch lg:text-35 font-semibold'>Join Over <span className="bg-dark text-white px-2 rounded-sm">1000+</span> Companies with Bexon Here</h2>
+                        <h2 className='mt-4 font-chakrapetch lg:text-35 font-semibold'>{companiesHeader.title}</h2>
                     </div>
                 </div>
                 <div className="relative mt-10">

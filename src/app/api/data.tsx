@@ -39,6 +39,71 @@ export type HeaderItem = {
   submenu?: SubMenuItem[];
 };
 
+export type HeroData = {
+  title: string;
+  buttonText: string;
+  quote: string;
+  counter: string;
+  counterSuffix: string;
+};
+
+export type SectionHeader = {
+  subtitle: string;
+  title: string;
+  description?: string;
+  buttonText?: string;
+};
+
+export type CommitmentData = {
+  header: SectionHeader;
+  card1: {
+    title: string;
+    stat: string;
+    text: string;
+  };
+  card2: {
+    title: string;
+  };
+  card3: {
+    title: string;
+    text: string;
+    tags: string[];
+  };
+};
+
+export type PricingPlan = {
+  title: string;
+  monthlyPrice: string;
+  yearlyPrice: string;
+  description: string;
+  features: string[];
+  buttonText: string;
+};
+
+export type PricingData = {
+  header: SectionHeader;
+  plans: {
+    basic: PricingPlan;
+    standard: PricingPlan;
+    premium: PricingPlan;
+  };
+  toggleText: {
+    monthly: string;
+    yearly: string;
+  };
+};
+
+export type ProcessStep = {
+  stepNumber: string;
+  title: string;
+  description: string;
+};
+
+export type ProcessData = {
+  header: SectionHeader;
+  steps: ProcessStep[];
+};
+
 
 // =======================
 // Solutions
@@ -257,6 +322,12 @@ export type Service = {
   image: StaticImageData;
   gallery?: StaticImageData[];
   features?: string[];
+  detailsParagraph1?: string;
+  detailsParagraph2?: string;
+  benefits?: string[];
+  rangeOfServicesTitle?: string;
+  rangeOfServicesDescription?: string;
+  faqs?: FAQItem[];
 };
 
 export const services: Service[] = [
@@ -281,6 +352,41 @@ export const services: Service[] = [
     image: service02,
     gallery: [service02, service03],
     features: ["Customer-Centric Approach", "Operational Efficiency", "Continuous Learning"],
+    detailsParagraph1: "Recognize that exceptional customer experiences are at the heart of every successful business. Our Customer Experience Solutions are crafted to help you transform every interaction your customers have with your brand into a meaningful and positive experience. We believe that understanding the customer journey and providing personalized, seamless experiences can significantly enhance customer loyalty, satisfaction, and lifetime value. Our approach to customer experience is comprehensive and data-driven.",
+    detailsParagraph2: "Our approach to customer experience is comprehensive and data-driven. We begin by assessing your current customer touchpoints, identifying areas for improvement, and using insights to develop strategies that meet your customers' evolving needs. From optimizing digital platforms.",
+    benefits: [
+      "Personalization at Scale",
+      "Customer Retention",
+      "Improved Customer Retention",
+      "Support Optimization",
+      "Data-Driven Insights",
+      "Proactive Engagement",
+      "Omni-channel Integration"
+    ],
+    rangeOfServicesTitle: "Our Range of Customer Services",
+    rangeOfServicesDescription: "At Bexon, we don't just focus on solving customer problems—we focus on creating experiences that delight and build lasting relationships. Whether it's through improving customer service operations, leveraging technology, or designing more engaging digital experiences, our team is here to help you exceed your customers' expectations every time. We help you understand your customers deeply, optimize their experience.",
+    faqs: [
+      {
+        question: "What is Customer Experience (CX) and why is it important?",
+        answer: "Customer Experience (CX) refers to the overall impression a customer has of a business based on their interactions across various touchpoints—whether it’s a website visit, a customer support call, or an in-store purchase. It encompasses everything from ease of navigation and service quality to emotional connection and brand perception."
+      },
+      {
+        question: "How can your Customer Experience Solutions benefit?",
+        answer: "Our CX solutions help streamline processes, increase customer satisfaction, and build long-term loyalty through personalized experiences."
+      },
+      {
+        question: "How do you personalize the customer experience?",
+        answer: "We collect customer data and insights to tailor interactions, offers, and support to each individual’s preferences and behavior."
+      },
+      {
+        question: "How do you collect customer feedback?",
+        answer: "We use surveys, feedback forms, analytics tools, and direct interactions to gather valuable insights from your customers."
+      },
+      {
+        question: "Can you help improve our customer support system?",
+        answer: "Yes! We analyze your current support channels and implement solutions to optimize efficiency, response time, and overall satisfaction."
+      }
+    ],
   },
   {
     id: 3,
@@ -401,3 +507,330 @@ export const team = [
     image: "/images/team/team-8.webp"
   },
 ]
+
+// =======================
+// Hero
+// =======================
+
+export const heroData: HeroData = {
+  title: "MAT AI: Translating Discovery into Delivery",
+  buttonText: "Get Started Now",
+  quote: "We are committed to precision engineering and lasting collaboration; driving success through transparent innovation and a shared vision for industrial AI.",
+  counter: "",
+  counterSuffix: ""
+};
+
+// =======================
+// Commitment
+// =======================
+
+export const commitmentData: CommitmentData = {
+  header: {
+    subtitle: "Choose the Best",
+    title: "Committed to delivering intelligent solutions that drive industrial precision, with a focus on technical excellence.",
+    buttonText: "Learn More"
+  },
+  card1: {
+    title: "Rebranding Strategy for a Growing",
+    stat: "200",
+    text: "Satisfied customers work with our AdriaMat AI."
+  },
+  card2: {
+    title: "Rebranding Strategy for a Growing"
+  },
+  card3: {
+    title: "Rebranding Strategy for a Growing",
+    text: "Our team are always available to addressed our concerns, providing quick solution.",
+    tags: ["Growth", "Success", "Innovate", "Lead", "Impact", "Focus", "Tech"]
+  }
+};
+
+// =======================
+// Pricing
+// =======================
+
+export const pricingData: PricingData = {
+  header: {
+    subtitle: "FLEXIBLE PRICING",
+    title: "Our Pricing Plan"
+  },
+  toggleText: {
+    monthly: "Monthly",
+    yearly: "Yearly"
+  },
+  plans: {
+    basic: {
+      title: "Basic Plan",
+      monthlyPrice: "99",
+      yearlyPrice: "299",
+      description: "Through a combination of our data-driven insights and innovative approaches.",
+      buttonText: "Choose package",
+      features: [
+        "Access to core services",
+        "Limited customer support (email)",
+        "1 project per month",
+        "Basic reporting and analytics",
+        "Standard templates and tools",
+        "Basic performance tracking"
+      ]
+    },
+    standard: {
+      title: "Standard Plan",
+      monthlyPrice: "249",
+      yearlyPrice: "599",
+      description: "Through a combination of our data-driven insights and innovative approaches.",
+      buttonText: "Choose package",
+      features: [
+        "All features in Basic Plan",
+        "Priority customer support",
+        "Up to 3 projects per month",
+        "Monthly performance reviews",
+        "Collaboration tools for team",
+        "Custom templates"
+      ]
+    },
+    premium: {
+      title: "Premium Plan",
+      monthlyPrice: "499",
+      yearlyPrice: "899",
+      description: "Through a combination of our data-driven insights and innovative approaches.",
+      buttonText: "Choose package",
+      features: [
+        "All features in Standard Plan",
+        "Dedicated account manager",
+        "Tailored strategy sessions",
+        "Quarterly performance audits",
+        "Priority support",
+        "24/7 emergency service"
+      ]
+    }
+  }
+};
+
+// =======================
+// Process
+// =======================
+
+export const processData: ProcessData = {
+  header: {
+    subtitle: "Our Process",
+    title: "Bespoke AI Architectures for Industrial-Scale Success",
+    description: "Developing personalized customer journeys to increase satisfaction and loyalty.",
+    buttonText: "Request a Call"
+  },
+  steps: [
+    {
+      stepNumber: "01",
+      title: "Discovery & Planning",
+      description: "The first step in our process is understanding your unique business needs, objectives, and our cutomes challenges."
+    },
+    {
+      stepNumber: "02",
+      title: "Execution & Delivery",
+      description: "Once the plan is in place, our team moves forward with execution, turning strategies into actiony to deliver"
+    },
+    {
+      stepNumber: "03",
+      title: "Review & Support",
+      description: "After project completion, we conduct a thorough review to ensure everything aligns with your goals and requirements"
+    }
+  ]
+};
+
+// =======================
+// Section Headers
+// =======================
+
+export const blogHeader: SectionHeader = {
+  subtitle: "Our Blogs",
+  title: "Strategies and Insights."
+};
+
+export const companiesHeader: SectionHeader = {
+  subtitle: "Our Partners",
+  title: "Start Your Intelligence Transformation with MAT.AI"
+};
+
+export const projectsHeader: SectionHeader = {
+  subtitle: "Our Projects",
+  title: "Start Your Intelligence Transformation with MAT.ai"
+};
+
+export const solutionHeader: SectionHeader = {
+  subtitle: "Our Solution",
+  title: "Tailor-Made Business Solutions for Modern Corporates",
+  buttonText: "Explore More"
+};
+
+export const testimonialsHeader = {
+  title: "Hear from Our Customer.",
+  rating: "4.9",
+  reviewCount: "(50+ Clients Reviews)"
+};
+
+// =======================
+// About
+// =======================
+
+export type AboutData = {
+  header: {
+    title: string;
+    subtitle: string;
+    description: string;
+    buttonText: string;
+  };
+  aboutItems: {
+    icon: string;
+    title: string;
+    description: string;
+  }[];
+  getToKnowUs: {
+    subtitle: string;
+    title: string;
+    mission: {
+      title: string;
+      description: string;
+      points: string[];
+    };
+    vision: {
+      title: string;
+      description: string;
+      points: string[];
+    };
+    buttonText: string;
+  };
+};
+
+export const aboutData: AboutData = {
+  header: {
+    title: "About",
+    subtitle: "Choose the Best",
+    description: "Empowering Business with Expertise.",
+    buttonText: "Request a Call"
+  },
+  aboutItems: [
+    {
+      icon: "famicons:bulb-outline",
+      title: "Innovative Solutions",
+      description: "We stay ahead of the curve, leveraging cutting-edge technologies and strategies to keep you competitive in a marketplace."
+    },
+    {
+      icon: "la:award",
+      title: "Award-Winning Expertise",
+      description: "Recognized by industry leaders, our award-winning team has a proven record of delivering excellence across projects."
+    },
+    {
+      icon: "streamline-plump:customer-support-3",
+      title: "Dedicated Support",
+      description: "Our team is always available to address your concerns, providing quick and effective solution to keep your business."
+    }
+  ],
+  getToKnowUs: {
+    subtitle: "Get to Know Us",
+    title: "Driving Innovation and Excellence for Sustainable Corporate Success Worldwide.",
+    mission: {
+      title: "Our Mission",
+      description: "our mission is empower businesses through innovate best solution, exceptional service.",
+      points: ["Innovation & Excellence", "Exceptional Customer", "Business Growth"]
+    },
+    vision: {
+      title: "Our Vision",
+      description: "Our vision is to become a global leader in providing transformative business solutions.",
+      points: ["Global Leadership", "Transformative Impact", "Sustainable Success"]
+    },
+    buttonText: "Learn More About Us"
+  }
+};
+
+// =======================
+// FAQ
+// =======================
+
+export type FAQItem = {
+  question: string;
+  answer: string;
+};
+
+export type FAQPageData = {
+  header: {
+    title: string;
+    breadcrumbLinkText: string;
+  };
+  faqSection: {
+    image: string;
+    items: FAQItem[];
+  };
+  commonQuestionsSection: {
+    subtitle: string;
+    title: string;
+    items: FAQItem[];
+  };
+};
+
+export const faqPageData: FAQPageData = {
+  header: {
+    title: "Faq",
+    breadcrumbLinkText: "Faq"
+  },
+  faqSection: {
+    image: "/images/faq/faq-image-01.webp",
+    items: [
+      {
+        question: "What services does Bexon offer to clients?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      },
+      {
+        question: "How do I get started with Corporate Business?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      },
+      {
+        question: "How do you ensure the success of a project?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      },
+      {
+        question: "How long will it take to complete my project?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      },
+      {
+        question: "Can I track the progress of my project?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      }
+    ]
+  },
+  commonQuestionsSection: {
+    subtitle: "Common Questions",
+    title: "Need Help? Start Here...",
+    items: [
+      {
+        question: "What services does Bexon offer to clients?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      },
+      {
+        question: "How do I get started with Corporate Business?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      },
+      {
+        question: "How do you ensure the success of a project?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      },
+      {
+        question: "How long will it take to complete my project?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      },
+      {
+        question: "Can I track the progress of my project?",
+        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+      }
+    ]
+  }
+};
+
+// =======================
+// Service Details Sidebar
+// =======================
+
+export const serviceDetailsSidebar = {
+  moreServicesTitle: "More services",
+  tagsTitle: "Tags",
+  tags: ["Branding", "Business", "Consulting", "Design", "Innovate", "Lead", "Marketing"]
+};

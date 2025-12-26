@@ -1,4 +1,5 @@
 "use client";
+"use client";
 import { Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import React from 'react';
@@ -11,16 +12,16 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 
 const Projects: React.FC = () => {
-    const { companies, projects } = useData();
+    const { companies, projects, projectsHeader } = useData();
     return (
         <>
             <section className="bg-light overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">
                 <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 space-y-14">
                     <div className="projects-content text-center mb-10">
                         <span className='sub-title text-14 bg-prim text-white py-1 rounded-xl relative font-chakrapetch capitalize ps-5 pe-3'>
-                            Our Projects
+                            {projectsHeader.subtitle}
                         </span>
-                        <h2 className='mt-4 font-chakrapetch lg:text-35 font-semibold'>Breaking Boundaries, Building Dreams.</h2>
+                        <h2 className='mt-4 font-chakrapetch lg:text-35 font-semibold'>{projectsHeader.title}</h2>
                     </div>
                 </div>
 
