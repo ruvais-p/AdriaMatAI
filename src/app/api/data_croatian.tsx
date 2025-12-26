@@ -748,27 +748,28 @@ export const faqPageData: FAQPageData = {
     image: "/images/faq/faq-image-01.webp",
     items: [
       {
-        question: "Koje usluge Bexon nudi klijentima?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "Koliko brzo vaša organizacija može transformirati složene operativne izazove u skalabilne inovacije?",
+        answer: "Ubrzavanje inovacija uz AdriaMAT AI je pojednostavljen i strukturiran proces. Kontaktirajte nas već danas kako bismo započeli konzultacije na visokoj razini, tijekom kojih povezujemo vaše poslovne ciljeve s našim naprednim AI i kvantnim mogućnostima. U svakoj fazi projekta dajemo prednost potpunoj transparentnosti i rigoroznoj kontroli kvalitete, osiguravajući isporuku robusnih i dugoročno održivih rješenja. Partnerstvom s nama pretvarate složene operativne izazove u održive konkurentske prednosti."
       },
       {
-        question: "Kako započeti s korporativnim poslovanjem?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "Je li vaša organizacija spremna predvoditi sljedeći val digitalne transformacije?",
+        answer: "Strateške inovacije započinju jednostavnim razgovorom. Kontaktirajte AdriaMAT AI već danas kako biste razgovarali o svojoj razvojnoj strategiji i otkrili kako naša napredna AI i kvantna rješenja mogu osnažiti vaš projekt. Od početnih konzultacija do konačne isporuke, prioritet nam je transparentnost, visoki standardi kvalitete i brza realizacija. Obratite nam se i pretvorite tehničku složenost u održivu konkurentsku prednost."
       },
       {
-        question: "Kako osiguravate uspjeh projekta?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "Kako AdriaMAT AI pretvara složene poslovne ciljeve u pouzdanu i visokoučinkovitu tehnologiju?",
+        answer: "U AdriaMAT AI uspjeh projekta temelji se na strateškom partnerskom modelu usmjerenom na usklađenost, transparentnost, kvalitetu i skalabilnost. Svaki angažman započinjemo konzultacijama na visokoj razini kako bismo uskladili vaše poslovne ciljeve s našim naprednim mogućnostima AI integracije, osiguravajući svrhovitu tehničku izvedbu. Korištenjem agilnog razvojnog ciklusa fokusiramo se na skalabilnu implementaciju i brzu realizaciju, pretvarajući tehničku složenost u mjerljivu i održivu konkurentsku prednost za vašu organizaciju."
       },
       {
-        question: "Koliko će trajati završetak mog projekta?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "Kako vizionarski koncept pretvarate u precizno dizajniranu digitalnu stvarnost?",
+        answer: "Strateške inovacije započinju jednostavnim razgovorom. Obratite nam se već danas kako bismo razgovarali o vašoj strategiji i otkrili kako integracijske sposobnosti AdriaMAT AI mogu osnažiti vašu viziju. Pružamo strukturiran i komunikativan proces koji vas drži u središtu razvoja, jamčeći precizno inženjerstvo i pravovremenu implementaciju. Partnerstvom s nama redefinirajte granice svojih digitalnih mogućnosti."
       },
       {
-        question: "Mogu li pratiti napredak svog projekta?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "Kako AdriaMAT AI osigurava transparentnost i praćenje napretka vašeg projekta?",
+        answer: "Strateške inovacije započinju jednostavnim razgovorom. Jednostavno kontaktirajte AdriaMAT AI putem našeg kontakt obrasca ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i načinu na koji vam možemo pomoći. Naš tim vas kontinuirano informira tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
       }
     ]
   },
+
   commonQuestionsSection: {
     subtitle: "Uobičajena pitanja",
     title: "Trebate pomoć? Započnite ovdje...",

@@ -776,24 +776,24 @@ export const faqPageData: FAQPageData = {
     image: "/images/faq/faq-image-01.webp",
     items: [
       {
-        question: "What services does Bexon offer to clients?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "How quickly can your organization transform complex operational hurdles into scalable innovation?",
+        answer: "Accelerating your innovation with AdriaMAT AI is a streamlined process. Contact us today to initiate a high-level consultation where we bridge the gap between your business objectives and our cutting-edge AI and Quantum capabilities. We prioritize complete transparency and rigorous quality assurance at every stage, ensuring the delivery of robust, future-ready solutions. Partner with us to transform your complex operational hurdles into sustainable competitive advantages."
       },
       {
-        question: "How do I get started with Corporate Business?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "Is your organization equipped to lead the next wave of digital transformation?",
+        answer: "Strategic innovation begins with a simple conversation. Contact AdriaMAT AI today to discuss your roadmap and discover how our advanced AI and Quantum solutions can empower your project. From the initial consultation to final delivery, we prioritize transparency, meticulous quality standards, and rapid execution. Reach out now to transform your technical complexities into a sustainable competitive edge."
       },
       {
-        question: "How do you ensure the success of a project?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "How does AdriaMAT AI translate complex business objectives into reliable, high-performance technology?",
+        answer: "At AdriaMAT AI, project success is driven by a strategic partnership model focused on alignment, transparency, quality, and scalability. We initiate every engagement with a high-level consultation to synchronize your business goals with our advanced AI integration capabilities, ensuring purposeful technical execution. By employing an Agile development lifecycle, we focus on scalable deployment and rapid execution, transforming technical complexity into a sustainable and measurable competitive edge for your organization"
       },
       {
-        question: "How long will it take to complete my project?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "How do you transform a visionary concept into a precision-engineered digital reality?",
+        answer: "Strategic innovation begins with a simple conversation. Reach out today to discuss your roadmap and discover how AdriaMAT AI’s integration capabilities can empower your vision. We provide a structured, communicative process that keeps you at the center of the development journey, guaranteeing precision engineering and on-schedule deployment. Partner with us to redefine the boundaries of your digital capabilities."
       },
       {
-        question: "Can I track the progress of my project?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "How does AdriaMAT AI ensure transparency and progress of your project?",
+        answer: "Strategic innovation begins with a simple conversation. Simply reach out to AdriaMAT AI through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
       }
     ]
   },

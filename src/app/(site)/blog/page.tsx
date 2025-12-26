@@ -11,8 +11,6 @@ import blog1 from "@/../public/images/blog/service-1.webp";
 import blog2 from "@/../public/images/blog/service-2.webp";
 import blog3 from "@/../public/images/blog/service-3.webp";
 
-const BlogPage: React.FC = () => {
-    const { blogs } = useData();
 
 const recentPosts = [
     {

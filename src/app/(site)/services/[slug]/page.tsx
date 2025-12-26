@@ -14,8 +14,7 @@ type FAQItem = {
     answer: string;
 };
 
-const ServiceDetails = ({ params }: { params: { slug: string } }) => {
-    const { services } = useData();
+
 
 type Props = { params: Promise<{ slug: string }> }; // params is a Promise now
 
@@ -47,7 +46,7 @@ const faqData: FAQItem[] = [
     },
 ];
 
-const ServiceDetails = ({ params }: { params: { slug: string } }) => {
+const ServiceDetails = ({ params }: Props) => {
     const { services } = useData();
     // Unwrap params Promise using React.use()
     const { slug } = React.use(params);

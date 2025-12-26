@@ -13,8 +13,7 @@ import protfolio1 from "@/../public/images/protfoliodetails/project-gallery-1.we
 import protfolio2 from "@/../public/images/protfoliodetails/project-gallery-2.webp";
 import protfolio3 from "@/../public/images/protfoliodetails/project-gallery-3.webp";
 
-const PortfolioDetails = ({ params }: { params: { slug: string } }) => {
-    const { protfolio } = useData();
+
 
 type Props = {
   params: Promise<{
@@ -30,10 +29,11 @@ const projectData = [
   { label: "Complete date", value: "Jul 20, 2025" },
 ];
 
-const ProtfolioDetails = ({ params }: { params: { slug: string } }) => {
+const ProtfolioDetails = ({ params }: Props) => {
   const { protfolio } = useData();
+  const { slug } = React.use(params);
 
-  const item = protfolio.find((p) => p.slug === params.slug);
+  const item = protfolio.find((p) => p.slug === slug);
   if (!item) {
     notFound();
   }

@@ -13,8 +13,6 @@ import blog3 from "@/../public/images/blog/service-3.webp";
 import blog01 from "@/../public/images/blogdetails/blog-1.webp";
 import blog02 from "@/../public/images/blogdetails/blog-2.webp";
 
-const BlogDetails = ({ params }: { params: { slug: string } }) => {
-    const { blogs } = useData();
 
 const recentPosts = [
     {
@@ -35,12 +33,12 @@ const recentPosts = [
 ];
 
 type Props = {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 };
-
 const BlogDetails = ({ params }: Props) => {
     const { blogs } = useData();
-    const blog = blogs.find((b) => b.slug === params.slug);
+    const { slug } = React.use(params);
+    const blog = blogs.find((b) => b.slug === slug);
 
     if (!blog) return notFound();
 
