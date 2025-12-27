@@ -25,14 +25,13 @@ const Header: React.FC = () => {
   return (
     <>
       <header
-        className={`fixed h-24 px-4 top-5 left-[2.5%] py-1 z-50 w-[95%] flex navbar items-center transition-all duration-500 rounded-3xl 
-        ${
-          sticky
+        className={`fixed h-20 px-4 top-5 left-[2.5%] py-1 z-50 w-[95%] flex navbar items-center transition-all duration-500 rounded-3xl 
+        ${sticky
             ? "bg-black/80 backdrop-blur-lg shadow-lg w-[90%]"
             : "bg-white/10 backdrop-blur-sm"
-        }`}
+          }`}
       >
-        <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) flex justify-between items-center xl:gap-16 lg:gap-8 py-6">
+        <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) flex justify-between items-center xl:gap-16 lg:gap-8 py-4">
           <div className="text-white">
             <Logo />
           </div>
@@ -43,7 +42,10 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-          <div className="nav-right gap-4 hidden lg:flex items-center">
+          <div className="nav-right gap-10 hidden lg:flex items-center">
+            <Link href="/adriamat" className="font-mona font-bold text-xl text-white">
+              AdriaMat.AI
+            </Link>
             <LanguageChanger />
             <Link
               href="/contact"
@@ -73,9 +75,8 @@ const Header: React.FC = () => {
 
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden fixed top-0 right-0 h-screen w-full sm:w-[50%] lg:w-[40%] shadow-2xl bg-dark-blur backdrop-blur-lg p-10 z-50 transform transition-transform overflow-y-scroll duration-500 ease-in-out ${
-          navbarOpen ? "-translate-x-0" : "translate-x-[110%]"
-        }`}
+        className={`lg:hidden fixed top-0 right-0 h-screen w-full sm:w-[50%] lg:w-[40%] shadow-2xl bg-dark-blur backdrop-blur-lg p-10 z-50 transform transition-transform overflow-y-scroll duration-500 ease-in-out ${navbarOpen ? "-translate-x-0" : "translate-x-[110%]"
+          }`}
       >
         <div className="text-white flex justify-between items-center w-full">
           <Logo />
@@ -107,22 +108,27 @@ const Header: React.FC = () => {
           ))}
         </nav>
 
-        <h3 className="font-chakrapetch pb-3">Search Now!</h3>
+        <div className="flex flex-col gap-4 mt-4">
+          <Link href="/adriamat" className="font-mona font-bold text-xl text-white">
+            AdriaMat.AI
+          </Link>
+          <div className="w-fit">
+            <LanguageChanger />
+          </div>
 
-        <form className="search-box relative flex">
-          <input
-            type="text"
-            placeholder="Search here..."
-            className="bg-white ps-3 h-[45px]"
-            required
-          />
-          <button
-            type="submit"
-            className="absolute right-0 h-full border-l border-border cursor-pointer"
+          <Link
+            href="/contact"
+            className="text-white bg-dark h-[50px] w-fit rounded-full font-chakrapetch font-semibold flex gap-2 ps-4 pe-2 py-2 justify-center items-center tracking-wider group"
           >
-            <Icon icon="ei:search" width="50" height="30" />
-          </button>
-        </form>
+            Let&apos;s Talk
+            <Icon
+              icon="tabler:arrow-right"
+              width="24"
+              height="24"
+              className="bg-prim text-white rounded-full h-full w-[35px] p-1.5 group-hover:-rotate-45 transition duration-300"
+            />
+          </Link>
+        </div>
       </div>
     </>
   );

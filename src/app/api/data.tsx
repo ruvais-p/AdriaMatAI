@@ -513,12 +513,26 @@ export const team = [
 // =======================
 
 export const heroData: HeroData = {
+  title: "Transforming Ideas into Reality",
+  buttonText: "Get Started Now",
+  quote: "We are committed to precision engineering and lasting collaboration; driving success through transparent innovation and a shared vision for industrial AI.",
+  counter: "10",
+  counterSuffix: "M+"
+};
+
+// =======================
+// AdriaHero
+// =======================
+
+export const adriaHeroData: HeroData = {
   title: "MAT AI: Translating Discovery into Delivery",
   buttonText: "Get Started Now",
   quote: "We are committed to precision engineering and lasting collaboration; driving success through transparent innovation and a shared vision for industrial AI.",
   counter: "",
   counterSuffix: ""
 };
+
+
 
 // =======================
 // Commitment

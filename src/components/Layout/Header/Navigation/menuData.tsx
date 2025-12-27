@@ -1,7 +1,7 @@
 import { HeaderItem } from "@/type/menu";
 
 export const headerData: HeaderItem[] = [
-    { label: "Home", href: "/" },
+
     {
         label: "Pages",
         href: "#",
@@ -28,13 +28,6 @@ export const headerData: HeaderItem[] = [
             { label: "Protfolio Details", href: "/protfolio/event-management-platform" }
         ]
     },
-    {
-        label: "Blog",
-        href: "/blog",
-        submenu: [
-            { label: "Blog", href: "/blog" },
-            { label: "Blog Details", href: "/blog/harnessing-digital-transform" }
-        ]
-    },
+
     { label: "Contact", href: "contact" },
 ]

@@ -476,6 +476,17 @@ export type ProcessData = {
 // =======================
 
 export const heroData: HeroData = {
+  title: "Transformirajmo ideje u stvarnost",
+  buttonText: "Započnite odmah",
+  quote: "Posvećeni smo preciznom inženjerstvu i trajnoj suradnji; potičemo uspjeh kroz transparentne inovacije i zajedničku viziju industrijske umjetne inteligencije.",
+  counter: "10",
+  counterSuffix: "M+"
+};
+
+// =======================
+// Hero
+// =======================
+export const adriaHeroData: HeroData = {
   title: "Pretvaramo ideje u stvarnost",
   buttonText: "Započnite odmah",
   quote: "Posvećeni smo preciznom inženjerstvu i trajnoj suradnji; potičemo uspjeh kroz transparentne inovacije i zajedničku viziju industrijske umjetne inteligencije.",
