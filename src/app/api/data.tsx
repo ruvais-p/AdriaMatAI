@@ -572,6 +572,24 @@ export const adriaTeam = [
     post: "Business Director",
     image: "/images/adriateam/team-4.jpg"
   },
+  {
+    id: 5,
+    name: "Alosh Denny",
+    post: "Business Director",
+    image: "/images/adriateam/team-5.jpg"
+  },
+  {
+    id: 6,
+    name: "Dr. Sanjana Salim",
+    post: "Business Director",
+    image: "/images/adriateam/team-6.jpg"
+  },
+  {
+    id: 7,
+    name: "Aswin Pradeep",
+    post: "Business Director",
+    image: "/images/adriateam/team-7.jpg"
+  },
 ]
 
 
@@ -860,6 +878,7 @@ export const faqPageData: FAQPageData = {
     breadcrumbLinkText: "Faq"
   },
   faqSection: {
+
     image: "/images/faq/faq-image-01.jpg",
     items: [
       {

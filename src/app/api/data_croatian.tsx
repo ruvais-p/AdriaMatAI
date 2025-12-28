@@ -470,6 +470,24 @@ export const adriaTeam = [
     post: "Direktor poslovanja",
     image: "/images/adriateam/team-4.jpg",
   },
+  {
+    id: 5,
+    name: "Alosh Denny",
+    post: "Direktor poslovanja",
+    image: "/images/adriateam/team-5.jpg"
+  },
+  {
+    id: 6,
+    name: "Dr Sanjana Salim",
+    post: "Direktor poslovanja",
+    image: "/images/adriateam/team-6.jpg"
+  },
+  {
+    id: 7,
+    name: "Aswin Pradeep",
+    post: "Direktor poslovanja",
+    image: "/images/adriateam/team-7.jpg"
+  },
 ];
 
 

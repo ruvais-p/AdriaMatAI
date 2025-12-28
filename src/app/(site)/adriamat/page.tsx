@@ -9,6 +9,7 @@ import Testimonials from "@/components/Home/Testimonials";
 import AdriaHero from "./components/adriaHero";
 import AdriaSolution from "./components/adriaSolution";
 import AdriaTeam from "./components/adraiTeam";
+import AdriaFaq from "./components/adriaFaq";
 
 const AdriamatPage = () => {
     return (
@@ -21,6 +22,7 @@ const AdriamatPage = () => {
                 <Projects />
                 <Testimonials />
                 <AdriaTeam />
+                <AdriaFaq />
                 <Blog />
             </main>
         </>
