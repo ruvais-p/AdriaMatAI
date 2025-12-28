@@ -83,6 +83,44 @@ export const solutionData: SolutionItem[] = [
 ];
 
 // =======================
+// Adria Solutions
+// =======================
+
+export const adriaSolutionData: SolutionItem[] = [
+  {
+    title: "Obuka i razvoj",
+    icon: "mdi:school",
+    description:
+      "Osnažite svoje timove vještinama i znanjem prilagođenim vašim korporativnim ciljevima.",
+  },
+  {
+    title: "Prijenos tehnologije",
+    icon: "mdi:briefcase-outline",
+    description:
+      "Naš model prijenosa tehnologije osigurava besprijekornu integraciju ekološki učinkovitih otkrića u globalne industrijske procese, pretvarajući teorijske inovacije u praktična i održiva rješenja u velikom opsegu.",
+  },
+  {
+    title: "AI vođene strategije",
+    icon: "mdi:brain",
+    description:
+      "Dizajniramo inteligentne strategije koje se uspješno nose sa složenošću digitalne transformacije, osiguravajući da je vaš prijelaz na AI-integrirane procese jednostavan, skalabilan i usmjeren na dugoročni rast.",
+  },
+  {
+    title: "Ekološki učinkovita otkrića",
+    icon: "mdi:account-group-outline",
+    description:
+      "Redefiniramo potragu za održivim rješenjima integracijom strojnog učenja u fazu istraživanja i razvoja, osiguravajući da je svako novo otkriće optimizirano za kružnu industriju s niskim udjelom ugljika.",
+  },
+  {
+    title: "Industrijska partnerstva",
+    icon: "mdi:school",
+    description:
+      "Djelujemo kao specijalizirano proširenje vašeg R&D tima, stvarajući industrijska partnerstva koja pretvaraju složene tehničke izazove u konkurentske tržišne prednosti kroz zajedničko znanje i preciznost vođenu umjetnom inteligencijom.",
+  },
+];
+
+
+// =======================
 // Companies
 // =======================
 
@@ -407,6 +445,34 @@ export const team = [
   },
 ]
 
+export const adriaTeam = [
+  {
+    id: 1,
+    name: "Prof.(Dr.) Sasi Gopalan",
+    post: "Glavni izvršni direktor",
+    image: "/images/adriateam/team-1.jpg",
+  },
+  {
+    id: 2,
+    name: "Rohit T P",
+    post: "Voditelj operacija",
+    image: "/images/adriateam/team-2.jpg",
+  },
+  {
+    id: 3,
+    name: "Varsha Shaheen",
+    post: "Voditeljica marketinga",
+    image: "/images/adriateam/team-3.jpg",
+  },
+  {
+    id: 4,
+    name: "Sunith V S",
+    post: "Direktor poslovanja",
+    image: "/images/adriateam/team-4.jpg",
+  },
+];
+
+
 export type HeroData = {
   title: string;
   buttonText: string;
@@ -640,6 +706,12 @@ export const projectsHeader: SectionHeader = {
 };
 
 export const solutionHeader: SectionHeader = {
+  subtitle: "Naša rješenja",
+  title: "Prilagođena poslovna rješenja za moderne korporacije",
+  buttonText: "Istraži više"
+};
+
+export const adriaSolutionHeader: SectionHeader = {
   subtitle: "Naša rješenja",
   title: "Prilagođena poslovna rješenja za moderne korporacije",
   buttonText: "Istraži više"

@@ -149,6 +149,45 @@ export const solutionData: SolutionItem[] = [
 ];
 
 // =======================
+// Adria Solutions
+// =======================
+
+export const adriaSolutionData: SolutionItem[] = [
+  {
+    title: "Training & Development",
+    icon: "mdi:school",
+    description:
+      "Equip your teams with relevant skills and practical knowledge aligned with corporate goals, driving performance, innovation, and long-term organizational success.",
+  },
+  {
+    title: "Technology Transfer",
+    icon: "mdi:briefcase-outline",
+    description:
+      "We seamlessly transfer eco-efficient innovations into global industrial workflows, transforming research into scalable, sustainable applications.",
+  },
+  {
+    title: "AI-Driven Roadmaps",
+    icon: "mdi:brain",
+    description:
+      "We design intelligent AI roadmaps enabling seamless digital transformation, scalable operations, and long-term organizational growth.",
+  },
+  {
+    title: "Eco-Efficient Discovery",
+    icon: "mdi:account-group-outline",
+    description:
+      "We integrate machine learning into R&D to accelerate sustainable discoveries for circular, low-carbon industrial futures.",
+  },
+  {
+    title: "Industrial Partnerships",
+    icon: "mdi:school",
+    description:
+      "We extend your R&D capabilities through strategic partnerships, converting complex technical challenges into market advantages.",
+  },
+
+
+];
+
+// =======================
 // Companies
 // =======================
 
@@ -508,6 +547,34 @@ export const team = [
   },
 ]
 
+export const adriaTeam = [
+  {
+    id: 1,
+    name: "Prof.(Dr.) Sasi Gopalan",
+    post: "Chief Executive",
+    image: "/images/adriateam/team-1.jpg"
+  },
+  {
+    id: 2,
+    name: "Rohit T P",
+    post: "Operations Head",
+    image: "/images/adriateam/team-2.jpg"
+  },
+  {
+    id: 3,
+    name: "Varsha Shaheen",
+    post: "Marketing Lead",
+    image: "/images/adriateam/team-3.jpg"
+  },
+  {
+    id: 4,
+    name: " Sunith V S",
+    post: "Business Director",
+    image: "/images/adriateam/team-4.jpg"
+  },
+]
+
+
 // =======================
 // Hero
 // =======================
@@ -671,6 +738,12 @@ export const projectsHeader: SectionHeader = {
 };
 
 export const solutionHeader: SectionHeader = {
+  subtitle: "Our Solution",
+  title: "Tailor-Made Business Solutions for Modern Corporates",
+  buttonText: "Explore More"
+};
+
+export const adriaSolutionHeader: SectionHeader = {
   subtitle: "Our Solution",
   title: "Tailor-Made Business Solutions for Modern Corporates",
   buttonText: "Explore More"

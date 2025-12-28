@@ -5,20 +5,22 @@ import Blog from "@/components/Home/Blog";
 import Commitment from "@/components/Home/Commitment";
 import Process from "@/components/Home/Process";
 import Projects from "@/components/Home/Projects";
-import Solution from "@/components/Home/Solution";
 import Testimonials from "@/components/Home/Testimonials";
 import AdriaHero from "./components/adriaHero";
+import AdriaSolution from "./components/adriaSolution";
+import AdriaTeam from "./components/adraiTeam";
 
 const AdriamatPage = () => {
     return (
         <>
             <main>
                 <AdriaHero />
-                <Solution />
+                <AdriaSolution />
                 <Commitment />
                 <Process />
                 <Projects />
                 <Testimonials />
+                <AdriaTeam />
                 <Blog />
             </main>
         </>
