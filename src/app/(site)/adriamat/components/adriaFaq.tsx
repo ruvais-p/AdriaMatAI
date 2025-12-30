@@ -6,7 +6,7 @@ import HeroSub from "@/components/SharedComponents/HeroSub";
 import { Icon } from "@iconify/react";
 import { useData } from "@/hooks/useData";
 
-const Page = () => {
+const AdriaFaq = () => {
     const { faqPageData } = useData();
 
     const breadcrumbLinks = [
@@ -57,4 +57,4 @@ const Page = () => {
     );
 };
 
-export default Page;
+export default AdriaFaq;
