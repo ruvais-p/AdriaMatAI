@@ -76,7 +76,7 @@ const fragmentShader = `
 
 const ShaderPlane = () => {
     const meshRef = useRef<THREE.Mesh>(null);
-    const { viewport, mouse } = useThree();
+    const { viewport } = useThree();
 
     const uniforms = useMemo(
         () => ({

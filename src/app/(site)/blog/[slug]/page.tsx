@@ -3,8 +3,7 @@ import { useData } from "@/hooks/useData";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import HeroSub from "@/components/SharedComponents/HeroSub";
-import React, { useState } from "react";
-import Link from "next/link";
+import React from "react";
 import { Icon } from "@iconify/react";
 
 import blog01 from "@/../public/images/blogdetails/blog-1.webp";

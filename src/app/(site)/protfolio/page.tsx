@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import Link from "next/link";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 import { useData } from "@/hooks/useData";
 
@@ -49,8 +48,8 @@ const PortfolioPage = () => {
                   <div
                     key={item.id}
                     className={`relative rounded-2xl overflow-hidden group ${isLarge
-                        ? "w-full lg:w-[70%]"
-                        : "w-full lg:w-[30%]"
+                      ? "w-full lg:w-[70%]"
+                      : "w-full lg:w-[30%]"
                       }`}
                   >
                     <Image

@@ -8,7 +8,7 @@ interface HeroSubProps {
   breadcrumbLinks: BreadcrumbLink[];
 }
 
-const HeroSub: FC<HeroSubProps> = ({ title, breadcrumbLinks }) => {
+const HeroSub: FC<HeroSubProps> = ({ breadcrumbLinks }) => {
   return (
     <section className="bg-cover relative overflow-x-hidden section-banner">
       <div className="w-full h-full absolute z-0 bg-heroBg rounded-b-[119px] -left-1/4 top-0"></div>

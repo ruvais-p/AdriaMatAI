@@ -5,7 +5,6 @@ import React from 'react';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Image from "next/image";
 import { useData } from "@/hooks/useData";
 
 const Companies: React.FC = () => {

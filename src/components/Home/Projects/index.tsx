@@ -80,7 +80,7 @@ const Projects: React.FC = () => {
 
             <div className="container mx-auto px-4 mt-16 lg:mt-24 flex flex-col items-center text-center relative z-10">
                 <p className="text-gray-400 font-chakrapetch text-18 lg:text-22 mb-10 max-w-2xl">
-                    Ready to bring your vision to life? Let's build something extraordinary together.
+                    Ready to bring your vision to life? Let&apos;s build something extraordinary together.
                 </p>
                 <Link
                     href="/contact"
