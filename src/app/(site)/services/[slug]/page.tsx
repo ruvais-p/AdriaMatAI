@@ -47,7 +47,7 @@ const faqData: FAQItem[] = [
 ];
 
 const ServiceDetails = ({ params }: Props) => {
-    const { services } = useData();
+    const { services, serviceDetailsSidebar } = useData();
     // Unwrap params Promise using React.use()
     const { slug } = React.use(params);
     const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -87,16 +87,14 @@ const ServiceDetails = ({ params }: Props) => {
                             </h4>
 
                             <p className="pb-4 text-pera-dark text-16 leading-6">
-                                Recognize that exceptional customer experiences are at the heart of every successful business. Our Customer Experience Solutions are crafted to help you transform every interaction your customers have with your brand into a meaningful and positive experience. We believe that understanding the customer journey and providing personalized, seamless experiences can significantly enhance customer loyalty, satisfaction, and lifetime value. Our approach to customer experience is comprehensive and data-driven.
+                                {service.detailsParagraph1 || "Recognize that exceptional customer experiences are at the heart of every successful business. Our Customer Experience Solutions are crafted to help you transform every interaction your customers have with your brand into a meaningful and positive experience. We believe that understanding the customer journey and providing personalized, seamless experiences can significantly enhance customer loyalty, satisfaction, and lifetime value. Our approach to customer experience is comprehensive and data-driven."}
                             </p>
                             <p className="pb-4 text-pera-dark text-16 leading-6">
-                                Our approach to customer experience is comprehensive and data-driven. We begin by assessing your current customer touchpoints, identifying areas for improvement, and using insights to develop strategies that meet your customers&apos; evolving needs. From optimizing digital platforms.
+                                {service.detailsParagraph2 || "Our approach to customer experience is comprehensive and data-driven. We begin by assessing your current customer touchpoints, identifying areas for improvement, and using insights to develop strategies that meet your customers' evolving needs. From optimizing digital platforms."}
                             </p>
 
-                            {/* ... skipped list ... */}
-
                             <ul className="grid grid-cols-2 gap-5">
-                                {[
+                                {(service.benefits || [
                                     "Personalization at Scale",
                                     "Customer Retention",
                                     "Improved Customer Retention",
@@ -104,7 +102,7 @@ const ServiceDetails = ({ params }: Props) => {
                                     "Data-Driven Insights",
                                     "Proactive Engagement",
                                     "Omni-channel Integration",
-                                ].map((item, idx) => (
+                                ]).map((item, idx) => (
                                     <li key={idx} className="flex items-center gap-2">
                                         <Icon icon="material-symbols:check-rounded" width="24" height="24" className="bg-prim text-white rounded-full p-0.5" />
                                         <span>{item}</span>
@@ -113,19 +111,27 @@ const ServiceDetails = ({ params }: Props) => {
                             </ul>
 
                             <div className="flex gap-3 flex-wrap md:flex-nowrap">
-                                <Image src={service1} alt="blog-image" width={200} height={200} className="w-full rounded-lg h-full" />
-                                <Image src={service2} alt="blog-image" width={200} height={200} className="w-full rounded-lg h-full" />
+                                {service.gallery ? (
+                                    service.gallery.map((img, idx) => (
+                                        <Image key={idx} src={img} alt={`${service.title} gallery ${idx}`} width={400} height={200} className="w-full rounded-lg object-cover" />
+                                    ))
+                                ) : (
+                                    <>
+                                        <Image src={service1} alt="service-image-1" width={200} height={200} className="w-full rounded-lg h-full" />
+                                        <Image src={service2} alt="service-image-2" width={200} height={200} className="w-full rounded-lg h-full" />
+                                    </>
+                                )}
                             </div>
 
                             <h4 className="font-unbounded font-medium text-3xl">
-                                Our Range of Customer Services
+                                {service.rangeOfServicesTitle || "Our Range of Customer Services"}
                             </h4>
                             <p className="pb-4 text-pera-dark text-16 leading-6">
-                                At Bexon, we don&apos;t just focus on solving customer problems—we focus on creating experiences that delight and build lasting relationships. Whether it&apos;s through improving customer service operations, leveraging technology, or designing more engaging digital experiences, our team is here to help you exceed your customers&apos; expectations every time. We help you understand your customers deeply, optimize their experience.
+                                {service.rangeOfServicesDescription || "At Bexon, we don't just focus on solving customer problems—we focus on creating experiences that delight and build lasting relationships. Whether it's through improving customer service operations, leveraging technology, or designing more engaging digital experiences, our team is here to help you exceed your customers' expectations every time. We help you understand your customers deeply, optimize their experience."}
                             </p>
 
                             <div className="space-y-4 w-full">
-                                {faqData.map((item, index) => (
+                                {(service.faqs || faqData).map((item, index) => (
                                     <div
                                         key={index}
                                         className={`border rounded-lg overflow-hidden transition-all duration-300 ${openIndex === index ? "bg-prim text-white" : "bg-white text-black"}`}
@@ -150,7 +156,7 @@ const ServiceDetails = ({ params }: Props) => {
 
                     <div className="lg:w-[40%] w-full lg:self-start lg:sticky top-20 space-y-5 py-5">
                         <div className="border border-gray-100 shadow-lg p-5 rounded-xl">
-                            <h4 className="text-black pb-5">More services</h4>
+                            <h4 className="text-black pb-5">{serviceDetailsSidebar?.moreServicesTitle || "More services"}</h4>
                             <div className="flex flex-col gap-5">
                                 {services.map((s) => (
                                     <Link
@@ -166,9 +172,9 @@ const ServiceDetails = ({ params }: Props) => {
                         </div>
 
                         <div className="border-gray-100 shadow-lg bg-white p-5 rounded-xl">
-                            <h4 className="text-black pb-5">Tags</h4>
+                            <h4 className="text-black pb-5">{serviceDetailsSidebar?.tagsTitle || "Tags"}</h4>
                             <div className="flex flex-wrap gap-2">
-                                {["Branding", "Business", "Consulting", "Design", "Innovate", "Lead", "Marketing"].map(
+                                {(serviceDetailsSidebar?.tags || ["Branding", "Business", "Consulting", "Design", "Innovate", "Lead", "Marketing"]).map(
                                     (tag) => (
                                         <span
                                             key={tag}

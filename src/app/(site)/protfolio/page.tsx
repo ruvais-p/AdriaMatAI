@@ -14,7 +14,7 @@ type PortfolioItem = {
 };
 
 const PortfolioPage = () => {
-    const { protfolio } = useData();
+  const { protfolio } = useData();
   const breadcrumbLinks = [
     { href: "/", text: "Home" },
     { href: "/protfolio", text: "Protfolio" },
@@ -46,14 +46,12 @@ const PortfolioPage = () => {
                   (rowIndex % 2 !== 0 && i === 1);
 
                 return (
-                  <Link
+                  <div
                     key={item.id}
-                    href={`/protfolio/${item.slug}`}
-                    className={`relative rounded-2xl overflow-hidden group cursor-pointer ${
-                      isLarge
+                    className={`relative rounded-2xl overflow-hidden group ${isLarge
                         ? "w-full lg:w-[70%]"
                         : "w-full lg:w-[30%]"
-                    }`}
+                      }`}
                   >
                     <Image
                       src={item.image}
@@ -64,22 +62,20 @@ const PortfolioPage = () => {
                     />
                     <div className="absolute inset-0 bg-black/40 group-hover:bg-black/60 transition-all duration-300" />
                     <div
-                      className={`absolute text-white ${
-                        isLarge ? "bottom-8 left-8" : "bottom-4 left-4"
-                      }`}
+                      className={`absolute text-white ${isLarge ? "bottom-8 left-8" : "bottom-4 left-4"
+                        }`}
                     >
                       <span className="border border-border px-2 rounded-sm">
                         {item.category}
                       </span>
                       <h3
-                        className={`font-unbounded font-medium mt-2 ${
-                          isLarge ? "text-3xl" : "text-lg"
-                        }`}
+                        className={`font-unbounded font-medium mt-2 ${isLarge ? "text-3xl" : "text-lg"
+                          }`}
                       >
                         {item.title}
                       </h3>
                     </div>
-                  </Link>
+                  </div>
                 );
               })}
             </div>

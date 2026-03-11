@@ -23,10 +23,6 @@ export const headerData: HeaderItem[] = [
     {
         label: "Protfolio",
         href: "/protfolio",
-        submenu: [
-            { label: "Protfolio", href: "/protfolio" },
-            { label: "Protfolio Details", href: "/protfolio/event-management-platform" }
-        ]
     },
 
     { label: "Contact", href: "contact" },

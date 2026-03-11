@@ -66,21 +66,22 @@ const Page = () => {
             </div>
 
             <div className="bg-light overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">
-                <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 flex lg:flex-row flex-col items-start gap-5">
-                    <div className="content w-full lg:w-[55%]">
+                <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 flex lg:flex-row flex-col items-center justify-center gap-5">
+                    <div className="content w-full">
                         <span className='sub-title text-14 bg-prim text-white py-1 rounded-xl relative font-chakrapetch capitalize ps-5 pe-3'>
                             {aboutData.getToKnowUs.subtitle}
                         </span>
                         <h2 className='w-full mt-4 font-chakrapetch lg:text-35 font-semibold mb-8'>
                             {aboutData.getToKnowUs.title}
                         </h2>
-                        <div className="flex lg:flex-nowrap flex-wrap gap-4">
-                            <div className="bg-white p-5 rounded-xl">
+
+                        {/* Changed to grid with 2 columns for full-width equal cards */}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+
+                            <div className="bg-white p-5 rounded-xl w-full">
                                 <h4 className="font-unbounded text-xl pb-3">{aboutData.getToKnowUs.mission.title}</h4>
                                 {aboutData.getToKnowUs.mission.description && (
-                                    <p className="pb-5">
-                                        {aboutData.getToKnowUs.mission.description}
-                                    </p>
+                                    <p className="pb-5">{aboutData.getToKnowUs.mission.description}</p>
                                 )}
                                 <ul className="space-y-2.5">
                                     {aboutData.getToKnowUs.mission.points.map((point, i) => (
@@ -92,12 +93,10 @@ const Page = () => {
                                 </ul>
                             </div>
 
-                            <div className="bg-white p-5 rounded-xl">
+                            <div className="bg-white p-5 rounded-xl w-full">
                                 <h4 className="font-unbounded text-xl pb-3">{aboutData.getToKnowUs.vision.title}</h4>
                                 {aboutData.getToKnowUs.vision.description && (
-                                    <p className="pb-5">
-                                        {aboutData.getToKnowUs.vision.description}
-                                    </p>
+                                    <p className="pb-5">{aboutData.getToKnowUs.vision.description}</p>
                                 )}
                                 <ul className="space-y-2.5">
                                     {aboutData.getToKnowUs.vision.points.map((point, i) => (
@@ -108,7 +107,9 @@ const Page = () => {
                                     ))}
                                 </ul>
                             </div>
+
                         </div>
+
                         <Link
                             href="/services"
                             className='text-white bg-dark h-[50px] text-sm lg:text-16 w-full rounded-lg font-chakrapetch font-semibold flex gap-2 ps-4 pe-2 py-2 justify-center items-center tracking-wider group mt-5'
@@ -116,9 +117,6 @@ const Page = () => {
                             {aboutData.getToKnowUs.buttonText}
                             <Icon icon="tabler:arrow-right" width="24" height="24" className='bg-prim text-white rounded-full h-full w-[35px] p-1.5 group-hover:-rotate-45 transition duration-300' />
                         </Link>
-                    </div>
-                    <div className="image lg:w-[45%] w-full rounded-lg overflow-hidden">
-                        <Image src="/images/about/about-01.jpg" alt="about-image" width={300} height={300} className="w-full h-full" />
                     </div>
                 </div>
             </div>

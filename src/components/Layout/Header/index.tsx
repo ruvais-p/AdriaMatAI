@@ -43,9 +43,6 @@ const Header: React.FC = () => {
           </nav>
 
           <div className="nav-right gap-10 hidden lg:flex items-center">
-            <Link href="/adriamat" className="font-mona font-bold text-xl text-white">
-              AdriaMat.AI
-            </Link>
             <LanguageChanger />
             <Link
               href="/contact"
@@ -109,9 +106,7 @@ const Header: React.FC = () => {
         </nav>
 
         <div className="flex flex-col gap-4 mt-4">
-          <Link href="/adriamat" className="font-mona font-bold text-xl text-white">
-            AdriaMat.AI
-          </Link>
+
           <div className="w-fit">
             <LanguageChanger />
           </div>

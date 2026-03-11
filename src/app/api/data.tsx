@@ -389,7 +389,38 @@ export const services: Service[] = [
     image: service01,
     gallery: [service01, service02, service03],
     features: ["Innovation", "Scalable Systems", "Customer-Centric Approach", "Resilience"],
+    detailsParagraph1:
+      "Business Strategy Development focuses on helping organizations define clear long-term objectives and build structured plans to achieve sustainable growth. Our team combines market research, operational analysis, and strategic planning to design effective business frameworks.",
+    detailsParagraph2:
+      "By aligning strategic planning with real operational capabilities, we help organizations adapt to changing markets while maintaining stability and competitiveness.",
+    benefits: [
+      "Clear Strategic Direction",
+      "Improved Decision Making",
+      "Sustainable Business Growth",
+      "Competitive Market Positioning",
+      "Operational Alignment",
+      "Risk Management",
+      "Long-Term Business Value"
+    ],
+    rangeOfServicesTitle: "Our Business Strategy Services",
+    rangeOfServicesDescription:
+      "Forum Invest helps organizations develop structured business strategies that align operational capabilities with long-term growth objectives.",
+    faqs: [
+      {
+        question: "What is Business Strategy Development?",
+        answer: "It is the process of defining long-term goals and creating structured plans to achieve sustainable growth."
+      },
+      {
+        question: "How does strategy improve business performance?",
+        answer: "A clear strategy helps organizations focus resources, reduce risks, and identify new opportunities."
+      },
+      {
+        question: "Can strategy consulting help growing companies?",
+        answer: "Yes. Strategic guidance helps businesses scale operations and adapt to changing market conditions."
+      }
+    ]
   },
+
   {
     id: 2,
     slug: "customer-experience-solutions",
@@ -400,8 +431,10 @@ export const services: Service[] = [
     image: service02,
     gallery: [service02, service03],
     features: ["Customer-Centric Approach", "Operational Efficiency", "Continuous Learning"],
-    detailsParagraph1: "Recognize that exceptional customer experiences are at the heart of every successful business. Our Customer Experience Solutions are crafted to help you transform every interaction your customers have with your brand into a meaningful and positive experience. We believe that understanding the customer journey and providing personalized, seamless experiences can significantly enhance customer loyalty, satisfaction, and lifetime value. Our approach to customer experience is comprehensive and data-driven.",
-    detailsParagraph2: "Our approach to customer experience is comprehensive and data-driven. We begin by assessing your current customer touchpoints, identifying areas for improvement, and using insights to develop strategies that meet your customers' evolving needs. From optimizing digital platforms.",
+    detailsParagraph1:
+      "Exceptional customer experiences are at the heart of successful organizations. Our Customer Experience Solutions help businesses design meaningful interactions that improve satisfaction and loyalty.",
+    detailsParagraph2:
+      "We analyze customer journeys, optimize digital platforms, and develop strategies that enhance engagement across all touchpoints.",
     benefits: [
       "Personalization at Scale",
       "Customer Retention",
@@ -412,66 +445,441 @@ export const services: Service[] = [
       "Omni-channel Integration"
     ],
     rangeOfServicesTitle: "Our Range of Customer Services",
-    rangeOfServicesDescription: "At Bexon, we don't just focus on solving customer problems—we focus on creating experiences that delight and build lasting relationships. Whether it's through improving customer service operations, leveraging technology, or designing more engaging digital experiences, our team is here to help you exceed your customers' expectations every time. We help you understand your customers deeply, optimize their experience.",
+    rangeOfServicesDescription:
+      "Forum Invest focuses on creating experiences that strengthen relationships between businesses and their customers.",
     faqs: [
       {
-        question: "What is Customer Experience (CX) and why is it important?",
-        answer: "Customer Experience (CX) refers to the overall impression a customer has of a business based on their interactions across various touchpoints—whether it’s a website visit, a customer support call, or an in-store purchase. It encompasses everything from ease of navigation and service quality to emotional connection and brand perception."
+        question: "What is Customer Experience (CX)?",
+        answer: "Customer Experience refers to the overall impression a customer forms through interactions with a business."
       },
       {
-        question: "How can your Customer Experience Solutions benefit?",
-        answer: "Our CX solutions help streamline processes, increase customer satisfaction, and build long-term loyalty through personalized experiences."
+        question: "How do CX solutions improve customer loyalty?",
+        answer: "By personalizing experiences and optimizing interactions across digital and physical channels."
       },
       {
-        question: "How do you personalize the customer experience?",
-        answer: "We collect customer data and insights to tailor interactions, offers, and support to each individual’s preferences and behavior."
-      },
-      {
-        question: "How do you collect customer feedback?",
-        answer: "We use surveys, feedback forms, analytics tools, and direct interactions to gather valuable insights from your customers."
-      },
-      {
-        question: "Can you help improve our customer support system?",
-        answer: "Yes! We analyze your current support channels and implement solutions to optimize efficiency, response time, and overall satisfaction."
+        question: "How do you collect customer insights?",
+        answer: "Through analytics tools, surveys, and direct customer interactions."
       }
-    ],
+    ]
   },
+
   {
     id: 3,
     slug: "sustainability-and-esg-consulting",
     title: "Sustainability and ESG Consulting",
-    description: "Provide tailored strategies that not only drive long-term value but also build trust with stakeholders, investors.",
+    description: "Provide tailored strategies that not only drive long-term value but also build trust with stakeholders and investors.",
     icon: "carbon:sustainability",
     href: "/services/sustainability-and-esg-consulting",
     image: service03,
+    gallery: [service03, service04, service05],
+    features: ["Sustainable Strategy", "ESG Compliance", "Environmental Responsibility", "Stakeholder Trust"],
+    detailsParagraph1:
+      "Sustainability and ESG Consulting helps organizations integrate environmental, social, and governance principles into their operational strategies.",
+    detailsParagraph2:
+      "Our consulting frameworks support responsible growth, regulatory compliance, and long-term sustainability while strengthening stakeholder confidence.",
+    benefits: [
+      "Improved Corporate Reputation",
+      "Regulatory Compliance",
+      "Investor Confidence",
+      "Sustainable Growth",
+      "Risk Reduction",
+      "Environmental Responsibility",
+      "Long-Term Value Creation"
+    ],
+    rangeOfServicesTitle: "Our ESG Consulting Services",
+    rangeOfServicesDescription:
+      "Forum Invest helps organizations design ESG strategies that align sustainability goals with business growth and regulatory requirements.",
+    faqs: [
+      {
+        question: "What is ESG consulting?",
+        answer: "It helps organizations integrate environmental, social, and governance practices into their operations."
+      },
+      {
+        question: "Why is ESG important for companies?",
+        answer: "ESG practices improve corporate reputation, investor trust, and regulatory compliance."
+      },
+      {
+        question: "Can ESG strategies improve business performance?",
+        answer: "Yes, sustainable practices often lead to long-term financial and operational benefits."
+      }
+    ]
   },
+
   {
     id: 4,
     slug: "training-and-development-programs",
     title: "Training and Development Programs",
-    description: "Training and Development Programs are designed to empower employees with the skills, knowledge, and tools they need.",
+    description: "Empowering employees with the skills, knowledge, and tools needed to succeed in modern business environments.",
     icon: "carbon:development",
     href: "/services/training-and-development-programs",
     image: service04,
+    gallery: [service04, service05, service06],
+    features: ["Professional Growth", "Skill Development", "Leadership Training", "Continuous Learning"],
+    detailsParagraph1:
+      "Training and Development Programs help organizations strengthen workforce capabilities and prepare teams for evolving business challenges.",
+    detailsParagraph2:
+      "Our training frameworks focus on leadership, technical skills, and innovation to create a culture of continuous learning.",
+    benefits: [
+      "Employee Skill Development",
+      "Improved Productivity",
+      "Leadership Growth",
+      "Knowledge Sharing",
+      "Team Collaboration",
+      "Innovation Culture",
+      "Higher Employee Retention"
+    ],
+    rangeOfServicesTitle: "Our Training Programs",
+    rangeOfServicesDescription:
+      "Forum Invest provides professional training programs designed to empower employees and support organizational development.",
+    faqs: [
+      {
+        question: "Why are training programs important?",
+        answer: "They help employees develop new skills and adapt to changing industry demands."
+      },
+      {
+        question: "Can training improve employee performance?",
+        answer: "Yes. Well-designed training programs improve productivity and job satisfaction."
+      },
+      {
+        question: "Do you provide customized training programs?",
+        answer: "Yes. Our training programs are tailored to meet organizational needs."
+      }
+    ]
   },
+
   {
     id: 5,
     slug: "it-support-and-maintenance",
     title: "IT Support & Maintenance",
-    description: "Our IT Support & Maintenance services ensure that your technology infrastructure is running smoothly and securely.",
+    description: "Ensuring technology infrastructure runs smoothly, securely, and efficiently.",
     icon: "pajamas:work-item-maintenance",
     href: "/services/it-support-and-maintenance",
     image: service05,
+    gallery: [service05, service06, service01],
+    features: ["System Monitoring", "Security Maintenance", "Technical Support", "Infrastructure Stability"],
+    detailsParagraph1:
+      "IT Support & Maintenance services ensure that enterprise technology infrastructure remains secure, stable, and operational.",
+    detailsParagraph2:
+      "Our experts monitor systems, perform maintenance updates, and resolve technical issues to prevent downtime and operational disruptions.",
+    benefits: [
+      "Reduced System Downtime",
+      "Improved Security",
+      "Reliable IT Infrastructure",
+      "Faster Issue Resolution",
+      "Operational Stability",
+      "Proactive System Monitoring",
+      "Technology Optimization"
+    ],
+    rangeOfServicesTitle: "Our IT Support Services",
+    rangeOfServicesDescription:
+      "Forum Invest provides proactive IT support and maintenance to ensure business systems remain secure and operational.",
+    faqs: [
+      {
+        question: "What does IT support include?",
+        answer: "IT support includes system monitoring, troubleshooting, maintenance, and security updates."
+      },
+      {
+        question: "Why is regular IT maintenance important?",
+        answer: "It helps prevent system failures, improves security, and ensures smooth operations."
+      },
+      {
+        question: "Can IT support improve system performance?",
+        answer: "Yes. Regular maintenance and optimization improve system reliability and speed."
+      }
+    ]
   },
+
   {
     id: 6,
     slug: "marketing-strategy-and-campaigns",
     title: "Marketing Strategy & Campaigns",
-    description: "Effective marketing is key to driving business growth. Our Marketing Strategy & Campaigns service.",
+    description: "Developing marketing strategies and campaigns that drive growth and brand visibility.",
     icon: "streamline-freehand:creativity-idea-strategy",
     href: "/services/marketing-strategy-and-campaigns",
     image: service06,
+    gallery: [service06, service01, service02],
+    features: ["Brand Strategy", "Digital Campaigns", "Market Insights", "Customer Engagement"],
+    detailsParagraph1:
+      "Marketing Strategy & Campaigns services help organizations strengthen brand visibility and attract new customers through targeted marketing initiatives.",
+    detailsParagraph2:
+      "Our team develops data-driven marketing strategies that combine digital campaigns, brand storytelling, and customer engagement.",
+    benefits: [
+      "Increased Brand Awareness",
+      "Customer Engagement",
+      "Targeted Campaigns",
+      "Data-Driven Marketing",
+      "Improved Lead Generation",
+      "Market Expansion",
+      "Stronger Brand Identity"
+    ],
+    rangeOfServicesTitle: "Our Marketing Services",
+    rangeOfServicesDescription:
+      "Forum Invest designs strategic marketing campaigns that help organizations reach the right audiences and accelerate business growth.",
+    faqs: [
+      {
+        question: "What is a marketing strategy?",
+        answer: "It is a structured plan designed to promote products, services, and brand value to the right audience."
+      },
+      {
+        question: "How do marketing campaigns improve growth?",
+        answer: "They increase brand awareness, generate leads, and strengthen customer relationships."
+      },
+      {
+        question: "Do you provide digital marketing strategies?",
+        answer: "Yes. Our marketing strategies include digital platforms, analytics, and targeted campaigns."
+      }
+    ]
+  }, {
+    id: 7,
+    slug: "ai-integration-and-implementation",
+    title: "AI Integration & Implementation",
+    description: "We help organizations integrate AI into existing digital ecosystems, ensuring seamless adoption with minimal disruption.",
+    icon: "hugeicons:ai-idea",
+    href: "/services/ai-integration-and-implementation",
+    image: service01,
+    gallery: [service01, service02, service03],
+    features: ["AI Integration", "System Compatibility", "Scalable Architecture", "Operational Efficiency"],
+    detailsParagraph1:
+      "AI Integration & Implementation services help organizations embed artificial intelligence into their existing digital environments. Our approach focuses on seamless integration that enhances operational capabilities without disrupting current workflows.",
+    detailsParagraph2:
+      "We analyze your infrastructure, data systems, and operational processes to ensure AI solutions integrate smoothly. Our team ensures the architecture remains scalable, secure, and optimized for performance while aligning with long-term strategic goals.",
+    benefits: [
+      "Seamless System Integration",
+      "Improved Operational Efficiency",
+      "Enhanced Decision Support",
+      "Reduced Implementation Risk",
+      "Scalable AI Architecture",
+      "Data Utilization Optimization",
+      "Faster Technology Adoption"
+    ],
+    rangeOfServicesTitle: "Our AI Integration Services",
+    rangeOfServicesDescription:
+      "Forum Invest helps organizations implement AI technologies in a structured and scalable way. From system architecture planning to deployment and monitoring, our integration frameworks ensure AI capabilities deliver measurable business value.",
+    faqs: [
+      {
+        question: "What does AI integration mean for an organization?",
+        answer: "AI integration involves embedding artificial intelligence capabilities into existing systems, enabling automation, intelligent insights, and improved operational performance."
+      },
+      {
+        question: "Will AI disrupt our existing systems?",
+        answer: "No. Our integration process focuses on compatibility and minimal disruption, ensuring AI works seamlessly with your current infrastructure."
+      },
+      {
+        question: "How long does AI implementation take?",
+        answer: "Implementation timelines depend on project scope, data availability, and system complexity, but we design projects to deliver results in structured phases."
+      }
+    ]
   },
+
+  {
+    id: 8,
+    slug: "intelligent-automation",
+    title: "Intelligent Automation",
+    description: "Automation of workflows and business processes using AI to improve efficiency, accuracy, and speed.",
+    icon: "hugeicons:ai-cloud-01",
+    href: "/services/intelligent-automation",
+    image: service02,
+    gallery: [service02, service03, service04],
+    features: ["Process Automation", "Workflow Optimization", "AI Decision Engines", "Operational Efficiency"],
+    detailsParagraph1:
+      "Intelligent Automation combines AI, machine learning, and automation technologies to streamline complex business processes. Our solutions eliminate repetitive tasks and allow teams to focus on high-value strategic activities.",
+    detailsParagraph2:
+      "By integrating automation with existing enterprise systems, organizations can increase productivity, reduce operational costs, and improve accuracy across business operations.",
+    benefits: [
+      "Reduced Operational Costs",
+      "Faster Workflow Execution",
+      "Higher Process Accuracy",
+      "Improved Productivity",
+      "Error Reduction",
+      "Scalable Automation Systems",
+      "Enhanced Operational Transparency"
+    ],
+    rangeOfServicesTitle: "Our Automation Capabilities",
+    rangeOfServicesDescription:
+      "Forum Invest designs automation solutions that enhance operational performance across departments. Our frameworks enable organizations to automate processes, increase speed, and maintain high operational quality.",
+    faqs: [
+      {
+        question: "What is Intelligent Automation?",
+        answer: "It is the use of AI and automation technologies to streamline business processes and reduce manual effort."
+      },
+      {
+        question: "Which processes can be automated?",
+        answer: "Administrative tasks, data processing, customer support workflows, financial processes, and operational reporting."
+      },
+      {
+        question: "Will automation replace employees?",
+        answer: "Automation supports employees by eliminating repetitive tasks and allowing them to focus on strategic and creative work."
+      }
+    ]
+  },
+
+  {
+    id: 9,
+    slug: "data-intelligence-and-analytics",
+    title: "Data Intelligence & Analytics",
+    description: "Transforming data into actionable insights through advanced analytics, predictive modelling, and machine learning.",
+    icon: "hugeicons:ai-network",
+    href: "/services/data-intelligence-and-analytics",
+    image: service03,
+    gallery: [service03, service04, service05],
+    features: ["Predictive Analytics", "Machine Learning Models", "Data Visualization", "Business Intelligence"],
+    detailsParagraph1:
+      "Data Intelligence & Analytics services transform complex datasets into strategic insights. Our analytics frameworks enable organizations to understand trends, identify opportunities, and predict future outcomes.",
+    detailsParagraph2:
+      "Using machine learning and advanced analytics, we help organizations turn raw data into actionable intelligence that supports data-driven decision making.",
+    benefits: [
+      "Predictive Insights",
+      "Improved Business Decisions",
+      "Data-Driven Strategy",
+      "Operational Transparency",
+      "Performance Optimization",
+      "Risk Reduction",
+      "Enhanced Forecasting"
+    ],
+    rangeOfServicesTitle: "Our Data Analytics Services",
+    rangeOfServicesDescription:
+      "Forum Invest provides advanced analytics frameworks designed to help organizations unlock the full value of their data. Our solutions combine AI, data engineering, and business intelligence.",
+    faqs: [
+      {
+        question: "What is Data Intelligence?",
+        answer: "It is the process of analyzing large volumes of data to extract meaningful insights that guide strategic decision-making."
+      },
+      {
+        question: "How can analytics improve business performance?",
+        answer: "Analytics helps identify patterns, optimize processes, and predict future trends."
+      },
+      {
+        question: "Do we need large datasets to start?",
+        answer: "While large datasets provide deeper insights, meaningful analytics can still be performed on smaller structured datasets."
+      }
+    ]
+  },
+
+  {
+    id: 10,
+    slug: "ai-strategy-and-consulting",
+    title: "AI Strategy & Consulting",
+    description: "Helping organizations design long-term AI roadmaps aligned with business goals, regulatory frameworks, and operational realities.",
+    icon: "hugeicons:ai-chat-02",
+    href: "/services/ai-strategy-and-consulting",
+    image: service04,
+    gallery: [service04, service05, service06],
+    features: ["Strategic Planning", "AI Roadmaps", "Regulatory Alignment", "Technology Assessment"],
+    detailsParagraph1:
+      "AI Strategy & Consulting services help organizations design structured transformation strategies. Our consultants assess operational needs, technological readiness, and market opportunities.",
+    detailsParagraph2:
+      "We create long-term AI roadmaps that align with regulatory frameworks, operational requirements, and business objectives.",
+    benefits: [
+      "Strategic Clarity",
+      "AI Adoption Roadmaps",
+      "Risk Reduction",
+      "Technology Alignment",
+      "Competitive Advantage",
+      "Operational Transformation",
+      "Regulatory Compliance"
+    ],
+    rangeOfServicesTitle: "Our AI Strategy Services",
+    rangeOfServicesDescription:
+      "Forum Invest supports organizations in designing AI strategies that deliver measurable business value while maintaining regulatory compliance.",
+    faqs: [
+      {
+        question: "Why is AI strategy important?",
+        answer: "A structured AI strategy ensures investments align with long-term business objectives."
+      },
+      {
+        question: "Do we need technical expertise internally?",
+        answer: "No. Our consulting services provide guidance for organizations at all levels of AI maturity."
+      },
+      {
+        question: "Can AI strategy help reduce risks?",
+        answer: "Yes. Strategic planning helps organizations manage technological, operational, and regulatory risks."
+      }
+    ]
+  },
+
+  {
+    id: 11,
+    slug: "custom-ai-solutions",
+    title: "Custom AI Solutions",
+    description: "Designing industry-specific AI applications tailored to the needs of each organization.",
+    icon: "hugeicons:artificial-intelligence-01",
+    href: "/services/custom-ai-solutions",
+    image: service05,
+    gallery: [service05, service06, service01],
+    features: ["Industry Solutions", "AI Model Development", "Custom Applications", "Enterprise Integration"],
+    detailsParagraph1:
+      "Custom AI Solutions focus on developing intelligent systems tailored to specific business environments. We design solutions that address unique operational challenges.",
+    detailsParagraph2:
+      "Our team develops machine learning models, AI applications, and enterprise solutions designed to deliver measurable improvements in productivity and decision-making.",
+    benefits: [
+      "Industry-Specific Solutions",
+      "Improved Productivity",
+      "Customized AI Models",
+      "Better Decision Making",
+      "Operational Efficiency",
+      "Technology Differentiation",
+      "Strategic Innovation"
+    ],
+    rangeOfServicesTitle: "Our Custom AI Services",
+    rangeOfServicesDescription:
+      "Forum Invest develops tailored AI systems designed to meet specific organizational needs across industries.",
+    faqs: [
+      {
+        question: "What are Custom AI Solutions?",
+        answer: "They are AI systems designed specifically to address the unique operational requirements of an organization."
+      },
+      {
+        question: "Which industries benefit most from custom AI?",
+        answer: "Industries such as finance, logistics, automotive, healthcare, and public services benefit greatly."
+      },
+      {
+        question: "Are custom solutions scalable?",
+        answer: "Yes. Our AI systems are designed with scalability and future growth in mind."
+      }
+    ]
+  },
+
+  {
+    id: 12,
+    slug: "cloud-ai-infrastructure",
+    title: "Cloud & AI Infrastructure",
+    description: "Building scalable and secure cloud infrastructures optimized for AI workloads, data processing, and enterprise applications.",
+    icon: "hugeicons:cloud",
+    href: "/services/cloud-ai-infrastructure",
+    image: service06,
+    gallery: [service06, service01, service02],
+    features: ["Cloud Architecture", "AI Infrastructure", "Scalable Systems", "Secure Platforms"],
+    detailsParagraph1:
+      "Cloud & AI Infrastructure services provide the technological foundation required for modern AI systems. Our cloud environments are optimized for high-performance data processing and machine learning workloads.",
+    detailsParagraph2:
+      "We design secure and scalable infrastructures that support enterprise applications, AI models, and advanced analytics platforms.",
+    benefits: [
+      "High-Performance Infrastructure",
+      "Secure Cloud Environments",
+      "Scalable AI Platforms",
+      "Reduced Infrastructure Costs",
+      "Flexible Computing Resources",
+      "Optimized Data Processing",
+      "Reliable System Performance"
+    ],
+    rangeOfServicesTitle: "Our Cloud Infrastructure Services",
+    rangeOfServicesDescription:
+      "Forum Invest develops cloud environments designed to support AI innovation and enterprise scalability. Our solutions combine security, performance, and operational reliability.",
+    faqs: [
+      {
+        question: "Why is cloud infrastructure important for AI?",
+        answer: "AI systems require powerful computing resources and scalable data environments, which cloud infrastructure provides."
+      },
+      {
+        question: "Is cloud infrastructure secure?",
+        answer: "Yes. Our cloud architectures are designed with strong cybersecurity frameworks and compliance standards."
+      },
+      {
+        question: "Can cloud infrastructure scale with business growth?",
+        answer: "Absolutely. Cloud systems are designed to scale dynamically as organizational needs grow."
+      }
+    ]
+  }
 ];
 
 export const protfolio = [
@@ -994,24 +1402,24 @@ export const faqPageData: FAQPageData = {
     title: "Need Help? Start Here...",
     items: [
       {
-        question: "What services does Bexon offer to clients?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "What services does Forum Invest provide?",
+        answer: "Forum Invest specializes in AI integration, enterprise strategy, intelligent automation, and advanced analytics. We help organizations adopt Artificial Intelligence to improve productivity, decision-making, and operational efficiency while ensuring solutions are scalable, secure, and aligned with long-term business goals."
       },
       {
-        question: "How do I get started with Corporate Business?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "How does Forum Invest help organizations adopt AI?",
+        answer: "We guide organizations through the full AI transformation journey—from strategy and architecture design to system integration and deployment. Our experts ensure AI technologies integrate seamlessly with existing workflows while delivering measurable improvements in efficiency and performance."
       },
       {
-        question: "How do you ensure the success of a project?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "Which industries does Forum Invest work with?",
+        answer: "Forum Invest develops AI solutions for industries including automotive, logistics, finance, insurance, research institutions, and the public sector. Our approach focuses on creating tailored solutions that align with the operational and strategic needs of each industry."
       },
       {
-        question: "How long will it take to complete my project?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "Does Forum Invest provide AI training for teams?",
+        answer: "Yes. Forum Invest helps organizations build internal AI capabilities by training existing teams and supporting the development of AI talent. Our programs equip professionals with practical knowledge needed to successfully work with intelligent technologies."
       },
       {
-        question: "Can I track the progress of my project?",
-        answer: "Getting started is easy! Simply reach out to us through our contact form or give us a call, and we’ll schedule a consultation to discuss your project and how we can best assist you. Our team keeps you informed throughout the process, ensuring quality control and timely delivery."
+        question: "How does Forum Invest ensure reliable and secure AI solutions?",
+        answer: "Our engineering frameworks are built on research-driven design, cybersecurity by default, and compliance with global and European standards. We focus on performance optimization, secure architectures, and scalable systems that remain reliable as organizations grow."
       }
     ]
   }

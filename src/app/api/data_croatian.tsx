@@ -273,6 +273,36 @@ export const services: Service[] = [
     image: service01,
     gallery: [service01, service02, service03],
     features: ["Inovacija", "Skalabilni sustavi", "Prilagođen kupcima", "Otpornost"],
+    detailsParagraph1:
+      "Razvoj poslovne strategije usmjeren je na pomoć organizacijama u definiranju jasnih dugoročnih ciljeva i izgradnji strukturiranih planova za postizanje održivog rasta. Naš tim kombinira istraživanje tržišta, operativnu analizu i strateško planiranje za dizajn učinkovitih poslovnih okvira.",
+    detailsParagraph2:
+      "Usklađivanjem strateškog planiranja sa stvarnim operativnim mogućnostima, pomažemo organizacijama da se prilagode promjenjivim tržištima uz zadržavanje stabilnosti i konkurentnosti.",
+    benefits: [
+      "Jasno strateško usmjerenje",
+      "Poboljšano donošenje odluka",
+      "Održivi poslovni rast",
+      "Konkurentna pozicija na tržištu",
+      "Operativna usklađenost",
+      "Upravljanje rizicima",
+      "Dugoročna poslovna vrijednost"
+    ],
+    rangeOfServicesTitle: "Naše usluge poslovne strategije",
+    rangeOfServicesDescription:
+      "Forum Invest pomaže organizacijama u razvoju strukturiranih poslovnih strategija koje usklađuju operativne sposobnosti s dugoročnim ciljevima rasta.",
+    faqs: [
+      {
+        question: "Što je razvoj poslovne strategije?",
+        answer: "To je proces definiranja dugoročnih ciljeva i izrade strukturiranih planova za postizanje održivog rasta."
+      },
+      {
+        question: "Kako strategija poboljšava poslovne rezultate?",
+        answer: "Jasna strategija pomaže organizacijama usmjeriti resurse, smanjiti rizike i identificirati nove prilike."
+      },
+      {
+        question: "Može li strateško savjetovanje pomoći rastućim tvrtkama?",
+        answer: "Da. Strateško vodstvo pomaže tvrtkama u skaliranju operacija i prilagodbi promjenjivim tržišnim uvjetima."
+      }
+    ]
   },
   {
     id: 2,
@@ -284,6 +314,36 @@ export const services: Service[] = [
     image: service02,
     gallery: [service02, service03],
     features: ["Prilagođen kupcima", "Operativna učinkovitost", "Kontinuirano učenje"],
+    detailsParagraph1:
+      "Izuzetna iskustva kupaca u središtu su uspješnih organizacija. Naša rješenja za iskustvo kupaca pomažu tvrtkama osmisliti značajne interakcije koje poboljšavaju zadovoljstvo i lojalnost.",
+    detailsParagraph2:
+      "Analiziramo putovanja kupaca, optimiziramo digitalne platforme i razvijamo strategije koje poboljšavaju angažman na svim dodirnim točkama.",
+    benefits: [
+      "Personalizacija sustava na razini",
+      "Zadržavanje kupaca",
+      "Poboljšano zadržavanje kupaca",
+      "Optimizacija podrške",
+      "Uvidi vođeni podacima",
+      "Proaktivni angažman",
+      "Omni-channel integracija"
+    ],
+    rangeOfServicesTitle: "Naš raspon usluga za kupce",
+    rangeOfServicesDescription:
+      "Forum Invest se fokusira na stvaranje iskustava koja jačaju odnose između tvrtki i njihovih kupaca.",
+    faqs: [
+      {
+        question: "Što je iskustvo kupaca (CX)?",
+        answer: "Iskustvo kupaca odnosi se na cjelokupni dojam koji kupac stječe interakcijom s tvrtkom."
+      },
+      {
+        question: "Kako CX rješenja poboljšavaju lojalnost kupaca?",
+        answer: "Personalizacijom iskustava i optimizacijom interakcija kroz digitalne i fizičke kanale."
+      },
+      {
+        question: "Kako prikupljate uvide o kupcima?",
+        answer: "Putem analitičkih alata, anketa i izravnih interakcija s kupcima."
+      }
+    ]
   },
   {
     id: 3,
@@ -293,6 +353,38 @@ export const services: Service[] = [
     icon: "carbon:sustainability",
     href: "/services/sustainability-and-esg-consulting",
     image: service03,
+    gallery: [service03, service04, service05],
+    features: ["Održiva strategija", "ESG usklađenost", "Okolišna odgovornost", "Povjerenje dionika"],
+    detailsParagraph1:
+      "Savjetovanje o održivosti i ESG-u pomaže organizacijama integrirati ekološka, društvena i upravljačka načela u operativne strategije.",
+    detailsParagraph2:
+      "Naši savjetodavni okviri podržavaju odgovoran rast, usklađenost s propisima i dugoročnu održivost uz jačanje povjerenja dionika.",
+    benefits: [
+      "Poboljšana korporativna reputacija",
+      "Regulatorna usklađenost",
+      "Povjerenje investitora",
+      "Održivi rast",
+      "Smanjenje rizika",
+      "Okolišna odgovornost",
+      "Stvaranje dugoročne vrijednosti"
+    ],
+    rangeOfServicesTitle: "Naše ESG savjetodavne usluge",
+    rangeOfServicesDescription:
+      "Forum Invest pomaže organizacijama u dizajnu ESG strategija koje usklađuju ciljeve održivosti s poslovnim rastom i regulatornim zahtjevima.",
+    faqs: [
+      {
+        question: "Što je ESG savjetovanje?",
+        answer: "Pomaže organizacijama integrirati ekološke, društvene i upravljačke prakse u poslovanje."
+      },
+      {
+        question: "Zašto je ESG važan za tvrtke?",
+        answer: "ESG prakse poboljšavaju korporativnu reputaciju, povjerenje investitora i usklađenost s propisima."
+      },
+      {
+        question: "Mogu li ESG strategije poboljšati poslovne rezultate?",
+        answer: "Da, održive prakse često vode do dugoročnih financijskih i operativnih koristi."
+      }
+    ]
   },
   {
     id: 4,
@@ -302,6 +394,38 @@ export const services: Service[] = [
     icon: "carbon:development",
     href: "/services/training-and-development-programs",
     image: service04,
+    gallery: [service04, service05, service06],
+    features: ["Profesionalni rast", "Razvoj vještina", "Obuka vodstva", "Kontinuirano učenje"],
+    detailsParagraph1:
+      "Programi obuke i razvoja pomažu organizacijama ojačati sposobnosti radne snage i pripremiti timove za evoluirajuće poslovne izazove.",
+    detailsParagraph2:
+      "Naši okviri obuke fokusiraju se na vodstvo, tehničke vještine i inovacije kako bi stvorili kulturu kontinuiranog učenja.",
+    benefits: [
+      "Razvoj vještina zaposlenika",
+      "Poboljšana produktivnost",
+      "Rast vodstva",
+      "Dijeljenje znanja",
+      "Timski rad",
+      "Kultura inovacija",
+      "Veće zadržavanje zaposlenika"
+    ],
+    rangeOfServicesTitle: "Naši programi obuke",
+    rangeOfServicesDescription:
+      "Forum Invest pruža profesionalne programe obuke dizajnirane za osnaživanje zaposlenika i potporu organizacijskom razvoju.",
+    faqs: [
+      {
+        question: "Zašto su programi obuke važni?",
+        answer: "Pomažu zaposlenicima razviti nove vještine i prilagoditi se promjenjivim zahtjevima industrije."
+      },
+      {
+        question: "Može li obuka poboljšati učinkovitost zaposlenika?",
+        answer: "Da. Dobro osmišljeni programi obuke poboljšavaju produktivnost i zadovoljstvo poslom."
+      },
+      {
+        question: "Pružate li prilagođene programe obuke?",
+        answer: "Da. Naši programi obuke prilagođeni su potrebama organizacije."
+      }
+    ]
   },
   {
     id: 5,
@@ -311,6 +435,38 @@ export const services: Service[] = [
     icon: "pajamas:work-item-maintenance",
     href: "/services/it-support-and-maintenance",
     image: service05,
+    gallery: [service05, service06, service01],
+    features: ["Nadzor sustava", "Sigurnosno održavanje", "Tehnička podrška", "Stabilnost infrastrukture"],
+    detailsParagraph1:
+      "Usluge IT podrške i održavanja osiguravaju da tehnološka infrastruktura poduzeća ostane sigurna, stabilna i operativna.",
+    detailsParagraph2:
+      "Naši stručnjaci prate sustave, provode ažuriranja održavanja i rješavaju tehničke probleme kako bi spriječili zastoje i operativne poremećaje.",
+    benefits: [
+      "Smanjeno vrijeme zastoja sustava",
+      "Poboljšana sigurnost",
+      "Pouzdana IT infrastruktura",
+      "Brže rješavanje problema",
+      "Operativna stabilnost",
+      "Proaktivno praćenje sustava",
+      "Optimizacija tehnologije"
+    ],
+    rangeOfServicesTitle: "Naše usluge IT podrške",
+    rangeOfServicesDescription:
+      "Forum Invest pruža proaktivnu IT podršku i održavanje kako bi osigurao da poslovni sustavi ostanu sigurni i operativni.",
+    faqs: [
+      {
+        question: "Što uključuje IT podrška?",
+        answer: "IT podrška uključuje nadzor sustava, rješavanje problema, održavanje i sigurnosna ažuriranja."
+      },
+      {
+        question: "Zašto je redovito IT održavanje važno?",
+        answer: "Pomaže u sprječavanju kvarova sustava, poboljšava sigurnost i osigurava neometano poslovanje."
+      },
+      {
+        question: "Može li IT podrška poboljšati performanse sustava?",
+        answer: "Da. Redovito održavanje i optimizacija poboljšavaju pouzdanost i brzinu sustava."
+      }
+    ]
   },
   {
     id: 6,
@@ -320,7 +476,285 @@ export const services: Service[] = [
     icon: "streamline-freehand:creativity-idea-strategy",
     href: "/services/marketing-strategy-and-campaigns",
     image: service06,
+    gallery: [service06, service01, service02],
+    features: ["Strategija brenda", "Digitalne kampanje", "Uvidi u tržište", "Angažman kupaca"],
+    detailsParagraph1:
+      "Usluge marketinške strategije i kampanja pomažu organizacijama ojačati vidljivost brenda i privući nove kupce putem ciljanih marketinških inicijativa.",
+    detailsParagraph2:
+      "Naš tim razvija marketinške strategije temeljene na podacima koje kombiniraju digitalne kampanje, pripovijedanje brenda i angažman kupaca.",
+    benefits: [
+      "Povećana svijest o brendu",
+      "Angažman kupaca",
+      "Ciljane kampanje",
+      "Marketing vođen podacima",
+      "Poboljšano generiranje leadova",
+      "Proširenje tržišta",
+      "Jači identitet brenda"
+    ],
+    rangeOfServicesTitle: "Naše marketinške usluge",
+    rangeOfServicesDescription:
+      "Forum Invest dizajnira strateške marketinške kampanje koje pomažu organizacijama dosegnuti pravu publiku i ubrzati poslovni rast.",
+    faqs: [
+      {
+        question: "Što je marketinška strategija?",
+        answer: "To je strukturirani plan osmišljen za promicanje proizvoda, usluga i vrijednosti brenda pravoj publici."
+      },
+      {
+        question: "Kako marketinške kampanje poboljšavaju rast?",
+        answer: "One povećavaju svijest o brendu, generiraju leadove i jačaju odnose s kupcima."
+      },
+      {
+        question: "Pružate li strategije digitalnog marketinga?",
+        answer: "Da. Naše marketinške strategije uključuju digitalne platforme, analitiku i ciljane kampanje."
+      }
+    ]
   },
+  {
+    id: 7,
+    slug: "ai-integration-and-implementation",
+    title: "AI integracija i implementacija",
+    description: "Pomažemo organizacijama integrirati AI u postojeće digitalne ekosustave, osiguravajući besprijekorno usvajanje uz minimalne smetnje.",
+    icon: "hugeicons:ai-idea",
+    href: "/services/ai-integration-and-implementation",
+    image: service01,
+    gallery: [service01, service02, service03],
+    features: ["AI integracija", "Kompatibilnost sustava", "Skalabilna arhitektura", "Operativna učinkovitost"],
+    detailsParagraph1:
+      "Usluge AI integracije i implementacije pomažu organizacijama da ugrade umjetnu inteligenciju u svoje postojeće digitalne sustave. Naš fokus je na besprijekornoj integraciji koja poboljšava operativne sposobnosti bez ometanja trenutnih procesa.",
+    detailsParagraph2:
+      "Analiziramo vašu infrastrukturu, sustave podataka i operativne procese kako bismo osigurali glatku integraciju AI rješenja. Naš tim osigurava skalabilnu, sigurnu i optimiziranu arhitekturu usklađenu s vašim strateškim ciljevima.",
+    benefits: [
+      "Besprijekorna integracija sustava",
+      "Poboljšana operativna učinkovitost",
+      "Unaprijeđena podrška odlučivanju",
+      "Smanjen rizik implementacije",
+      "Skalabilna AI arhitektura",
+      "Optimizacija korištenja podataka",
+      "Brže usvajanje tehnologije"
+    ],
+    rangeOfServicesTitle: "Naše AI integracijske usluge",
+    rangeOfServicesDescription:
+      "Forum Invest pomaže organizacijama implementirati AI tehnologije na strukturiran i skalabilan način. Naši okviri osiguravaju mjerljivu poslovnu vrijednost.",
+    faqs: [
+      {
+        question: "Što AI integracija znači za organizaciju?",
+        answer: "Uključuje instalaciju AI mogućnosti u postojeće sustave, omogućujući automatizaciju i inteligentne uvide."
+      },
+      {
+        question: "Hoće li AI omesti naše postojeće sustave?",
+        answer: "Ne. Naš proces fokusiran je na kompatibilnost i minimalne smetnje tijekom integracije."
+      },
+      {
+        question: "Koliko traje implementacija AI-a?",
+        answer: "Vremenski okviri ovise o opsegu projekta i složenosti sustava, ali radimo u strukturiranim fazama."
+      }
+    ]
+  },
+  {
+    id: 8,
+    slug: "intelligent-automation",
+    title: "Inteligentna automatizacija",
+    description: "Automatizacija radnih procesa i poslovnih operacija pomoću AI-a radi poboljšanja učinkovitosti, točnosti i brzine.",
+    icon: "hugeicons:ai-cloud-01",
+    href: "/services/intelligent-automation",
+    image: service02,
+    gallery: [service02, service03, service04],
+    features: ["Automatizacija procesa", "Optimizacija tijeka rada", "AI motori za odlučivanje", "Operativna učinkovitost"],
+    detailsParagraph1:
+      "Inteligentna automatizacija spaja AI, strojno učenje i automatizacijske tehnologije za pojednostavljenje složenih poslovnih procesa. Naša rješenja uklanjaju zadatke koji se ponavljaju.",
+    detailsParagraph2:
+      "Integracijom automatizacije s postojećim sustavima, organizacije mogu povećati produktivnost, smanjiti troškove i poboljšati točnost u svim operacijama.",
+    benefits: [
+      "Smanjeni operativni troškovi",
+      "Brže izvršavanje tijeka rada",
+      "Veća točnost procesa",
+      "Poboljšana produktivnost",
+      "Smanjenje pogrešaka",
+      "Skalabilni sustavi automatizacije",
+      "Poboljšana operativna transparentnost"
+    ],
+    rangeOfServicesTitle: "Naše mogućnosti automatizacije",
+    rangeOfServicesDescription:
+      "Forum Invest dizajnira rješenja koja poboljšavaju operativne performanse u svim odjelima. Naši okviri omogućuju brzinu i visoku kvalitetu.",
+    faqs: [
+      {
+        question: "Što je inteligentna automatizacija?",
+        answer: "To je korištenje AI i tehnologija automatizacije za pojednostavljenje poslovnih procesa i smanjenje ručnog rada."
+      },
+      {
+        question: "Koji se procesi mogu automatizirati?",
+        answer: "Administrativni zadaci, obrada podataka, tijekovi rada podrške i financijski procesi."
+      },
+      {
+        question: "Hoće li automatizacija zamijeniti zaposlenike?",
+        answer: "Automatizacija podržava zaposlenike uklanjanjem repetitivnih zadataka, omogućujući im fokus na strateški rad."
+      }
+    ]
+  },
+  {
+    id: 9,
+    slug: "data-intelligence-and-analytics",
+    title: "Podatkovna inteligencija i analitika",
+    description: "Pretvaranje podataka u djelotvorne uvide putem napredne analitike, prediktivnog modeliranja i strojnog učenja.",
+    icon: "hugeicons:ai-network",
+    href: "/services/data-intelligence-and-analytics",
+    image: service03,
+    gallery: [service03, service04, service05],
+    features: ["Prediktivna analitika", "Modeli strojnog učenja", "Vizualizacija podataka", "Poslovna inteligencija"],
+    detailsParagraph1:
+      "Usluge podatkovne inteligencije pretvaraju složene skupove podataka u strateške uvide. Naši analitički okviri omogućuju razumijevanje trendova i predviđanje ishoda.",
+    detailsParagraph2:
+      "Koristeći strojno učenje, pomažemo organizacijama pretvoriti sirove podatke u inteligenciju koja podržava donošenje odluka temeljem dokaza.",
+    benefits: [
+      "Prediktivni uvidi",
+      "Poboljšane poslovne odluke",
+      "Strategija vođena podacima",
+      "Operativna transparentnost",
+      "Optimizacija performansi",
+      "Smanjenje rizika",
+      "Poboljšano predviđanje"
+    ],
+    rangeOfServicesTitle: "Naše usluge analitike podataka",
+    rangeOfServicesDescription:
+      "Forum Invest pruža napredne analitičke okvire dizajnirane da otključaju punu vrijednost vaših podataka spajajući AI i poslovnu inteligenciju.",
+    faqs: [
+      {
+        question: "Što je podatkovna inteligencija?",
+        answer: "Proces analize velikih količina podataka radi izvlačenja značenja koje vodi strateške odluke."
+      },
+      {
+        question: "Kako analitika poboljšava poslovanje?",
+        answer: "Identificira obrasce, optimizira procese i predviđa buduće trendove."
+      },
+      {
+        question: "Trebaju li nam veliki skupovi podataka?",
+        answer: "Iako veliki podaci pružaju dublje uvide, smislena analitika moguća je i na manjim strukturiranim podacima."
+      }
+    ]
+  },
+  {
+    id: 10,
+    slug: "ai-strategy-and-consulting",
+    title: "AI strategija i savjetovanje",
+    description: "Pomažemo organizacijama osmisliti dugoročne AI planove usklađene s poslovnim ciljevima, regulatornim okvirima i operativnom stvarnošću.",
+    icon: "hugeicons:ai-chat-02",
+    href: "/services/ai-strategy-and-consulting",
+    image: service04,
+    gallery: [service04, service05, service06],
+    features: ["Strateško planiranje", "AI planovi razvoja", "Regulatorna usklađenost", "Procjena tehnologije"],
+    detailsParagraph1:
+      "Usluge AI strategije pomažu organizacijama u dizajnu strukturiranih transformacija. Naši konzultanti procjenjuju spremnost i tržišne prilike.",
+    detailsParagraph2:
+      "Stvaramo dugoročne AI planove koji su usklađeni s regulatornim okvirima i vašim specifičnim poslovnim ciljevima.",
+    benefits: [
+      "Strateška jasnoća",
+      "Planovi za usvajanje AI-a",
+      "Smanjenje rizika",
+      "Usklađenost tehnologije",
+      "Konkurentska prednost",
+      "Operativna transformacija",
+      "Regulatorna usklađenost"
+    ],
+    rangeOfServicesTitle: "Naše usluge AI strategije",
+    rangeOfServicesDescription:
+      "Forum Invest podržava organizacije u dizajnu AI strategija koje donose mjerljivu vrijednost uz poštivanje propisa.",
+    faqs: [
+      {
+        question: "Zašto je AI strategija važna?",
+        answer: "Osigurava da ulaganja u tehnologiju budu usklađena s dugoročnim poslovnim ciljevima."
+      },
+      {
+        question: "Trebamo li unutarnju tehničku stručnost?",
+        answer: "Ne. Naše usluge pružaju vodstvo za organizacije na svim razinama zrelosti u AI-u."
+      },
+      {
+        question: "Može li AI strategija smanjiti rizike?",
+        answer: "Da. Planiranje pomaže u upravljanju tehnološkim, operativnim i regulatornim rizicima."
+      }
+    ]
+  },
+  {
+    id: 11,
+    slug: "custom-ai-solutions",
+    title: "Prilagođena AI rješenja",
+    description: "Dizajniranje AI aplikacija specifičnih za industriju, prilagođenih potrebama svake organizacije.",
+    icon: "hugeicons:artificial-intelligence-01",
+    href: "/services/custom-ai-solutions",
+    image: service05,
+    gallery: [service05, service06, service01],
+    features: ["Industrijska rješenja", "Razvoj AI modela", "Prilagođene aplikacije", "Enterprise integracija"],
+    detailsParagraph1:
+      "Prilagođena AI rješenja fokusirana su na razvoj inteligentnih sustava za specifična poslovna okruženja i jedinstvene izazove.",
+    detailsParagraph2:
+      "Naš tim razvija modele strojnog učenja i aplikacije dizajnirane za mjerljiva poboljšanja produktivnosti.",
+    benefits: [
+      "Rješenja specifična za industriju",
+      "Poboljšana produktivnost",
+      "Prilagođeni AI modeli",
+      "Bolje donošenje odluka",
+      "Operativna učinkovitost",
+      "Tehnološka diferencijacija",
+      "Strateška inovacija"
+    ],
+    rangeOfServicesTitle: "Naše prilagođene AI usluge",
+    rangeOfServicesDescription:
+      "Forum Invest razvija AI sustave po mjeri dizajnirane da zadovolje specifične potrebe organizacija u svim sektorima.",
+    faqs: [
+      {
+        question: "Što su prilagođena AI rješenja?",
+        answer: "Sustavi dizajnirani posebno za rješavanje jedinstvenih operativnih zahtjeva vaše organizacije."
+      },
+      {
+        question: "Koje industrije imaju najviše koristi?",
+        answer: "Financije, logistika, automobilska industrija, zdravstvo i javne usluge."
+      },
+      {
+        question: "Jesu li prilagođena rješenja skalabilna?",
+        answer: "Da. Naši sustavi su izgrađeni s vizijom skalabilnosti i budućeg rasta."
+      }
+    ]
+  },
+  {
+    id: 12,
+    slug: "cloud-ai-infrastructure",
+    title: "Cloud i AI infrastruktura",
+    description: "Izgradnja skalabilne i sigurne cloud infrastrukture optimizirane za AI radna opterećenja, obradu podataka i poslovne aplikacije.",
+    icon: "hugeicons:cloud",
+    href: "/services/cloud-ai-infrastructure",
+    image: service06,
+    gallery: [service06, service01, service02],
+    features: ["Cloud arhitektura", "AI infrastruktura", "Skalabilni sustavi", "Sigurne platforme"],
+    detailsParagraph1:
+      "Usluge Cloud i AI infrastrukture pružaju tehnološki temelj za moderne AI sustave optimizirane za obradu podataka.",
+    detailsParagraph2:
+      "Dizajniramo sigurne i skalabilne infrastrukture koje podržavaju poslovne aplikacije i naprednu analitiku.",
+    benefits: [
+      "Visokoučinkovita infrastruktura",
+      "Sigurna Cloud okruženja",
+      "Skalabilne AI platforme",
+      "Smanjeni troškovi infrastrukture",
+      "Fleksibilni resursi",
+      "Optimizirana obrada podataka",
+      "Pouzdane performanse sustava"
+    ],
+    rangeOfServicesTitle: "Naše usluge Cloud infrastrukture",
+    rangeOfServicesDescription:
+      "Forum Invest razvija okruženja dizajnirana da podrže AI inovaciju i skalabilnost, spajajući sigurnost i pouzdanost.",
+    faqs: [
+      {
+        question: "Zašto je Cloud infrastruktura važna za AI?",
+        answer: "AI sustavi zahtijevaju snažne računalne resurse i skalabilna podatkovna okruženja."
+      },
+      {
+        question: "Je li Cloud infrastruktura sigurna?",
+        answer: "Da. Naše arhitekture dizajnirane su s jakim sigurnosnim okvirima i standardima usklađenosti."
+      },
+      {
+        question: "Može li Cloud skalirati s rastom poslovanja?",
+        answer: "Apsolutno. Cloud sustavi su dizajnirani za dinamičko skaliranje prema potrebama."
+      }
+    ]
+  }
 ];
 
 export const protfolio = [
@@ -920,24 +1354,24 @@ export const faqPageData: FAQPageData = {
     title: "Trebate pomoć? Započnite ovdje...",
     items: [
       {
-        question: "Koje usluge Bexon nudi klijentima?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "What services does Forum Invest provide?",
+        answer: "Forum Invest specializes in AI integration, enterprise strategy, intelligent automation, and advanced analytics. We help organizations adopt Artificial Intelligence to improve productivity, decision-making, and operational efficiency while ensuring solutions are scalable, secure, and aligned with long-term business goals."
       },
       {
-        question: "Kako započeti s korporativnim poslovanjem?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "How does Forum Invest help organizations adopt AI?",
+        answer: "We guide organizations through the full AI transformation journey—from strategy and architecture design to system integration and deployment. Our experts ensure AI technologies integrate seamlessly with existing workflows while delivering measurable improvements in efficiency and performance."
       },
       {
-        question: "Kako osiguravate uspjeh projekta?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "Which industries does Forum Invest work with?",
+        answer: "Forum Invest develops AI solutions for industries including automotive, logistics, finance, insurance, research institutions, and the public sector. Our approach focuses on creating tailored solutions that align with the operational and strategic needs of each industry."
       },
       {
-        question: "Koliko će trajati završetak mog projekta?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "Does Forum Invest provide AI training for teams?",
+        answer: "Yes. Forum Invest helps organizations build internal AI capabilities by training existing teams and supporting the development of AI talent. Our programs equip professionals with practical knowledge needed to successfully work with intelligent technologies."
       },
       {
-        question: "Mogu li pratiti napredak svog projekta?",
-        answer: "Početak je jednostavan! Jednostavno nas kontaktirajte putem našeg obrasca za kontakt ili nas nazovite, a mi ćemo zakazati konzultacije kako bismo razgovarali o vašem projektu i kako vam možemo najbolje pomoći. Naš tim vas obavještava tijekom cijelog procesa, osiguravajući kontrolu kvalitete i pravovremenu isporuku."
+        question: "How does Forum Invest ensure reliable and secure AI solutions?",
+        answer: "Our engineering frameworks are built on research-driven design, cybersecurity by default, and compliance with global and European standards. We focus on performance optimization, secure architectures, and scalable systems that remain reliable as organizations grow."
       }
     ]
   }
