@@ -1,5 +1,5 @@
 "use client";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import React from 'react';
 import "swiper/css";
@@ -24,27 +24,35 @@ const Projects: React.FC = () => {
                     </span>
                     <h2 className='mt-6 font-chakrapetch text-30 lg:text-45 font-bold text-white leading-tight max-w-3xl mx-auto'>{projectsHeader.title}</h2>
                 </div>
+                <style dangerouslySetInnerHTML={{
+                    __html: `
+                    .projects-swiper .swiper-wrapper {
+                        transition-timing-function: linear !important;
+                    }
+                `}} />
             </div>
 
             <Swiper
-                modules={[Autoplay]}
+                modules={[Autoplay, FreeMode]}
                 spaceBetween={50}
                 slidesPerView={1.5}
                 loop={true}
                 centeredSlides={true}
                 speed={6000}
                 autoplay={{ delay: 0, disableOnInteraction: false }}
-                allowTouchMove={false}
+                freeMode={true}
+                allowTouchMove={true}
                 breakpoints={{
                     1400: { slidesPerView: 1.5 },
                     0: { slidesPerView: 1 }
                 }}
-                className="relative z-10"
+                className="projects-swiper relative z-10"
             >
                 {projects.concat(projects).map((project, index) => (
                     <SwiperSlide key={index}>
-                        <div className="project-item flex flex-col sm:flex-row justify-center items-center w-full bg-white border border-gray-200 p-8 rounded-2xl gap-8 h-auto lg:h-[550px] backdrop-blur-md group hover:shadow-lg transition-all duration-500">
+                        <div className="project-item flex flex-col sm:flex-row justify-center items-stretch w-full bg-white border border-gray-200 p-8 rounded-2xl gap-8 h-[520px] group hover:shadow-lg transition-all duration-500">
 
+                            {/* Image */}
                             <div className="project-image w-full sm:w-[50%] h-full relative overflow-hidden rounded-xl">
                                 <Image
                                     src={project.image}
@@ -56,18 +64,22 @@ const Projects: React.FC = () => {
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                             </div>
 
-                            <div className="project-content w-full sm:w-[50%] flex flex-col items-start">
-                                <span className="bg-prim/10 border border-prim/20 rounded-lg px-4 py-1 text-prim font-chakrapetch font-medium text-14 mb-4">
-                                    {project.category}
-                                </span>
+                            {/* Content */}
+                            <div className="project-content w-full sm:w-[50%] flex flex-col justify-between h-full">
 
-                                <h4 className="font-chakrapetch text-24 lg:text-32 font-bold text-black mb-4 group-hover:text-prim transition-colors duration-500">
-                                    {project.title}
-                                </h4>
+                                <div>
+                                    <span className="bg-prim/10 border border-prim/20 rounded-lg px-4 py-1 text-prim font-chakrapetch font-medium text-14 mb-4 inline-block">
+                                        {project.category}
+                                    </span>
 
-                                <p className="text-gray-600 font-normal text-16 lg:text-18 leading-relaxed mb-6 group-hover:text-gray-800 transition-colors duration-500">
-                                    {project.description}
-                                </p>
+                                    <h4 className="font-chakrapetch text-24 lg:text-30 font-bold text-black mb-4 group-hover:text-prim transition-colors duration-500 line-clamp-2">
+                                        {project.title}
+                                    </h4>
+
+                                    <p className="text-gray-600 font-normal text-16 lg:text-18 leading-relaxed mb-6 group-hover:text-gray-800 transition-colors duration-500 line-clamp-4">
+                                        {project.description}
+                                    </p>
+                                </div>
 
                                 <Link
                                     href={project.link}
@@ -81,8 +93,8 @@ const Projects: React.FC = () => {
                                         className="bg-prim text-white rounded-full h-full w-[35px] p-1.5 group-hover/btn:-rotate-45 transition duration-300"
                                     />
                                 </Link>
-                            </div>
 
+                            </div>
                         </div>
                     </SwiperSlide>
                 ))}
