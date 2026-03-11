@@ -318,37 +318,100 @@ export const footerLinks: FooterLink[] = [
 
 // blogs
 
-export const blogs = [
+export type Blog = {
+  id: number;
+  slug: string;
+  title: string;
+  category: string;
+  author: string;
+  date: string;
+  image: string;
+  description: string;
+  detailsParagraph1: string;
+  detailsParagraph2: string;
+  quote: string;
+  quoteAuthor: string;
+  lessonTitle: string;
+  lessonDescription: string;
+  lessonsList: string[];
+};
+
+export const blogs: Blog[] = [
   {
     id: 1,
     slug: "harnessing-digital-transform",
     title: "Harnessing Digital Transform: A Roadmap for Businesses",
     category: "Business",
-    author: "Ellinien Loma",
-    date: "18 Jun",
+    author: "Ivan Jedvej",
+    date: "18 Jun 2026",
     image: "/images/blog/blog-1.jpg",
-    description: "Discover how to leverage digital transformation to boost efficiency and growth."
+    description: "Discover how to leverage digital transformation to boost efficiency and growth.",
+    detailsParagraph1:
+      "Digital transformation is no longer a luxury; it's a necessity for survival in today's fast-paced market. Harnessing the power of digital tools allows businesses to streamline operations, reduce costs, and deliver superior customer value. A strategic roadmap is essential to navigate this complex journey, starting from internal processes to external customer interactions.",
+    detailsParagraph2:
+      "Implementing technologies like cloud computing, AI, and data analytics requires a cultural shift within the organization. By fostering a digital-first mindset, companies can unlock new levels of efficiency and agility, ensuring they remain competitive in an increasingly automated world. The roadmap involves clear milestones, continuous employee training, and a focus on scalability.",
+    quote: "Digital transformation is not about technology. It's about people and how they use it to solve problems.",
+    quoteAuthor: "Ivan Jedvej",
+    lessonTitle: "Key Lessons in Digital Transformation",
+    lessonDescription: "Successful transformation requires balancing technological adoption with organizational readiness.",
+    lessonsList: [
+      "Customer-Centric Strategy",
+      "Data-Driven Decision Making",
+      "Agile Implementation",
+      "Cybersecurity Integration",
+      "Scalable Infrastructure"
+    ]
   },
   {
     id: 2,
     slug: "mastering-change-management",
     title: "Mastering Change Management: Lessons for Businesses",
     category: "Corporate",
-    author: "Ellinien Loma",
-    date: "14 Jun",
+    author: "Sherif",
+    date: "14 Jun 2026",
     image: "/images/blog/blog-2.jpg",
-    description: "Learn proven change management strategies for adapting to evolving business challenges."
+    description: "Learn proven change management strategies for adapting to evolving business challenges.",
+    detailsParagraph1:
+      "Change is the only constant in the business world, and how an organization manages it dictates its long-term success. Mastering change management involves clear communication, leadership alignment, and an understanding of human psychology. It's about bridging the gap between current reality and the desired future state while minimizing resistance.",
+    detailsParagraph2:
+      "Effective change management ensures that transitions are smooth and that the desired outcomes are achieved with minimal disruption. It requires a structured approach that includes stakeholder engagement, risk assessment, and a continuous feedback loop to adjust strategies as needed. Resilience and adaptability are the hallmarks of a successful transition.",
+    quote: "Change is not a threat, it's an opportunity. Survival is not the goal, excellence is.",
+    quoteAuthor: "Sherif",
+    lessonTitle: "Mastering Organizational Change",
+    lessonDescription: "The success of any change initiative depends on the people involved and the clarity of the vision.",
+    lessonsList: [
+      "Transparent Communication",
+      "Empowering Employees",
+      "Clear Vision and Goals",
+      "Iterative Progress Tracking",
+      "Emotional Intelligence"
+    ]
   },
   {
     id: 3,
     slug: "entrepreneur-mindset-success",
-    title: "Entrepreneur Mindset: Habits That Drive Success",
-    category: "Innovation",
-    author: "Ellinien Loma",
-    date: "01 Oct, 2025",
+    title: "AI-Driven Business Transformation: A Roadmap for Growth",
+    category: "AI",
+    author: "Prof. Sasi Gopalan",
+    date: "01 Oct 2026",
     image: "/images/blog/blog-3.jpg",
-    description: "Explore the key habits and strategies that shape a successful entrepreneur mindset."
-  },
+    description: "Discover how AI is reshaping industries, driving efficiency, and creating new opportunities for growth.",
+    detailsParagraph1:
+      "Artificial Intelligence is no longer a futuristic concept; it's a current driver of massive business growth. An AI-driven transformation involves integrating machine learning and predictive analytics into core business functions. This roadmap for growth helps organizations identify high-impact AI use cases, from optimizing supply chains to personalizing marketing at scale.",
+    detailsParagraph2:
+      "Building an AI-ready organization requires both technical investment and strategic planning. Companies must ensure their data infrastructure is robust and their teams are equipped to work alongside intelligent systems. The focus should be on creating measurable value and fostering a culture of experimentation and data-driven innovation.",
+    quote: "AI will not replace humans, but humans who use AI will replace those who do not.",
+    quoteAuthor: "Prof. Sasi Gopalan",
+    lessonTitle: "Insights into AI Growth",
+    lessonDescription: "Transforming your business with AI requires a shift from intuition to data-backed intelligence.",
+    lessonsList: [
+      "Infrastructure Readiness",
+      "AI Ethics and Governance",
+      "Predictive Maintenance",
+      "Personalized Customer Journeys",
+      "Operational Automation"
+    ]
+  }
 ];
 
 import service01 from "@/../public/images/servicedetails/service-01.webp";
@@ -963,53 +1026,6 @@ export const team = [
     image: "/images/team/team-8.webp"
   },
 ]
-
-export const adriaTeam = [
-  {
-    id: 1,
-    name: "Prof.(Dr.) Sasi Gopalan",
-    post: "Chief Executive",
-    image: "/images/adriateam/team-1.jpg"
-  },
-  {
-    id: 2,
-    name: "Rohit T P",
-    post: "Operations Head",
-    image: "/images/adriateam/team-2.jpg"
-  },
-  {
-    id: 3,
-    name: "Varsha Shaheen",
-    post: "Marketing Lead",
-    image: "/images/adriateam/team-3.jpg"
-  },
-  {
-    id: 4,
-    name: " Sunith V S",
-    post: "Business Director",
-    image: "/images/adriateam/team-4.jpg"
-  },
-  {
-    id: 5,
-    name: "Alosh Denny",
-    post: "Business Director",
-    image: "/images/adriateam/team-5.jpg"
-  },
-  {
-    id: 6,
-    name: "Dr. Sanjana Salim",
-    post: "Business Director",
-    image: "/images/adriateam/team-6.jpg"
-  },
-  {
-    id: 7,
-    name: "Aswin Pradeep",
-    post: "Business Director",
-    image: "/images/adriateam/team-7.jpg"
-  },
-]
-
-
 // =======================
 // Hero
 // =======================

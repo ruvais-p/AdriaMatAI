@@ -7,36 +7,18 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
 
-import blog1 from "@/../public/images/blog/service-1.webp";
-import blog2 from "@/../public/images/blog/service-2.webp";
-import blog3 from "@/../public/images/blog/service-3.webp";
 import blog01 from "@/../public/images/blogdetails/blog-1.webp";
 import blog02 from "@/../public/images/blogdetails/blog-2.webp";
 
 
-const recentPosts = [
-    {
-        image: blog1,
-        title: "Entrepreneur Mindset: Habits That Drive Success",
-        date: "01 Oct, 2025",
-    },
-    {
-        image: blog2,
-        title: "Innovative Strategies for Business Growth",
-        date: "15 Oct, 2025",
-    },
-    {
-        image: blog3,
-        title: "Leadership Lessons for Modern Entrepreneurs",
-        date: "22 Oct, 2025",
-    },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 type Props = {
     params: Promise<{ slug: string }>;
 };
 const BlogDetails = ({ params }: Props) => {
     const { blogs } = useData();
+    const { language } = useLanguage();
     const { slug } = React.use(params);
     const blog = blogs.find((b) => b.slug === slug);
 
@@ -52,8 +34,8 @@ const BlogDetails = ({ params }: Props) => {
             <HeroSub title={blog.title} description="" breadcrumbLinks={breadcrumbLinks} />
 
             <section className="py-15">
-                <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 flex flex-col lg:flex-row gap-5">
-                    <div className="lg:w-[60%] w-full">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
                         <div className="bg-white p-5 rounded-2xl">
                             <Image
                                 src={blog.image}
@@ -64,61 +46,51 @@ const BlogDetails = ({ params }: Props) => {
                             />
                             <h4 className="font-unbounded font-medium uppercase text-3xl py-5">{blog.title}</h4>
                             <p className="pb-4 text-pera-dark text-16 leading-6">
-                                In today’s competitive landscape, businesses must continuously adapt and innovate to thrive. Unlocking Business Potential means identifying untapped opportunities and leveraging innovative solutions to drive growth, enhance efficiency, and foster lasting success. At Bexon, we believe that success is not just about working harder—it’s about working smarter. By harnessing cutting-edge technologies, data-driven insights, and creative problem-solving, we provide businesses with the tools and strategies needed to stay ahead.
+                                {blog.detailsParagraph1 || "In today’s competitive landscape, businesses must continuously adapt and innovate to thrive. Unlocking Business Potential means identifying untapped opportunities and leveraging innovative solutions to drive growth, enhance efficiency, and foster lasting success."}
                             </p>
                             <p className="pb-4 text-pera-dark text-16 leading-6">
-                                The curve. Whether you’re looking to streamline operations, enhance customer experiences, or explore new market opportunities, our tailored solutions are designed to empower your business to achieve unparalleled success. With a focus on sustainability, scalability, and adaptability, we help your business.
+                                {blog.detailsParagraph2 || "The curve. Whether you’re looking to streamline operations, enhance customer experiences, or explore new market opportunities, our tailored solutions are designed to empower your business to achieve unparalleled success."}
                             </p>
 
                             <div className="border border-border rounded-lg p-5 bg-dark/20">
                                 <Icon icon="tabler:quote" width="60" height="60" className="mb-3" />
-                                <h5 className="text-black font-semibold font-chakrapetch leading-8">The true entrepreneur is a doer, not a dreamer. Innovation is the catalyst that transforms ideas into reality. In today’s fast-paced world, success depends not on just surviving change.</h5>
+                                <h5 className="text-black font-semibold font-chakrapetch leading-8">
+                                    {blog.quote || "The true entrepreneur is a doer, not a dreamer. Innovation is the catalyst that transforms ideas into reality."}
+                                </h5>
                                 <span className="w-full text-end block font-semibold font-unbounded">
-                                    - Kevin Hooks
+                                    - {blog.quoteAuthor || "Kevin Hooks"}
                                 </span>
                             </div>
                             <h4 className="font-unbounded py-5">
-                                Kye lessons of Business Potential
+                                {blog.lessonTitle || "Key Lessons of Business Potential"}
                             </h4>
                             <p>
-                                Unlocking your business potential requires more than just vision and ambition—it involves strategic thinking, adaptability, and an unwavering commitment to growth. Over time, successful businesses have learned essential lessons that allow them to not only survive but thrive in an ever-changing marketplace. One of the most important lessons is understanding the need for continuous innovation.
+                                {blog.lessonDescription || "Unlocking your business potential requires more than just vision and ambition—it involves strategic thinking, adaptability, and an unwavering commitment to growth."}
                             </p>
                             <div className="flex gap-3 flex-wrap md:flex-nowrap py-8">
                                 <Image src={blog01} alt="blog-image" width={200} height={200} className="w-full rounded-lg h-full" />
                                 <Image src={blog02} alt="blog-image" width={200} height={200} className="w-full  rounded-lg h-full" />
                             </div>
                             <p className="pb-4 text-pera-dark text-16 leading-6">
-                                Lastly, effective leadership that inspires and motivates employees, customers, and stakeholders is essential in steering the business toward achieving its full potential. By applying these lessons, businesses can unlock new opportunities, overcome obstacles, and reach new levels of success.
+                                {language === "hr"
+                                    ? "Naposljetku, učinkovito vodstvo koje nadahnjuje i motivira zaposlenike, kupce i dionike bitno je u usmjeravanju poslovanja prema ostvarenju njegovog punog potencijala."
+                                    : "Lastly, effective leadership that inspires and motivates employees, customers, and stakeholders is essential in steering the business toward achieving its full potential."}
                             </p>
                             <ul className="grid grid-cols-2 gap-5">
-                                <li className="flex items-center gap-2">
-                                    <Icon icon="material-symbols:check-rounded" width="24" height="24" className="bg-prim text-white rounded-full p-0.5" />
-                                    <span>Embrace Innovation</span>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <Icon icon="material-symbols:check-rounded" width="24" height="24" className="bg-prim text-white rounded-full p-0.5" />
-                                    <span>Scalable Systems</span>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <Icon icon="material-symbols:check-rounded" width="24" height="24" className="bg-prim text-white rounded-full p-0.5" />
-                                    <span>Customer-Centric Approach</span>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <Icon icon="material-symbols:check-rounded" width="24" height="24" className="bg-prim text-white rounded-full p-0.5" />
-                                    <span>Resilience</span>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <Icon icon="material-symbols:check-rounded" width="24" height="24" className="bg-prim text-white rounded-full p-0.5" />
-                                    <span>Effective Leadership</span>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <Icon icon="material-symbols:check-rounded" width="24" height="24" className="bg-prim text-white rounded-full p-0.5" />
-                                    <span>Continuous Learning</span>
-                                </li>
-                                <li className="flex items-center gap-2">
-                                    <Icon icon="material-symbols:check-rounded" width="24" height="24" className="bg-prim text-white rounded-full p-0.5" />
-                                    <span>Operational Efficiency</span>
-                                </li>
+                                {(blog.lessonsList || [
+                                    "Embrace Innovation",
+                                    "Scalable Systems",
+                                    "Customer-Centric Approach",
+                                    "Resilience",
+                                    "Effective Leadership",
+                                    "Continuous Learning",
+                                    "Operational Efficiency"
+                                ]).map((lesson, idx) => (
+                                    <li key={idx} className="flex items-center gap-2">
+                                        <Icon icon="material-symbols:check-rounded" width="24" height="24" className="bg-prim text-white rounded-full p-0.5" />
+                                        <span>{lesson}</span>
+                                    </li>
+                                ))}
                             </ul>
                             <h4 className="font-unbounded pb-5 pt-8">
                                 Leave a Comment
@@ -128,7 +100,7 @@ const BlogDetails = ({ params }: Props) => {
                             </p>
 
                             <form>
-                                <textarea placeholder="Enter Your Comments" rows={8} className="border border-border p-5 mb-5" required>
+                                <textarea placeholder="Enter Your Comments" rows={8} className="border border-border p-5 mb-5 w-full" required>
                                 </textarea>
                                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
                                     <input type="text" placeholder="Enter Name" className="border border-border px-5 h-[45px]" required />
@@ -147,61 +119,6 @@ const BlogDetails = ({ params }: Props) => {
                                     <Icon icon="tabler:arrow-right" width="24" height="24" className='bg-prim text-white rounded-full h-full w-[35px] p-1.5 group-hover:-rotate-45 transition duration-300' />
                                 </button>
                             </form>
-                        </div>
-                    </div>
-
-                    <div className="lg:w-[40%] w-full lg:self-start lg:sticky top-20 space-y-5 py-5">
-                        <div className="border border-gray-100 shadow-lg bg-white p-5 rounded-xl">
-                            <h4 className="text-black pb-5">Recent Posts</h4>
-                            <div className="flex flex-col gap-4">
-                                <div className="flex flex-col gap-4">
-                                    {recentPosts.map((post, i) => (
-                                        <div key={i} className="flex items-center gap-3">
-                                            <Image
-                                                src={post.image}
-                                                alt={post.title}
-                                                width={200}
-                                                height={100}
-                                                className="w-[250px] h-[100px] object-cover rounded-xl"
-                                            />
-                                            <div>
-                                                <h4 className="font-chakrapetch pb-2 text-18 font-semibold">
-                                                    {post.title}
-                                                </h4>
-                                                <span className="uppercase text-pera-dark">{post.date}</span>
-                                            </div>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-
-                        {/* Categories */}
-                        <div className="border border-gray-100 shadow-lg bg-white p-5 rounded-xl">
-                            <h4 className="text-black pb-5">Categories</h4>
-                            <ul className="flex flex-col gap-2">
-                                <li className="flex justify-between items-center"><span>Business</span>(3)</li>
-                                <li className="flex justify-between items-center"><span>Corporate</span>(4)</li>
-                                <li className="flex justify-between items-center"><span>Designing</span>(2)</li>
-                                <li className="flex justify-between items-center"><span>Innovation</span>(2)</li>
-                            </ul>
-                        </div>
-
-                        {/* Tags */}
-                        <div className="border-gray-100 shadow-lg bg-white p-5 rounded-xl">
-                            <h4 className="text-black pb-5">Tags</h4>
-                            <div className="flex flex-wrap gap-2">
-                                {["Branding", "Business", "Consulting", "Design", "Innovate", "Lead", "Marketing"].map(
-                                    (tag) => (
-                                        <span
-                                            key={tag}
-                                            className="border border-border px-3 py-0.5 rounded-sm hover:bg-pera-dark hover:border-transparent hover:text-white transition-colors duration-300"
-                                        >
-                                            {tag}
-                                        </span>
-                                    )
-                                )}
-                            </div>
                         </div>
                     </div>
                 </div>

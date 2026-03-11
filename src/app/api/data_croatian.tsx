@@ -202,37 +202,100 @@ export const footerLinks: FooterLink[] = [
 
 // blogs
 
-export const blogs = [
+export type Blog = {
+  id: number;
+  slug: string;
+  title: string;
+  category: string;
+  author: string;
+  date: string;
+  image: string;
+  description: string;
+  detailsParagraph1: string;
+  detailsParagraph2: string;
+  quote: string;
+  quoteAuthor: string;
+  lessonTitle: string;
+  lessonDescription: string;
+  lessonsList: string[];
+};
+
+export const blogs: Blog[] = [
   {
     id: 1,
     slug: "harnessing-digital-transform",
-    title: "Iskorištavanje digitalne transformacije: Plan za tvrtke",
-    category: "Posao",
-    author: "Ellinien Loma",
-    date: "18 Lip",
+    title: "Iskorištavanje digitalne transformacije: Putokaz za poslovanje",
+    category: "Poslovanje",
+    author: "Ivan Jedvej",
+    date: "18 Lip 2026",
     image: "/images/blog/blog-1.jpg",
-    description: "Otkrijte kako iskoristiti digitalnu transformaciju za povećanje učinkovitosti i rasta."
+    description: "Otkrijte kako iskoristiti digitalnu transformaciju za povećanje učinkovitosti i poslovnog rasta.",
+    detailsParagraph1:
+      "Digitalna transformacija više nije luksuz; to je nužnost za opstanak na današnjem brzom tržištu. Iskorištavanje snage digitalnih alata omogućuje tvrtkama da pojednostave operacije, smanje troškove i pruže vrhunsku vrijednost kupcima. Strateški putokaz ključan je za navigaciju ovim složenim putovanjem, počevši od internih procesa do vanjskih interakcija s kupcima.",
+    detailsParagraph2:
+      "Implementacija tehnologija poput računalstva u oblaku, AI-a i analitike podataka zahtijeva kulturnu promjenu unutar organizacije. Poticanjem digitalnog načina razmišljanja, tvrtke mogu otključati nove razine učinkovitosti i agilnosti, osiguravajući da ostanu konkurentne u sve automatiziranijem svijetu. Putokaz uključuje jasne prekretnice, kontinuiranu obuku zaposlenika i fokus na skalabilnost.",
+    quote: "Digitalna transformacija nije u tehnologiji. Riječ je o ljudima i načinu na koji je koriste za rješavanje problema.",
+    quoteAuthor: "Ivan Jedvej",
+    lessonTitle: "Ključne lekcije u digitalnoj transformaciji",
+    lessonDescription: "Uspješna transformacija zahtijeva usklađivanje tehnološkog usvajanja s organizacijskom spremnošću.",
+    lessonsList: [
+      "Strategija usmjerena na kupca",
+      "Donošenje odluka temeljeno na podacima",
+      "Agilna implementacija",
+      "Integracija kibernetičke sigurnosti",
+      "Skalabilna infrastruktura"
+    ]
   },
   {
     id: 2,
     slug: "mastering-change-management",
-    title: "Ovladavanje upravljanjem promjenama: Lekcije za tvrtke",
+    title: "Upravljanje promjenama: Lekcije za poslovanje",
     category: "Korporativno",
-    author: "Ellinien Loma",
-    date: "14 Lip",
+    author: "Sherif",
+    date: "14 Lip 2026",
     image: "/images/blog/blog-2.jpg",
-    description: "Naučite dokazane strategije upravljanja promjenama za prilagođavanje evoluirajućim poslovnim izazovima."
+    description: "Saznajte provjerene strategije upravljanja promjenama za prilagodbu stalno promjenjivim poslovnim izazovima.",
+    detailsParagraph1:
+      "Promjena je jedina konstanta u poslovnom svijetu, a način na koji je organizacija vodi diktira njezin dugoročni uspjeh. Ovladavanje upravljanjem promjenama uključuje jasnu komunikaciju, usklađenost vodstva i razumijevanje ljudske psihologije. Riječ je o premošćivanju jaza između trenutne stvarnosti i željenog budućeg stanja uz minimiziranje otpora.",
+    detailsParagraph2:
+      "Učinkovito upravljanje promjenama osigurava da su prijelazi glatki i da se postignu željeni rezultati uz minimalne poremećaje. Zahtijeva strukturirani pristup koji uključuje angažman dionika, procjenu rizika i kontinuiranu povratnu informaciju za prilagodbu strategija prema potrebi. Otpornost i prilagodljivost obilježja su uspješne tranzicije.",
+    quote: "Promjena nije prijetnja, već prilika. Opstanak nije cilj, izvrsnost jest.",
+    quoteAuthor: "Sherif",
+    lessonTitle: "Ovladavanje organizacijskim promjenama",
+    lessonDescription: "Uspjeh svake inicijative promjene ovisi o uključenim ljudima i jasnoći vizije.",
+    lessonsList: [
+      "Transparentna komunikacija",
+      "Osnaživanje zaposlenika",
+      "Jasna vizija i ciljevi",
+      "Iterativno praćenje napretka",
+      "Emocionalna inteligencija"
+    ]
   },
   {
     id: 3,
     slug: "entrepreneur-mindset-success",
-    title: "Poduzetnički mentalitet: Navike koje pokreću uspjeh",
-    category: "Inovacija",
-    author: "Ellinien Loma",
-    date: "01 Lis, 2025",
+    title: "AI pokretana poslovna transformacija: Putokaz za rast",
+    category: "Umjetna inteligencija",
+    author: "Prof. Sasi Gopalan",
+    date: "01 Lis 2026",
     image: "/images/blog/blog-3.jpg",
-    description: "Istražite ključne navike i strategije koje oblikuju uspješan poduzetnički mentalitet."
-  },
+    description: "Otkrijte kako umjetna inteligencija mijenja industrije, povećava učinkovitost i stvara nove prilike za rast.",
+    detailsParagraph1:
+      "Umjetna inteligencija više nije futuristički koncept; ona je trenutni pokretač masovnog poslovnog rasta. Transformacija vođena AI-jem uključuje integraciju strojnog učenja i prediktivne analitike u temeljne poslovne funkcije. Ovaj putokaz za rast pomaže organizacijama identificirati slučajeve upotrebe AI-a s velikim učinkom, od optimizacije opskrbnih lanaca do personalizacije marketinga u velikom opsegu.",
+    detailsParagraph2:
+      "Izgradnja organizacije spremne za AI zahtijeva i tehnička ulaganja i strateško planiranje. Tvrtke moraju osigurati da su njihove podatkovne infrastrukture robusne i da su njihovi timovi opremljeni za rad uz inteligentne sustave. Fokus bi trebao biti na stvaranju mjerljive vrijednosti i poticanju kulture eksperimentiranja i inovacija temeljenih na podacima.",
+    quote: "AI neće zamijeniti ljude, ali ljudi koji koriste AI zamijenit će one koji to ne čine.",
+    quoteAuthor: "Prof. Sasi Gopalan",
+    lessonTitle: "Uvidi u rast AI-a",
+    lessonDescription: "Transformacija vašeg poslovanja pomoću AI-a zahtijeva pomak s intuicije na inteligenciju podržanu podacima.",
+    lessonsList: [
+      "Spremnost infrastrukture",
+      "AI etika i upravljanje",
+      "Prediktivno održavanje",
+      "Personalizirana putovanja kupaca",
+      "Operativna automatizacija"
+    ]
+  }
 ];
 
 import service01 from "@/../public/images/servicedetails/service-01.webp";
@@ -838,52 +901,6 @@ export const team = [
     image: "/images/team/team-8.webp"
   },
 ]
-
-export const adriaTeam = [
-  {
-    id: 1,
-    name: "Prof.(Dr.) Sasi Gopalan",
-    post: "Glavni izvršni direktor",
-    image: "/images/adriateam/team-1.jpg",
-  },
-  {
-    id: 2,
-    name: "Rohit T P",
-    post: "Voditelj operacija",
-    image: "/images/adriateam/team-2.jpg",
-  },
-  {
-    id: 3,
-    name: "Varsha Shaheen",
-    post: "Voditeljica marketinga",
-    image: "/images/adriateam/team-3.jpg",
-  },
-  {
-    id: 4,
-    name: "Sunith V S",
-    post: "Direktor poslovanja",
-    image: "/images/adriateam/team-4.jpg",
-  },
-  {
-    id: 5,
-    name: "Alosh Denny",
-    post: "Direktor poslovanja",
-    image: "/images/adriateam/team-5.jpg"
-  },
-  {
-    id: 6,
-    name: "Dr Sanjana Salim",
-    post: "Direktor poslovanja",
-    image: "/images/adriateam/team-6.jpg"
-  },
-  {
-    id: 7,
-    name: "Aswin Pradeep",
-    post: "Direktor poslovanja",
-    image: "/images/adriateam/team-7.jpg"
-  },
-];
-
 
 export type HeroData = {
   title: string;
