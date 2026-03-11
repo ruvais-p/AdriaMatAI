@@ -5,7 +5,7 @@ export type SolutionItem = {
 };
 
 export type CompanyItem = {
-  image: string;
+  name: string;
 };
 
 export type ProjectItem = {
@@ -45,93 +45,53 @@ export type HeaderItem = {
 
 export const solutionData: SolutionItem[] = [
   {
-    title: "Obuka i razvoj",
+    title: "Strategija integracije umjetne inteligencije",
+    icon: "mdi:brain",
+    description:
+      "Dizajniranje strateških planova za učinkovitu integraciju umjetne inteligencije u postojeće poslovne sustave i radne procese.",
+  },
+  {
+    title: "Obuka za umjetnu inteligenciju i razvoj radne snage",
     icon: "mdi:school",
     description:
-      "Opremite svoje timove vještinama i znanjem prilagođenim vašim korporativnim ciljevima.",
+      "Osposobljavanje zaposlenika praktičnim znanjima i vještinama iz područja umjetne inteligencije uz pomoć organizacijama u privlačenju i razvoju vrhunskih AI talenata.",
   },
   {
-    title: "Poslovna strategija",
-    icon: "mdi:briefcase-outline",
+    title: "Inteligentna automatizacija procesa",
+    icon: "mdi:robot-outline",
     description:
-      "Razvijte djelotvorne strategije za poticanje rasta i ostati ispred u svojoj industriji.",
+      "Korištenje automatizacije pokretane umjetnom inteligencijom za poboljšanje operativne učinkovitosti, smanjenje ručnog rada i povećanje produktivnosti.",
   },
   {
-    title: "Održivost i ESG",
+    title: "AI vođena inteligencija odlučivanja",
+    icon: "mdi:chart-line",
+    description:
+      "Primjena napredne AI analitike i prediktivnih modela za donošenje pametnijih i bržih poslovnih odluka.",
+  },
+  {
+    title: "Odgovorna i održiva umjetna inteligencija",
     icon: "mdi:leaf",
     description:
-      "Implementirajte strategije za dugoročnu vrijednost, održivost i korporativnu odgovornost.",
+      "Implementacija etičnih, transparentnih i održivih AI rješenja koja su usklađena s organizacijskim vrijednostima i dugoročnim ciljevima.",
   },
   {
-    title: "AI rješenja",
-    icon: "mdi:brain",
+    title: "AI rješenja specifična za industriju",
+    icon: "mdi:domain",
     description:
-      "Razvijte djelotvorne strategije za poticanje rasta i ostati ispred u svojoj industriji.",
-  },
-  {
-    title: "Angažman kupaca",
-    icon: "mdi:account-group-outline",
-    description:
-      "Poboljšajte putovanja kupaca kako biste povećali zadovoljstvo, lojalnost i dugoročno zadržavanje.",
-  },
-  {
-    title: "Obuka i razvoj",
-    icon: "mdi:school",
-    description:
-      "Opremite svoje timove vještinama i znanjem prilagođenim vašim korporativnim ciljevima.",
+      "Razvoj prilagođenih AI sustava za sektore poput automobilske industrije, logistike, financija, osiguranja, istraživačkih institucija i javnog sektora.",
   },
 ];
-
-// =======================
-// Adria Solutions
-// =======================
-
-export const adriaSolutionData: SolutionItem[] = [
-  {
-    title: "Obuka i razvoj",
-    icon: "mdi:school",
-    description:
-      "Osnažite svoje timove vještinama i znanjem prilagođenim vašim korporativnim ciljevima.",
-  },
-  {
-    title: "Prijenos tehnologije",
-    icon: "mdi:briefcase-outline",
-    description:
-      "Naš model prijenosa tehnologije osigurava besprijekornu integraciju ekološki učinkovitih otkrića u globalne industrijske procese, pretvarajući teorijske inovacije u praktična i održiva rješenja u velikom opsegu.",
-  },
-  {
-    title: "AI vođene strategije",
-    icon: "mdi:brain",
-    description:
-      "Dizajniramo inteligentne strategije koje se uspješno nose sa složenošću digitalne transformacije, osiguravajući da je vaš prijelaz na AI-integrirane procese jednostavan, skalabilan i usmjeren na dugoročni rast.",
-  },
-  {
-    title: "Ekološki učinkovita otkrića",
-    icon: "mdi:account-group-outline",
-    description:
-      "Redefiniramo potragu za održivim rješenjima integracijom strojnog učenja u fazu istraživanja i razvoja, osiguravajući da je svako novo otkriće optimizirano za kružnu industriju s niskim udjelom ugljika.",
-  },
-  {
-    title: "Industrijska partnerstva",
-    icon: "mdi:school",
-    description:
-      "Djelujemo kao specijalizirano proširenje vašeg R&D tima, stvarajući industrijska partnerstva koja pretvaraju složene tehničke izazove u konkurentske tržišne prednosti kroz zajedničko znanje i preciznost vođenu umjetnom inteligencijom.",
-  },
-];
-
 
 // =======================
 // Companies
 // =======================
 
 export const companies: CompanyItem[] = [
-  { image: "/images/companies/brand-1.webp" },
-  { image: "/images/companies/brand-2.webp" },
-  { image: "/images/companies/brand-3.webp" },
-  { image: "/images/companies/brand-4.webp" },
-  { image: "/images/companies/brand-5.webp" },
-  { image: "/images/companies/brand-2.webp" },
-  { image: "/images/companies/brand-4.webp" },
+  { name: "Korporativni subjekti" },
+  { name: "Vladine institucije" },
+  { name: "Istraživačke organizacije" },
+  { name: "Obrazovne ustanove" },
+  { name: "Neprofitne organizacije" },
 ];
 
 // =======================
@@ -181,25 +141,25 @@ export const testimonial: TestimonialItem[] = [
   {
     id: 1,
     text:
-      "Suradnja s Bexonom bila je prekretnica za naš posao. Profesionalizam njihovog tima, pažnja na detalje i inovativna rješenja pomogli su nam racionalizirati operacije i postići naše ciljeve brže nego što smo zamislili. Stvarno se osjećamo kao cijenjeni partner.",
-    name: "Ralph Edwards",
-    position: "Suosnivač",
+      "Umjetna inteligencija redefinira globalno poslovanje. U Forum Investu spajamo napredni AI, inženjering i poslovnu strategiju kako bismo pomogli organizacijama da postanu inteligentni i prilagodljivi ekosustavi. Naš fokus je na discipliniranoj provedbi, skalabilnim inovacijama i strateškim partnerstvima koja stvaraju trajnu konkurentsku prednost.",
+    name: "Ivan Jedvej",
+    position: "CEO",
     image: "/images/testimonials/user.jpg",
   },
   {
     id: 2,
     text:
-      "Rezultati koje smo vidjeli nakon partnerstva s Bexonom nadmašuju naša očekivanja. Ne samo da su razumjeli našu viziju, već su donijeli nove ideje koje su naš posao podigle na višu razinu.",
-    name: "Guy Hawkins",
-    position: "Suosnivač",
+      "Tehnološko vodstvo u eri umjetne inteligencije zahtijeva preciznost, sigurnu arhitekturu i kontinuirane inovacije. Forum Invest razvija inteligentne sustave koji integriraju AI, automatizaciju i analitiku u skalabilne infrastrukture. Vođeni istraživanjem, kibernetičkom sigurnošću i optimizacijom performansi isporučujemo pouzdana rješenja s dugoročnim učinkom.",
+    name: "Prof. Sasi Gopalan",
+    position: "CTO",
     image: "/images/testimonials/user2.jpg",
   },
   {
     id: 3,
     text:
-      "Suradjujemo s Bexonom godinama, a oni nastavljaju isporučivati izvanredne rezultate. Njihov tim je proaktivan, odzivan i uvijek ide korak dalje.",
-    name: "Devon Lane",
-    position: "Suosnivač",
+      "Današnja tržišta definira inteligencija. Forum Invest pomaže organizacijama redizajnirati poslovne procese kroz integraciju umjetne inteligencije, otkriti prediktivne uvide iz podataka te povećati produktivnost uz smanjenje troškova. Naša misija je pretvoriti inteligentne sustave u mjerljive poslovne rezultate i dugoročno tržišno vodstvo.",
+    name: "Sherif",
+    position: "CMO",
     image: "/images/testimonials/user3.jpg",
   },
 ];
@@ -551,9 +511,20 @@ export type ProcessStep = {
   description: string;
 };
 
+export type AIServiceItem = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
 export type ProcessData = {
   header: SectionHeader;
   steps: ProcessStep[];
+};
+
+export type AIServicesData = {
+  header: SectionHeader;
+  services: AIServiceItem[];
 };
 // =======================
 // Hero
@@ -676,30 +647,61 @@ export const pricingData: PricingData = {
 
 export const processData: ProcessData = {
   header: {
-    subtitle: "Naš proces",
+    subtitle: "Naš pristup",
     title: "Prilagođene AI arhitekture za uspjeh na industrijskoj razini",
-    description:
-      "Razvijamo personalizirana korisnička iskustva kako bismo povećali zadovoljstvo i lojalnost.",
+    description: "Pretvaramo inovativna AI istraživanja u skalabilne industrijske primjene.",
     buttonText: "Zatraži poziv"
   },
   steps: [
     {
       stepNumber: "01",
-      title: "Otkrivanje i planiranje",
-      description:
-        "Prvi korak je razumijevanje vaših poslovnih potreba, ciljeva i izazova."
+      title: "Razumijevanje",
+      description: "Započinjemo razumijevanjem klijentovog ekosustava, podatkovne infrastrukture i operativnih izazova."
     },
     {
       stepNumber: "02",
-      title: "Provedba i isporuka",
-      description:
-        "Nakon definiranja plana, naš tim prelazi na provedbu strategije i realizaciju ciljeva."
+      title: "Dizajniranje",
+      description: "Naši stručnjaci dizajniraju prilagođene AI strategije i arhitekture koje odgovaraju ciljevima organizacije."
     },
     {
       stepNumber: "03",
-      title: "Pregled i podrška",
-      description:
-        "Nakon završetka projekta provodimo detaljnu analizu kako bismo osigurali usklađenost s vašim ciljevima."
+      title: "Integracija",
+      description: "Besprijekorno integriramo AI rješenja u postojeće platforme, tijekove rada i sustave odlučivanja."
+    },
+    {
+      stepNumber: "04",
+      title: "Skaliranje",
+      description: "Naša rješenja su izgrađena za skalabilnost, osiguravajući dugoročnu vrijednost razvojem organizacija."
+    }
+  ]
+};
+
+export const aiServicesData: AIServicesData = {
+  header: {
+    subtitle: "Naše osnovne usluge",
+    title: "Omogućujemo industrijsku izvrsnost putem umjetne inteligencije",
+    description: "Pružamo cjelovita AI rješenja dizajnirana za transformaciju poslovanja i poticanje inovacija."
+  },
+  services: [
+    {
+      title: "AI integracija i implementacija",
+      description: "Pomažemo organizacijama integrirati AI u postojeće digitalne ekosustave, osiguravajući besprijekorno usvajanje uz minimalne smetnje.",
+      icon: "hugeicons:ai-idea"
+    },
+    {
+      title: "Inteligentna automatizacija",
+      description: "Automatizacija radnih procesa i poslovnih operacija pomoću AI-a radi poboljšanja učinkovitosti, točnosti i brzine.",
+      icon: "hugeicons:ai-cloud-01"
+    },
+    {
+      title: "Podatkovna inteligencija i analitika",
+      description: "Pretvaranje podataka u djelotvorne uvide putem napredne analitike, prediktivnog modeliranja i strojnog učenja.",
+      icon: "hugeicons:ai-network"
+    },
+    {
+      title: "AI strategija i savjetovanje",
+      description: "Pomažemo organizacijama osmisliti dugoročne AI planove usklađene s poslovnim ciljevima, regulatornim okvirima i operativnom stvarnošću.",
+      icon: "hugeicons:ai-chat-02"
     }
   ]
 };
@@ -715,7 +717,8 @@ export const blogHeader: SectionHeader = {
 
 export const companiesHeader: SectionHeader = {
   subtitle: "Naši partneri",
-  title: "Start Your Intelligence Transformation with MAT.ai"
+  title: "Surađujemo s",
+  description: "Surađujemo u svim sektorima kako bismo potaknuli AI transformaciju i isporučili održivu industrijsku izvrsnost."
 };
 
 export const projectsHeader: SectionHeader = {
@@ -784,18 +787,48 @@ export const aboutData: AboutData = {
   aboutItems: [
     {
       icon: "famicons:bulb-outline",
-      title: "Inovativna rješenja",
-      description: "Ostajemo ispred krivulje, koristeći najsuvremenije tehnologije i strategije kako bismo vas održali konkurentnima na tržištu."
+      title: "Inovativna Rješenja",
+      description: "Ostajemo korak ispred koristeći najsuvremenije tehnologije i strategije kako bismo vam pomogli da ostanete konkurentni na tržištu."
     },
     {
       icon: "la:award",
-      title: "Nagrađivana stručnost",
-      description: "Priznat od strane lidera industrije, naš nagrađivani tim ima dokazano iskustvo u isporuci izvrsnosti u svim projektima."
+      title: "Nagrađivana Stručnost",
+      description: "Prepoznati od strane industrijskih lidera, naš nagrađivani tim ima dokazanu povijest postizanja izvrsnosti u projektima."
     },
     {
       icon: "streamline-plump:customer-support-3",
-      title: "Posvećena podrška",
-      description: "Naš tim je uvijek dostupan za rješavanje vaših problema, pružajući brza i učinkovita rješenja za održavanje vašeg poslovanja."
+      title: "Posvećena Podrška",
+      description: "Naš tim je uvijek dostupan za rješavanje vaših pitanja, pružajući brza i učinkovita rješenja kako bi vaše poslovanje nesmetano funkcioniralo."
+    },
+    {
+      icon: "mdi:robot-outline",
+      title: "Stručnjaci za AI Integraciju",
+      description: "Mi smo europska tehnološka tvrtka usmjerena na pomoć organizacijama u sigurnom i učinkovitom usvajanju i integraciji umjetne inteligencije."
+    },
+    {
+      icon: "carbon:machine-learning",
+      title: "Multidisciplinarni Tim",
+      description: "Naš tim kombinira stručnost u AI inženjerstvu, znanosti o podacima, poslovnim sustavima i industrijskom savjetovanju kako bi napredne AI tehnologije pretvorio u praktična rješenja."
+    },
+    {
+      icon: "mdi:lightbulb-on-outline",
+      title: "Vođeni Inovacijama",
+      description: "Izgradili smo prepoznatljiv i napredan identitet temeljen na inovacijama, uvidu i pouzdanosti kako bismo pružili moderna i učinkovita tehnološka rješenja."
+    },
+    {
+      icon: "mdi:account-search-outline",
+      title: "Duboko Razumijevanje Klijenata",
+      description: "Naši stručnjaci pažljivo analiziraju zahtjeve klijenata te prepoznaju izazove i prilike kako bi osmislili rješenja prilagođena stvarnom poslovnom okruženju."
+    },
+    {
+      icon: "mdi:cog-sync-outline",
+      title: "Prilagođena Rješenja",
+      description: "Dizajniramo i implementiramo skalabilna AI rješenja usklađena s potrebama organizacija kako bismo ostvarili održive i značajne rezultate."
+    },
+    {
+      icon: "mdi:chart-line",
+      title: "Stvarni AI Učinak",
+      description: "Kombiniranjem tehničke izvrsnosti i strateškog uvida pomažemo organizacijama prijeći s eksperimentiranja na mjerljiv i stvaran utjecaj umjetne inteligencije."
     }
   ],
   getToKnowUs: {
@@ -803,13 +836,24 @@ export const aboutData: AboutData = {
     title: "Poticanje inovacija i izvrsnosti za održivi korporativni uspjeh širom svijeta.",
     mission: {
       title: "Naša misija",
-      description: "naša misija je osnažiti tvrtke kroz inovativna najbolja rješenja, iznimnu uslugu.",
-      points: ["Inovacija i izvrsnost", "Iznimni kupac", "Poslovni rast"]
+      description: "",
+      points: [
+        "Pojednostaviti i unaprijediti svakodnevni život kroz inteligentnu integraciju umjetne inteligencije.",
+        "Razviti sustave i platforme temeljene na AI-u koji stvaraju trajnu vrijednost za sadašnje i buduće generacije.",
+        "Razvijati i osnažiti novu generaciju IT stručnjaka sposobnih oblikovati tehnološku budućnost.",
+        "Iskoristiti nove tehnologije i postojeće resurse za izgradnju pametnijih sustava, snažnijih institucija i boljih prilika za sve.",
+        "Doprinijeti svijetu u kojem pojedinci, organizacije i zajednice imaju koristi od odgovorne i inteligentne upotrebe tehnologije."
+      ]
     },
     vision: {
       title: "Naša vizija",
-      description: "Naša vizija je postati globalni lider u pružanju transformativnih poslovnih rješenja.",
-      points: ["Globalno vodstvo", "Transformativni učinak", "Održivi uspjeh"]
+      description: "",
+      points: [
+        "Postati pouzdan globalni partner organizacijama koje žele odgovorno integrirati umjetnu inteligenciju u samu srž svojeg poslovanja i sustava odlučivanja.",
+        "Učiniti naprednu tehnologiju dostupnom, pristupačnom i utjecajnom za svaki sektor društva.",
+        "Redefinirati primjenu tehnologije kao pokretača održivog rasta, inovacija i zajedničkog prosperiteta.",
+        "Poticati i podržavati istraživanja, inovacije i praktičnu primjenu tehnologije koja ubrzava napredak u svim industrijama i domenama."
+      ]
     },
     buttonText: "Saznajte više o nama"
   }

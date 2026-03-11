@@ -77,9 +77,11 @@ const Page = () => {
                         <div className="flex lg:flex-nowrap flex-wrap gap-4">
                             <div className="bg-white p-5 rounded-xl">
                                 <h4 className="font-unbounded text-xl pb-3">{aboutData.getToKnowUs.mission.title}</h4>
-                                <p className="capitalize pb-5">
-                                    {aboutData.getToKnowUs.mission.description}
-                                </p>
+                                {aboutData.getToKnowUs.mission.description && (
+                                    <p className="pb-5">
+                                        {aboutData.getToKnowUs.mission.description}
+                                    </p>
+                                )}
                                 <ul className="space-y-2.5">
                                     {aboutData.getToKnowUs.mission.points.map((point, i) => (
                                         <li key={i} className="flex gap-1">
@@ -92,9 +94,11 @@ const Page = () => {
 
                             <div className="bg-white p-5 rounded-xl">
                                 <h4 className="font-unbounded text-xl pb-3">{aboutData.getToKnowUs.vision.title}</h4>
-                                <p className="capitalize pb-5">
-                                    {aboutData.getToKnowUs.vision.description}
-                                </p>
+                                {aboutData.getToKnowUs.vision.description && (
+                                    <p className="pb-5">
+                                        {aboutData.getToKnowUs.vision.description}
+                                    </p>
+                                )}
                                 <ul className="space-y-2.5">
                                     {aboutData.getToKnowUs.vision.points.map((point, i) => (
                                         <li key={i} className="flex gap-1">

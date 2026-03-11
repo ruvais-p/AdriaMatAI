@@ -6,7 +6,10 @@ import { HeaderItem } from "@/type/menu";
 import { usePathname } from "next/navigation";
 import { Icon } from "@iconify/react";
 
-const HeaderLinks: React.FC<{ item: HeaderItem }> = ({ item }) => {
+const HeaderLinks: React.FC<{ item: HeaderItem; isLight?: boolean }> = ({
+  item,
+  isLight,
+}) => {
   const path = usePathname();
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -31,9 +34,12 @@ const HeaderLinks: React.FC<{ item: HeaderItem }> = ({ item }) => {
       <Link
         href={item.href}
         className={`flex items-center gap-1 text-base font-normal transition-colors
-          ${
-            path === item.href
-              ? "text-white"
+          ${path === item.href
+            ? isLight
+              ? "text-black"
+              : "text-white"
+            : isLight
+              ? "text-black/80 hover:text-black"
               : "text-white/80 hover:text-white"
           }
         `}
@@ -45,9 +51,8 @@ const HeaderLinks: React.FC<{ item: HeaderItem }> = ({ item }) => {
             icon="iconamoon:arrow-down-2-duotone"
             width={22}
             height={22}
-            className={`transition-transform duration-300 ${
-              submenuOpen ? "rotate-180" : ""
-            }`}
+            className={`transition-transform duration-300 ${submenuOpen ? "rotate-180" : ""
+              }`}
           />
         )}
       </Link>
@@ -61,15 +66,13 @@ const HeaderLinks: React.FC<{ item: HeaderItem }> = ({ item }) => {
             shadow-[0_8px_32px_rgba(0,0,0,0.35)]
             overflow-hidden z-50
             transition-all duration-300 ease-out
-            ${
-              scrolled
-                ? "bg-black/60 border-white/10"
-                : "bg-white/15 border-white/20"
+            ${scrolled
+              ? "bg-black/60 border-white/10"
+              : "bg-white/15 border-white/20"
             }
-            ${
-              submenuOpen
-                ? "opacity-100 scale-100 visible"
-                : "opacity-0 scale-95 invisible"
+            ${submenuOpen
+              ? "opacity-100 scale-100 visible"
+              : "opacity-0 scale-95 invisible"
             }
           `}
         >
@@ -77,10 +80,9 @@ const HeaderLinks: React.FC<{ item: HeaderItem }> = ({ item }) => {
           <div
             className={`
               absolute inset-0 pointer-events-none
-              ${
-                scrolled
-                  ? "bg-gradient-to-b from-white/10 to-transparent"
-                  : "bg-gradient-to-b from-white/25 to-transparent"
+              ${scrolled
+                ? "bg-gradient-to-b from-white/10 to-transparent"
+                : "bg-gradient-to-b from-white/25 to-transparent"
               }
             `}
           />
@@ -92,10 +94,9 @@ const HeaderLinks: React.FC<{ item: HeaderItem }> = ({ item }) => {
               className={`
                 relative block px-4 py-3 text-sm font-medium
                 transition-all duration-200
-                ${
-                  path === subItem.href
-                    ? "bg-white/20 text-white"
-                    : "text-white/90 hover:bg-white/20 hover:text-white"
+                ${path === subItem.href
+                  ? "bg-white/20 text-white"
+                  : "text-white/90 hover:bg-white/20 hover:text-white"
                 }
               `}
             >

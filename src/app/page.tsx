@@ -7,6 +7,7 @@ import Process from "@/components/Home/Process";
 import Projects from "@/components/Home/Projects";
 import Solution from "@/components/Home/Solution";
 import Testimonials from "@/components/Home/Testimonials";
+import AIServices from "@/components/Home/AIServices";
 import Image from "next/image";
 
 export default function Home() {
@@ -15,11 +16,12 @@ export default function Home() {
       <main>
         <Hero />
         <Solution />
+        <Testimonials />
         <Companies />
         <Commitment />
         <Process />
+        <AIServices />
         <Projects />
-        <Testimonials />
         <Blog />
       </main>
     </>

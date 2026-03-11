@@ -44,6 +44,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={`${chakraPetch.variable} ${mona.variable} ${poppins.variable} ${unbounded.variable}`}
+        suppressHydrationWarning
       >
         <LanguageProvider>
           <Header />

@@ -5,7 +5,7 @@ export type SolutionItem = {
 };
 
 export type CompanyItem = {
-  image: string;
+  name: string;
 };
 
 export type ProjectItem = {
@@ -99,9 +99,20 @@ export type ProcessStep = {
   description: string;
 };
 
+export type AIServiceItem = {
+  title: string;
+  description: string;
+  icon: string;
+};
+
 export type ProcessData = {
   header: SectionHeader;
   steps: ProcessStep[];
+};
+
+export type AIServicesData = {
+  header: SectionHeader;
+  services: AIServiceItem[];
 };
 
 
@@ -111,40 +122,40 @@ export type ProcessData = {
 
 export const solutionData: SolutionItem[] = [
   {
-    title: "Training & Development",
-    icon: "mdi:school",
-    description:
-      "Equip your teams with skills and knowledge tailored to your corporate goals.",
-  },
-  {
-    title: "Business Strategy",
-    icon: "mdi:briefcase-outline",
-    description:
-      "Develop actionable strategies to drive growth and stay ahead in your industry.",
-  },
-  {
-    title: "Sustainability & ESG",
-    icon: "mdi:leaf",
-    description:
-      "Implement strategies for long-term value, sustainability, and corporate responsibility.",
-  },
-  {
-    title: "AI Solutions",
+    title: "AI Integration Strategy",
     icon: "mdi:brain",
     description:
-      "Develop actionable strategies to drive growth and stay ahead in your industry.",
+      "Design strategic roadmaps to integrate Artificial Intelligence into existing business systems and workflows effectively.",
   },
   {
-    title: "Customer Engagement",
-    icon: "mdi:account-group-outline",
-    description:
-      "Enhance customer journeys to boost satisfaction, loyalty, and long-term retention.",
-  },
-  {
-    title: "Training & Development",
+    title: "AI Training & Workforce Development",
     icon: "mdi:school",
     description:
-      "Equip your teams with skills and knowledge tailored to your corporate goals.",
+      "Equip employees with practical AI knowledge and skills while helping organizations attract and nurture top AI talent.",
+  },
+  {
+    title: "Intelligent Process Automation",
+    icon: "mdi:robot-outline",
+    description:
+      "Leverage AI-powered automation to improve operational efficiency, reduce manual workload, and enhance productivity.",
+  },
+  {
+    title: "AI-Driven Decision Intelligence",
+    icon: "mdi:chart-line",
+    description:
+      "Use advanced AI analytics and predictive models to support smarter and faster business decision-making.",
+  },
+  {
+    title: "Responsible & Sustainable AI",
+    icon: "mdi:leaf",
+    description:
+      "Implement ethical, transparent, and sustainable AI solutions that align with organizational values and long-term goals.",
+  },
+  {
+    title: "Industry-Specific AI Solutions",
+    icon: "mdi:domain",
+    description:
+      "Develop tailored AI systems for sectors such as automotive, logistics, finance, insurance, research, and the public sector.",
   },
 ];
 
@@ -192,13 +203,11 @@ export const adriaSolutionData: SolutionItem[] = [
 // =======================
 
 export const companies: CompanyItem[] = [
-  { image: "/images/companies/brand-1.webp" },
-  { image: "/images/companies/brand-2.webp" },
-  { image: "/images/companies/brand-3.webp" },
-  { image: "/images/companies/brand-4.webp" },
-  { image: "/images/companies/brand-5.webp" },
-  { image: "/images/companies/brand-2.webp" },
-  { image: "/images/companies/brand-4.webp" },
+  { name: "Corporate Entities" },
+  { name: "Government institutions" },
+  { name: "Research organizations" },
+  { name: "Educational institutions" },
+  { name: "Non-profit organizations" },
 ];
 
 // =======================
@@ -248,25 +257,25 @@ export const testimonial: TestimonialItem[] = [
   {
     id: 1,
     text:
-      "Working with Bexon has been a game-changer for our business. Their team’s professionalism, attention to detail, and innovative solutions have helped us streamline operations and achieve our goals faster than we imagined. We truly feel like a valued partner.",
-    name: "Ralph Edwards",
-    position: "Co. Founder",
+      "Artificial Intelligence is redefining global business. At Forum Invest, we combine advanced AI, engineering, and enterprise strategy to help organizations evolve into intelligent, adaptive ecosystems. Our focus is disciplined execution, scalable innovation, and strategic partnerships that create lasting competitive advantage.",
+    name: "Ivan Jedvej",
+    position: "CEO",
     image: "/images/testimonials/user.jpg",
   },
   {
     id: 2,
     text:
-      "The results we’ve seen after partnering with Bexon are beyond our expectations. They not only understood our vision but also brought new ideas to the table that have taken our business to the next level.",
-    name: "Guy Hawkins",
-    position: "Co. Founder",
+      "Technology leadership in the AI era demands precision, secure architecture, and continuous innovation. Forum Invest builds intelligent systems integrating AI, automation, and analytics into scalable infrastructures. Guided by research, cybersecurity, and performance optimization, we deliver reliable enterprise solutions designed for long-term impact.",
+    name: "Prof. Sasi Gopalan",
+    position: "CTO",
     image: "/images/testimonials/user2.jpg",
   },
   {
     id: 3,
     text:
-      "We’ve been working with Bexon for years, and they continue to deliver outstanding results. Their team is proactive, responsive, and always goes the extra mile.",
-    name: "Devon Lane",
-    position: "Co. Founder",
+      "Markets today are defined by intelligence. Forum Invest helps organizations redesign operations through AI integration, unlock predictive insights, and improve productivity while reducing costs. Our mission is to translate intelligent systems into measurable business performance and strong long-term market leadership.",
+    name: "Sherif",
+    position: "CMO",
     image: "/images/testimonials/user3.jpg",
   },
 ];
@@ -712,26 +721,61 @@ export const pricingData: PricingData = {
 
 export const processData: ProcessData = {
   header: {
-    subtitle: "Our Process",
+    subtitle: "Our Approach",
     title: "Bespoke AI Architectures for Industrial-Scale Success",
-    description: "Developing personalized customer journeys to increase satisfaction and loyalty.",
+    description: "Translating innovative AI research into scalable industrial applications.",
     buttonText: "Request a Call"
   },
   steps: [
     {
       stepNumber: "01",
-      title: "Discovery & Planning",
-      description: "The first step in our process is understanding your unique business needs, objectives, and our cutomes challenges."
+      title: "Understand",
+      description: "We begin by understanding the client’s ecosystem, data infrastructure, and operational challenges."
     },
     {
       stepNumber: "02",
-      title: "Execution & Delivery",
-      description: "Once the plan is in place, our team moves forward with execution, turning strategies into actiony to deliver"
+      title: "Design",
+      description: "Our experts design tailored AI strategies and architectures suited to the organization’s objectives."
     },
     {
       stepNumber: "03",
-      title: "Review & Support",
-      description: "After project completion, we conduct a thorough review to ensure everything aligns with your goals and requirements"
+      title: "Integrate",
+      description: "We seamlessly integrate AI solutions into existing platforms, workflows, and decision-making systems."
+    },
+    {
+      stepNumber: "04",
+      title: "Scale",
+      description: "Our solutions are built for scalability, ensuring long-term value as organizations grow."
+    }
+  ]
+};
+
+export const aiServicesData: AIServicesData = {
+  header: {
+    subtitle: "Our Core Services",
+    title: "Enabling Industrial Excellence Through Artificial Intelligence",
+    description: "We provide end-to-end AI solutions designed to transform operations and drive innovation."
+  },
+  services: [
+    {
+      title: "AI Integration & Implementation",
+      description: "We help organizations integrate AI into existing digital ecosystems, ensuring seamless adoption with minimal disruption.",
+      icon: "hugeicons:ai-idea"
+    },
+    {
+      title: "Intelligent Automation",
+      description: "Automation of workflows and business processes using AI to improve efficiency, accuracy, and speed.",
+      icon: "hugeicons:ai-cloud-01"
+    },
+    {
+      title: "Data Intelligence & Analytics",
+      description: "Transforming data into actionable insights through advanced analytics, predictive modelling, and machine learning.",
+      icon: "hugeicons:ai-network"
+    },
+    {
+      title: "AI Strategy & Consulting",
+      description: "Helping organizations design long-term AI roadmaps aligned with business goals, regulatory frameworks, and operational realities.",
+      icon: "hugeicons:ai-chat-02"
     }
   ]
 };
@@ -747,7 +791,8 @@ export const blogHeader: SectionHeader = {
 
 export const companiesHeader: SectionHeader = {
   subtitle: "Our Partners",
-  title: "Start Your Intelligence Transformation with MAT.AI"
+  title: "We work with",
+  description: "We collaborate across sectors to drive AI-powered transformation and deliver sustainable industrial excellence."
 };
 
 export const projectsHeader: SectionHeader = {
@@ -828,6 +873,36 @@ export const aboutData: AboutData = {
       icon: "streamline-plump:customer-support-3",
       title: "Dedicated Support",
       description: "Our team is always available to address your concerns, providing quick and effective solution to keep your business."
+    },
+    {
+      icon: "mdi:robot-outline",
+      title: "AI Integration Experts",
+      description: "We are a European technology company focused on helping organizations confidently adopt and integrate artificial intelligence into their operations."
+    },
+    {
+      icon: "carbon:machine-learning",
+      title: "Multidisciplinary Team",
+      description: "Our team combines expertise in AI engineering, data science, enterprise systems, and industry consulting to transform advanced AI technologies into practical solutions."
+    },
+    {
+      icon: "mdi:lightbulb-on-outline",
+      title: "Innovation Driven",
+      description: "We have built a forward-looking identity centered on innovation, insight, and reliability to deliver modern and effective technological solutions."
+    },
+    {
+      icon: "mdi:account-search-outline",
+      title: "Deep Client Understanding",
+      description: "Our experts carefully analyze client requirements, identifying challenges and opportunities to design solutions tailored to real operational environments."
+    },
+    {
+      icon: "mdi:cog-sync-outline",
+      title: "Tailored Solutions",
+      description: "We design and implement scalable AI solutions precisely aligned with organizational needs to deliver meaningful and sustainable results."
+    },
+    {
+      icon: "mdi:chart-line",
+      title: "Real AI Impact",
+      description: "By combining technical excellence with strategic insight, we help organizations move from experimentation to measurable and impactful AI adoption."
     }
   ],
   getToKnowUs: {
@@ -835,13 +910,24 @@ export const aboutData: AboutData = {
     title: "Driving Innovation and Excellence for Sustainable Corporate Success Worldwide.",
     mission: {
       title: "Our Mission",
-      description: "our mission is empower businesses through innovate best solution, exceptional service.",
-      points: ["Innovation & Excellence", "Exceptional Customer", "Business Growth"]
+      description: "",
+      points: [
+        "To simplify and enhance everyday life through the intelligent integration of Artificial Intelligence.",
+        "To develop AI-powered systems and platforms that create lasting value for present and future generations.",
+        "To nurture and empower a new generation of IT professionals capable of shaping the technological future.",
+        "To leverage emerging technologies and existing resources to build smarter systems, stronger institutions, and better opportunities for all.",
+        "To contribute to a world where individuals, organizations, and communities benefit from the responsible and intelligent use of technology."
+      ]
     },
     vision: {
       title: "Our Vision",
-      description: "Our vision is to become a global leader in providing transformative business solutions.",
-      points: ["Global Leadership", "Transformative Impact", "Sustainable Success"]
+      description: "",
+      points: [
+        "To become a trusted global partner for organizations seeking to responsibly integrate artificial intelligence into the fabric of their operations and decision-making systems.",
+        "To make advanced technology accessible, affordable, and impactful for every sector of society.",
+        "To redefine the application of technology as a driver of sustainable growth, innovation, and shared prosperity.",
+        "To encourage and support research, innovation, and practical applications of technology that accelerate progress across industries and domains."
+      ]
     },
     buttonText: "Learn More About Us"
   }

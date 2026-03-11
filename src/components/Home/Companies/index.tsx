@@ -1,5 +1,5 @@
 "use client";
-import { Autoplay } from "swiper/modules";
+import { Autoplay, FreeMode } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import React from 'react';
 import "swiper/css";
@@ -18,39 +18,87 @@ const Companies: React.FC = () => {
                         <span className='sub-title text-14 bg-prim text-white py-1 rounded-xl relative font-chakrapetch capitalize ps-5 pe-3'>
                             {companiesHeader.subtitle}
                         </span>
-                        <h2 className='mt-4 font-chakrapetch lg:text-35 font-semibold'>{companiesHeader.title}</h2>
+                        <h2 className='mt-4 font-chakrapetch lg:text-35 font-semibold text-dark'>{companiesHeader.title}</h2>
+                        {companiesHeader.description && (
+                            <p className="mt-4 text-dark max-w-2xl mx-auto text-18">
+                                {companiesHeader.description}
+                            </p>
+                        )}
                     </div>
                 </div>
-                <div className="relative mt-10">
+                <div className="relative mt-12 overflow-hidden flex flex-col gap-1.5">
+                    <style dangerouslySetInnerHTML={{
+                        __html: `
+                        .companies-swiper {
+                            width: 100% !important;
+                            max-width: 100% !important;
+                        }
+                        .companies-swiper .swiper-wrapper {
+                            transition-timing-function: linear !important;
+                        }
+                    `}} />
+
+                    {/* FIRST ROW - NORMAL DIRECTION */}
                     <Swiper
-                        modules={[Autoplay]}
-                        spaceBetween={30}
-                        slidesPerView={5}
+                        modules={[Autoplay, FreeMode]}
+                        spaceBetween={20}
+                        slidesPerView={3}
                         loop={true}
-                        speed={3000}
+                        freeMode={true}
+                        speed={5000}
                         autoplay={{
                             delay: 0,
                             disableOnInteraction: false,
                         }}
-                        allowTouchMove={false}
+                        allowTouchMove={true}
                         breakpoints={{
-                            320: { slidesPerView: 2 },
-                            640: { slidesPerView: 3 },
-                            768: { slidesPerView: 4 },
-                            1024: { slidesPerView: 5 },
+                            480: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                            1280: { slidesPerView: 3 },
                         }}
-                        className="companies-swiper relative"
+                        className="companies-swiper w-full"
                     >
                         {companies.map((company, index) => (
                             <SwiperSlide key={index}>
-                                <div className="companies-item h-[100px] w-full bg-white shadow-xl px-8 rounded-xl flex items-center justify-center cursor-pointer">
-                                    <Image
-                                        src={company.image}
-                                        alt={`brand-${index + 1}`}
-                                        width={150}
-                                        height={80}
-                                        className="object-contain"
-                                    />
+                                <div className="companies-item h-[80px] w-full bg-white border border-gray-100 shadow-sm px-6 rounded-xl flex items-center justify-center cursor-pointer hover:shadow-md transition-shadow duration-300">
+                                    <h3 className="text-16 lg:text-18 font-medium text-dark text-center">
+                                        {company.name}
+                                    </h3>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+
+                    {/* SECOND ROW - OPPOSITE DIRECTION */}
+                    <Swiper
+                        modules={[Autoplay, FreeMode]}
+                        spaceBetween={20}
+                        slidesPerView={3}
+                        loop={true}
+                        freeMode={true}
+                        speed={5000}
+                        autoplay={{
+                            delay: 0,
+                            disableOnInteraction: false,
+                            reverseDirection: true,
+                        }}
+                        allowTouchMove={true}
+                        breakpoints={{
+                            480: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                            1280: { slidesPerView: 3 },
+                        }}
+                        className="companies-swiper w-full"
+                    >
+                        {/* Reverse the array to show different items at the start if possible, or just repeat */}
+                        {[...companies].reverse().map((company, index) => (
+                            <SwiperSlide key={`rev-${index}`}>
+                                <div className="companies-item h-[80px] w-full bg-white border border-gray-100 shadow-sm px-6 rounded-xl flex items-center justify-center cursor-pointer hover:shadow-md transition-shadow duration-300">
+                                    <h3 className="text-16 lg:text-18 font-medium text-dark text-center">
+                                        {company.name}
+                                    </h3>
                                 </div>
                             </SwiperSlide>
                         ))}
