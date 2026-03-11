@@ -74,26 +74,9 @@ const Footer = () => {
                             <Logo />
                         </div>
                         <p className="text-[14px] leading-6 text-foottext">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-                            repudiandae animi iusto nisi similique quas saepe nam soluta,
-                            natus sit?
+                            We empower organizations with innovative technology solutions that enhance efficiency, accelerate growth, and drive digital transformation, helping businesses and institutions solve complex challenges and build a smarter, more connected future.
                         </p>
-                        <div className="flex flex-wrap gap-3 items-center pt-5">
-                            <Image
-                                src="/images/footer/award-logo-1.webp"
-                                alt="award-logo-1"
-                                width={70}
-                                height={70}
-                                className="p-2 cursor-pointer bg-black"
-                            />
-                            <Image
-                                src="/images/footer/award-logo-2.webp"
-                                alt="award-logo-2"
-                                width={70}
-                                height={70}
-                                className="bg-black p-2 cursor-pointer"
-                            />
-                        </div>
+
                     </div>
 
                     {/* Middle Columns */}
@@ -153,29 +136,7 @@ const Footer = () => {
                             </div>
                         </form>
 
-                        <p className="text-[18px] text-black font-bold font-chakrapetch pt-10 pb-4">
-                            Get App
-                        </p>
-                        <div className="flex flex-wrap gap-4">
-                            <a href="#">
-                                <Image
-                                    src="/images/footer/google.webp"
-                                    alt="Google Play"
-                                    width={140}
-                                    height={45}
-                                    className="w-auto h-auto"
-                                />
-                            </a>
-                            <a href="#">
-                                <Image
-                                    src="/images/footer/app.webp"
-                                    alt="App Store"
-                                    width={140}
-                                    height={45}
-                                    className="w-auto h-auto"
-                                />
-                            </a>
-                        </div>
+
                     </div>
                 </div>
 
@@ -188,20 +149,20 @@ const Footer = () => {
                             target="_blank"
                             className="hover:text-prim"
                         >
-                            UIcode
+                            Forum Invest
                         </Link>
                     </p>
-                    <div className="flex gap-4">
-                        {footerLinks.slice(12, 15).map((item, index) => (
-                            <Link
-                                key={index}
-                                href="#"
-                                className="text-foottext hover:text-prim text-[15px]"
-                            >
-                                {item.link}
-                            </Link>
-                        ))}
-                    </div>
+
+                    <p className="text-[15px] text-foottext">
+                        Developed by{" "}
+                        <Link
+                            href="https://www.linkedin.com/in/ruvais-p"
+                            target="_blank"
+                            className="hover:text-prim"
+                        >
+                            Ruvais P
+                        </Link>
+                    </p>
                 </div>
             </div>
         </footer>

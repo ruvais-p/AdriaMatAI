@@ -10,7 +10,7 @@ const AIServices: React.FC = () => {
     if (!aiServicesData) return null;
 
     return (
-        <section id="ai-services" className="bg-[#050608] overflow-hidden py-14 lg:py-18 xl:py-22 relative">
+        <section id="ai-services" className="bg-[#2d3137] overflow-hidden py-14 lg:py-18 xl:py-22 relative">
             <InteractiveBackground />
 
             <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 relative z-10">
@@ -32,8 +32,9 @@ const AIServices: React.FC = () => {
                     {aiServicesData.services.map((service, index) => (
                         <div
                             key={index}
-                            className="ai-service-card group bg-white/5 border border-white/10 p-8 rounded-2xl hover:bg-white/10 transition-all duration-500 hover:border-prim/50 flex flex-col items-start gap-6 backdrop-blur-md relative overflow-hidden"
+                            className="ai-service-card group bg-white border border-gray-200 p-8 rounded-2xl hover:shadow-lg transition-all duration-500 hover:border-prim/50 flex flex-col items-start gap-6 relative overflow-hidden"
                         >
+
                             {/* Card Glow Effect */}
                             <div className="absolute -inset-2 bg-prim/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
 
@@ -47,19 +48,21 @@ const AIServices: React.FC = () => {
                             </div>
 
                             <div className="content relative z-10">
-                                <h3 className="text-22 lg:text-24 font-chakrapetch font-bold text-white mb-4 group-hover:text-prim transition-colors duration-500">
+                                <h3 className="text-22 lg:text-24 font-chakrapetch font-bold text-black mb-4 group-hover:text-prim transition-colors duration-500">
                                     {service.title}
                                 </h3>
-                                <p className="text-gray-400 text-16 lg:text-17 leading-relaxed group-hover:text-gray-300 transition-colors duration-500">
+
+                                <p className="text-gray-600 text-16 lg:text-17 leading-relaxed group-hover:text-gray-700 transition-colors duration-500">
                                     {service.description}
                                 </p>
                             </div>
 
                             {/* Decorative Corner Line */}
-                            <div className="absolute bottom-0 right-0 w-12 h-12 border-r-2 border-b-2 border-transparent group-hover:border-prim/30 rounded-br-2xl transition-all duration-500"></div>
+                            <div className="absolute bottom-0 right-0 w-12 h-12 border-r-2 border-b-2 border-transparent group-hover:border-prim/40 rounded-br-2xl transition-all duration-500"></div>
                         </div>
                     ))}
                 </div>
+
             </div>
         </section>
     );

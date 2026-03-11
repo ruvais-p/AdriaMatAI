@@ -90,8 +90,17 @@ export const companies: CompanyItem[] = [
   { name: "Korporativni subjekti" },
   { name: "Vladine institucije" },
   { name: "Istraživačke organizacije" },
-  { name: "Obrazovne ustanove" },
+  { name: "Obrazovne institucije" },
   { name: "Neprofitne organizacije" },
+  { name: "Automobilska industrija i mobilnost" },
+  { name: "Osiguranje i financijske usluge" },
+  { name: "Logistika i lanac opskrbe" },
+  { name: "Proizvodnja" },
+  { name: "Zdravstvo i biološke znanosti" },
+  { name: "Vlada i javna uprava" },
+  { name: "Istraživačke institucije" },
+  { name: "Obrazovne i akademske institucije" },
+  { name: "Maloprodaja i e-trgovina" },
 ];
 
 // =======================
@@ -177,27 +186,6 @@ export const footerLinks: FooterLink[] = [
   { link: "Centar za razvoj" },
   { link: "Kontaktirajte nas" },
   { link: "Član tima" },
-  {
-    link: "Priznanja",
-  },
-  {
-    link: "Karijere",
-  },
-  {
-    link: "Novosti",
-  },
-  {
-    link: "Povratne informacije",
-  },
-  {
-    link: "Privatnost",
-  },
-  {
-    link: "Sigurnost",
-  },
-  {
-    link: "Odricanje",
-  },
 ];
 
 // blogs

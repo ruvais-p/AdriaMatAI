@@ -208,6 +208,15 @@ export const companies: CompanyItem[] = [
   { name: "Research organizations" },
   { name: "Educational institutions" },
   { name: "Non-profit organizations" },
+  { name: "Automotive & Mobility" },
+  { name: "Insurance & Financial Services" },
+  { name: "Logistics & Supply Chain" },
+  { name: "Manufacturing" },
+  { name: "Healthcare & Life Sciences" },
+  { name: "Government & Public Administration" },
+  { name: "Research Institutions" },
+  { name: "Education & Academic Institutions" },
+  { name: "Retail & E-commerce" },
 ];
 
 // =======================
@@ -293,27 +302,6 @@ export const footerLinks: FooterLink[] = [
   { link: "Development Hub" },
   { link: "Contact us" },
   { link: "Team Member" },
-  {
-    link: "Recognitions",
-  },
-  {
-    link: "Careers",
-  },
-  {
-    link: "News",
-  },
-  {
-    link: "Feedback",
-  },
-  {
-    link: "Privacy",
-  },
-  {
-    link: "Security",
-  },
-  {
-    link: "Disclaimer",
-  },
 ];
 
 // blogs

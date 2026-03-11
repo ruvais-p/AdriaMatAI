@@ -110,19 +110,6 @@ const ServiceDetails = ({ params }: Props) => {
                                 ))}
                             </ul>
 
-                            <div className="flex gap-3 flex-wrap md:flex-nowrap">
-                                {service.gallery ? (
-                                    service.gallery.map((img, idx) => (
-                                        <Image key={idx} src={img} alt={`${service.title} gallery ${idx}`} width={400} height={200} className="w-full rounded-lg object-cover" />
-                                    ))
-                                ) : (
-                                    <>
-                                        <Image src={service1} alt="service-image-1" width={200} height={200} className="w-full rounded-lg h-full" />
-                                        <Image src={service2} alt="service-image-2" width={200} height={200} className="w-full rounded-lg h-full" />
-                                    </>
-                                )}
-                            </div>
-
                             <h4 className="font-unbounded font-medium text-3xl">
                                 {service.rangeOfServicesTitle || "Our Range of Customer Services"}
                             </h4>
