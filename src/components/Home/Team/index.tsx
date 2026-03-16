@@ -28,7 +28,7 @@ const Team: React.FC<TeamProps> = ({ limit }) => {
                 <div className="team-wrapper grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {displayedTeam.map((member) => (
                         <div key={member.id} className="team-item group">
-                            <div className="team-image bg-white rounded-xl overflow-hidden relative">
+                            <div className="team-image bg-white rounded-xl overflow-hidden relative aspect-square">
                                 <Image
                                     src={member.image}
                                     alt={member.name}

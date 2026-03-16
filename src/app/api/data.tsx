@@ -967,51 +967,75 @@ export const protfolio = [
 export const team = [
   {
     id: 1,
-    name: "Eade Marren",
+    name: "Prof.(Dr.) Sasi Gopalan",
     post: "Chief Executive",
-    image: "/images/team/team-1.webp"
+    image: "/images/team/team-1.jpeg"
   },
   {
     id: 2,
-    name: "Savannah Nguyen",
-    post: "Operations Head",
-    image: "/images/team/team-2.webp"
+    name: "Mr. Rohit T P",
+    post: "Solutions Architect",
+    image: "/images/team/team-2.jpg"
   },
   {
     id: 3,
-    name: "Kristin Watson",
-    post: "Marketing Lead",
-    image: "/images/team/team-3.webp"
+    name: "Mr. Sunith V S",
+    post: "Senior Software Engineer",
+    image: "/images/team/team-3.jpg"
   },
   {
     id: 4,
-    name: "Darlene Robertson",
-    post: "Business Director",
-    image: "/images/team/team-4.webp"
+    name: "Varsha Shaheen",
+    post: "Research and Development Engineer",
+    image: "/images/team/team-4.jpg"
   },
   {
     id: 5,
-    name: "Eade Marren",
-    post: "Chief Executive",
-    image: "/images/team/team-5.webp"
+    name: "Anand K Vinu",
+    post: "Compiler Engineer",
+    image: "/images/team/team-5.jpg"
   },
   {
     id: 6,
-    name: "Darlene Robertson",
-    post: "Business Director",
-    image: "/images/team/team-7.webp"
+    name: "Aswin Pradeep",
+    post: "ML Engineer",
+    image: "/images/team/team-6.jpg"
   },
   {
     id: 7,
-    name: "Kristin Watson",
-    post: "Marketing Lead",
-    image: "/images/team/team-6.webp"
+    name: "Shambu Raj",
+    post: "Mathematician",
+    image: "/images/team/team-7.jpg"
   },
   {
     id: 8,
-    name: "Savannah Nguyen",
-    post: "Operations Head",
-    image: "/images/team/team-8.webp"
+    name: "Athira Vinay",
+    post: "Mathematician",
+    image: "/images/team/team-8.jpg"
+  },
+  {
+    id: 9,
+    name: "Dr.Girija O K",
+    post: "AI Researcher",
+    image: "/images/team/team-9.jpeg"
+  },
+  {
+    id: 10,
+    name: "Dr. Dhanya K Sudhish",
+    post: "AI/ML Supply Chain Analytics",
+    image: "/images/team/team-10.jpeg"
+  },
+  {
+    id: 11,
+    name: "Dr. Midhun",
+    post: "AI and robotics specialist",
+    image: "/images/team/team-11.jpeg"
+  },
+  {
+    id: 12,
+    name: "Sebin Thomas",
+    post: "AI engineer",
+    image: "/images/team/teamn-12.jpeg"
   },
 ]
 // =======================
