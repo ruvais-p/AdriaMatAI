@@ -82,8 +82,8 @@ const ShaderPlane = () => {
         () => ({
             uTime: { value: 0 },
             uMouse: { value: new THREE.Vector2(0, 0) },
-            uColor1: { value: new THREE.Color("#050608") },
-            uColor2: { value: new THREE.Color("#161b22") }, // Slightly lighter than bg
+            uColor1: { value: new THREE.Color("#f0f4f8") }, // Very light blue/gray
+            uColor2: { value: new THREE.Color("#ffffff") }, // White
         }),
         []
     );

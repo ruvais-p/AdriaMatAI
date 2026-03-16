@@ -14,15 +14,13 @@ import InteractiveBackground from "@/components/SharedComponents/InteractiveBack
 const Projects: React.FC = () => {
     const { projects, projectsHeader } = useData();
     return (
-        <section id="projects" className="bg-[#2d3137] overflow-hidden py-14 lg:py-18 xl:py-22 relative">
-            <InteractiveBackground />
-
+        <section id="projects" className="bg-light overflow-hidden py-14 lg:py-18 xl:py-22 bg-prim-light">
             <div className="container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) px-4 space-y-14 relative z-10">
                 <div className="projects-content text-center mb-10">
                     <span className='sub-title text-14 bg-prim text-white py-1 rounded-xl relative font-chakrapetch capitalize ps-5 pe-3'>
                         {projectsHeader.subtitle}
                     </span>
-                    <h2 className='mt-6 font-chakrapetch text-30 lg:text-45 font-bold text-white leading-tight max-w-3xl mx-auto'>{projectsHeader.title}</h2>
+                    <h2 className='mt-6 font-chakrapetch text-30 lg:text-45 font-bold text-black leading-tight max-w-3xl mx-auto'>{projectsHeader.title}</h2>
                 </div>
                 <style dangerouslySetInnerHTML={{
                     __html: `
@@ -101,7 +99,7 @@ const Projects: React.FC = () => {
             </Swiper>
 
             <div className="container mx-auto px-4 mt-16 lg:mt-24 flex flex-col items-center text-center relative z-10">
-                <p className="text-white font-chakrapetch text-18 lg:text-22 mb-10 max-w-2xl">
+                <p className="text-black font-chakrapetch text-18 lg:text-22 mb-10 max-w-2xl">
                     Ready to bring your vision to life? Let&apos;s build something extraordinary together.
                 </p>
                 <Link
