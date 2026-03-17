@@ -966,10 +966,16 @@ export const protfolio = [
 
 export const team = [
   {
-    id: 1,
+    id: 0,
     name: "Prof.(Dr.) Sasi Gopalan",
     post: "Chief Executive",
     image: "/images/team/team-1.jpeg"
+  },
+  {
+    id: 1,
+    name: "Dr. Sabu M K",
+    post: "Generative AI",
+    image: "/images/team/team-2.jpeg"
   },
   {
     id: 2,
@@ -1004,13 +1010,13 @@ export const team = [
   {
     id: 7,
     name: "Shambu Raj",
-    post: "Mathematician",
+    post: "Mathematical Optimisation",
     image: "/images/team/team-7.jpg"
   },
   {
     id: 8,
     name: "Athira Vinay",
-    post: "Mathematician",
+    post: "Quantum Optimization",
     image: "/images/team/team-8.jpg"
   },
   {
@@ -1033,6 +1039,13 @@ export const team = [
   },
   {
     id: 12,
+    name: "Suraj Sunil",
+    post: "AI engineer",
+    image: "/images/team/team-13.jpeg"
+  },
+
+  {
+    id: 13,
     name: "Sebin Thomas",
     post: "AI engineer",
     image: "/images/team/teamn-12.jpeg"
