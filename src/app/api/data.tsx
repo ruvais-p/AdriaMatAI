@@ -991,19 +991,19 @@ export const team = [
   },
   {
     id: 4,
-    name: "Varsha Shaheen",
+    name: "Ms. Varsha Shaheen",
     post: "Research and Development Engineer",
     image: "/images/team/team-4.jpg"
   },
   {
     id: 5,
-    name: "Anand K Vinu",
+    name: "Mr. Anand K Vinu",
     post: "Compiler Engineer",
     image: "/images/team/team-5.jpg"
   },
   {
     id: 6,
-    name: "Aswin Pradeep",
+    name: "Mr. Aswin Pradeep",
     post: "ML Engineer",
     image: "/images/team/team-6.jpg"
   },
@@ -1015,8 +1015,8 @@ export const team = [
   },
   {
     id: 8,
-    name: "Athira Vinay",
-    post: "Quantum Optimization",
+    name: "Ms. Athira Vinay",
+    post: "AI & Quantum Optimization.",
     image: "/images/team/team-8.jpg"
   },
   {
@@ -1033,22 +1033,35 @@ export const team = [
   },
   {
     id: 11,
-    name: "Dr. Midhun",
-    post: "AI and robotics specialist",
+    name: "Dr. Midhun M S",
+    post: "AI and Robotics Engineer",
     image: "/images/team/team-11.jpeg"
   },
   {
     id: 12,
-    name: "Suraj Sunil",
+    name: "Mr. Suraj Sunil",
     post: "AI engineer",
     image: "/images/team/team-13.jpeg"
   },
-
   {
     id: 13,
-    name: "Sebin Thomas",
+    name: "Mr. Sebin Thomas",
     post: "AI engineer",
     image: "/images/team/teamn-12.jpeg"
+  },
+
+  {
+    id: 14,
+    name: "Dr. Suja C Nair",
+    post: "Data mining and machine learning",
+    image: "/images/team/team-14.jpeg"
+  },
+
+  {
+    id: 15,
+    name: "Dr. Lijin P",
+    post: "Computer Vision and Biomedical Image Analysis",
+    image: "/images/team/team-15.jpeg"
   },
 ]
 // =======================
