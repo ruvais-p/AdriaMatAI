@@ -9,7 +9,6 @@ import Image from "next/image";
 import { useData } from "@/hooks/useData";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
-import InteractiveBackground from "@/components/SharedComponents/InteractiveBackground";
 
 const Projects: React.FC = () => {
     const { projects, projectsHeader } = useData();

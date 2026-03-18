@@ -5,8 +5,6 @@ import Image from "next/image";
 import HeroSub from "@/components/SharedComponents/HeroSub";
 import { Icon } from "@iconify/react";
 import { useData } from "@/hooks/useData";
-import service1 from '@/../public/images/services/service-02.webp';
-import service2 from '@/../public/images/services/service-03.webp';
 import Link from "next/link";
 
 type FAQItem = {

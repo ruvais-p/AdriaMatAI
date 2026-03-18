@@ -2,7 +2,6 @@
 
 import { useData } from "@/hooks/useData";
 import { Icon } from "@iconify/react";
-import InteractiveBackground from "@/components/SharedComponents/InteractiveBackground";
 
 const AIServices: React.FC = () => {
     const { aiServicesData } = useData();

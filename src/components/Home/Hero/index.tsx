@@ -2,6 +2,7 @@
 import { Icon } from '@iconify/react';
 import Link from 'next/link';
 import React from 'react';
+import Image from 'next/image';
 import { useData } from '@/hooks/useData';
 
 const Hero: React.FC = () => {
@@ -11,11 +12,11 @@ const Hero: React.FC = () => {
             <div id="hero" className='hero h-screen w-full bg-midnight_text relative overflow-hidden pt-44 pb-20'>
                 <div className="hero-image bg-[url(/images/hero/hero-bg.jpg)] absolute top-0 left-0 w-full h-full bg-cover bg-no-repeat"></div>
                 <div className="shape-1 absolute z-30 top-0 left-0 w-[300px] h-auto flex justify-start items-start">
-                    <img src="/images/hero/pattern-2.svg" alt="element-image" />
+                    <Image src="/images/hero/pattern-2.svg" alt="element-image" width={300} height={300} />
                 </div>
 
                 <div className="shape-2 absolute z-30 right-0 bottom-0 w-[300px] h-auto flex justify-center items-center">
-                    <img src="/images/hero/pattern-3.svg" alt="element-image" />
+                    <Image src="/images/hero/pattern-3.svg" alt="element-image" width={300} height={300} />
                 </div>
 
                 <div className='container mx-auto lg:max-w-(--breakpoint-xl) md:max-w-(--breakpoint-md) z-20 relative text-white px-4 h-full flex flex-col justify-center items-start'>
