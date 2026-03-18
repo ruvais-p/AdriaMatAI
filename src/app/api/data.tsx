@@ -1009,7 +1009,7 @@ export const team = [
   },
   {
     id: 7,
-    name: "Shambu Raj",
+    name: "Dr. Shambu Raj",
     post: "Mathematical Optimisation",
     image: "/images/team/team-7.jpg"
   },
@@ -1021,7 +1021,7 @@ export const team = [
   },
   {
     id: 9,
-    name: "Dr.Girija O K",
+    name: "Dr. Girija O K",
     post: "AI Researcher",
     image: "/images/team/team-9.jpeg"
   },
