@@ -20,10 +20,6 @@ export const headerData: HeaderItem[] = [
             { label: "Services Details", href: "/services/business-strategy-development" }
         ]
     },
-    {
-        label: "Protfolio",
-        href: "/protfolio",
-    },
-
+    { label: "Team", href: "/team" },
     { label: "Contact", href: "contact" },
 ]

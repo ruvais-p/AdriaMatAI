@@ -5,7 +5,6 @@ import React from 'react';
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import Image from "next/image";
 import { useData } from "@/hooks/useData";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
@@ -47,22 +46,10 @@ const Projects: React.FC = () => {
             >
                 {projects.concat(projects).map((project, index) => (
                     <SwiperSlide key={index}>
-                        <div className="project-item flex flex-col sm:flex-row justify-center items-stretch w-full bg-white border border-gray-200 p-8 rounded-2xl gap-8 h-[520px] group hover:shadow-lg transition-all duration-500">
-
-                            {/* Image */}
-                            <div className="project-image w-full sm:w-[50%] h-full relative overflow-hidden rounded-xl">
-                                <Image
-                                    src={project.image}
-                                    width={600}
-                                    height={600}
-                                    alt="project-image"
-                                    className="w-full h-full object-cover rounded-xl group-hover:scale-110 transition-transform duration-700"
-                                />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                            </div>
+                        <div className="project-item flex flex-col justify-center w-full bg-white border-2 border-black p-8 rounded-2xl gap-8 h-auto group hover:shadow-lg transition-all duration-500">
 
                             {/* Content */}
-                            <div className="project-content w-full sm:w-[50%] flex flex-col justify-between h-full">
+                            <div className="project-content w-full flex flex-col justify-between h-full">
 
                                 <div>
                                     <span className="bg-prim/10 border border-prim/20 rounded-lg px-4 py-1 text-prim font-chakrapetch font-medium text-14 mb-4 inline-block">

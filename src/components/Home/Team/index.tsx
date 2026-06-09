@@ -30,7 +30,7 @@ const Team: React.FC<TeamProps> = ({ limit }) => {
                         <div key={member.id} className="team-item group">
                             <div className="team-image bg-white rounded-xl overflow-hidden relative aspect-square">
                                 <Image
-                                    src={member.image}
+                                    src={member.image || "/images/team/placeholder.jpg"}
                                     alt={member.name}
                                     width={200}
                                     height={200}

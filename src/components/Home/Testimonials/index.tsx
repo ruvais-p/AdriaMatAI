@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Icon } from "@iconify/react";
-import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
@@ -29,31 +28,9 @@ const Testimonials: React.FC = () => {
         >
           {testimonial.map((item) => (
             <SwiperSlide key={item.id}>
-              <div className="testimonials-item w-full flex h-auto lg:h-[550px] gap-5 flex-wrap lg:flex-nowrap">
-                {/* LEFT IMAGE & METADATA */}
-                <div className="w-full lg:w-1/2 flex flex-col gap-4">
-                  <div className="w-full h-[300px] lg:h-full rounded-2xl overflow-hidden relative">
-                    <Image
-                      src={item.image}
-                      alt={item.name}
-                      width={600}
-                      height={600}
-                      className="w-full h-full object-cover"
-                    />
-                    <div className="absolute inset-0 bg-black/10" />
-                  </div>
-                  <div className="px-2">
-                    <h4 className="text-20 lg:text-24 font-semibold text-dark">
-                      {item.name}
-                    </h4>
-                    <span className="text-pera-light text-16">
-                      {item.position}
-                    </span>
-                  </div>
-                </div>
-
-                {/* RIGHT SLIDER CONTENT (TESTIMONIAL TEXT ONLY) */}
-                <div className="w-full lg:w-1/2 bg-white shadow-lg p-8 rounded-2xl h-full flex flex-col justify-center">
+              <div className="testimonials-item w-full flex justify-center">
+                {/* TESTIMONIAL CARD */}
+                <div className="w-full max-w-3xl bg-white shadow-lg p-8 md:p-12 rounded-2xl flex flex-col justify-center">
                   <Icon
                     icon="iconoir:quote-solid"
                     width={90}
@@ -61,9 +38,18 @@ const Testimonials: React.FC = () => {
                     className="text-dark mb-6"
                   />
 
-                  <p className="text-pera-dark text-16 md:text-22 leading-7 md:leading-8">
+                  <p className="text-pera-dark text-16 md:text-22 leading-7 md:leading-8 mb-8">
                     {item.text}
                   </p>
+
+                  <div>
+                    <h4 className="text-20 lg:text-24 font-semibold text-dark">
+                      {item.name}
+                    </h4>
+                    <span className="text-pera-light text-16">
+                      {item.position}
+                    </span>
+                  </div>
                 </div>
               </div>
             </SwiperSlide>
