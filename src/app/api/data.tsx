@@ -967,7 +967,7 @@ export const protfolio = [
 export const team = [
   {
     id: -3,
-    name: "Dr. Mihael Jedvaj",
+    name: "Mr. Mihael Jedvaj",
     post: "Chief Executive Officer",
     image: "/images/team/ivan_ceo.jpeg"
   },
@@ -985,7 +985,7 @@ export const team = [
   },
   {
     id: 0,
-    name: "Abdu Rahman Mohammad Sherif",
+    name: "Mr. Abdu Rahman Mohammad Sherif",
     post: "Business Analyst",
     image: "/images/team/business_analyst.jpg"
   },
