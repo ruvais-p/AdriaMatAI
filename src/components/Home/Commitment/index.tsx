@@ -35,21 +35,21 @@ const Commitment: React.FC = () => {
                             </h2>
                             <div className='flex w-full items-center pt-8 pb-10 overflow-hidden'>
                                 <Image
-                                    src="/images/commitment/user1.jpg"
+                                    src="/images/team/team-3.jpg"
                                     alt="avatar-image"
                                     width={100}
                                     height={200}
                                     className="object-cover w-[100px] h-[100px] rounded-full scale-105 border-4 border-white shadow-xl translate-x-3"
                                 />
                                 <Image
-                                    src="/images/commitment/user2.jpg"
+                                    src="/images/team/team-4.jpg"
                                     alt="avatar-image"
                                     width={100}
                                     height={200}
                                     className="object-cover w-[120px] h-[120px] rounded-full scale-110 border-4 border-white shadow-xl z-2"
                                 />
                                 <Image
-                                    src="/images/commitment/user3.jpg"
+                                    src="/images/team/team-2.jpg"
                                     alt="avatar-image"
                                     width={100}
                                     height={200}

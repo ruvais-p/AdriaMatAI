@@ -14,15 +14,15 @@ const HeaderLinks: React.FC<{ item: HeaderItem; isLight?: boolean }> = ({
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Detect scroll
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
-    };
-
+    const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const isHome = path === "/";
+  // Dark glassy always on inner pages; on homepage only when scrolled
+  const isDark = !isHome || scrolled;
 
   return (
     <div
@@ -66,7 +66,7 @@ const HeaderLinks: React.FC<{ item: HeaderItem; isLight?: boolean }> = ({
             shadow-[0_8px_32px_rgba(0,0,0,0.35)]
             overflow-hidden z-50
             transition-all duration-300 ease-out
-            ${scrolled
+            ${isDark
               ? "bg-black/60 border-white/10"
               : "bg-white/15 border-white/20"
             }
@@ -80,7 +80,7 @@ const HeaderLinks: React.FC<{ item: HeaderItem; isLight?: boolean }> = ({
           <div
             className={`
               absolute inset-0 pointer-events-none
-              ${scrolled
+              ${isDark
                 ? "bg-gradient-to-b from-white/10 to-transparent"
                 : "bg-gradient-to-b from-white/25 to-transparent"
               }

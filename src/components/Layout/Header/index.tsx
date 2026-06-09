@@ -7,10 +7,13 @@ import Link from "next/link";
 import { Icon } from "@iconify/react";
 import MobileHeaderLink from "./Navigation/mobileheaderLinks";
 import LanguageChanger from "./LanguageChanger";
+import { usePathname } from "next/navigation";
 
 const Header: React.FC = () => {
   const [sticky, setSticky] = useState(false);
   const [navbarOpen, setNavbarOpen] = useState(false);
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
@@ -22,11 +25,14 @@ const Header: React.FC = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // On inner pages always use dark glassy; on homepage use dark only when sticky
+  const isDark = !isHome || sticky;
+
   return (
     <>
       <header
         className={`fixed h-20 px-4 top-5 left-[2.5%] py-1 z-50 w-[95%] flex navbar items-center transition-all duration-500 rounded-3xl 
-        ${sticky
+        ${isDark
             ? "bg-black/80 backdrop-blur-lg shadow-lg w-[90%]"
             : "bg-white/10 backdrop-blur-sm"
           }`}
