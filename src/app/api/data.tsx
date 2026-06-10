@@ -266,9 +266,17 @@ export const testimonial: TestimonialItem[] = [
   {
     id: 1,
     text:
+      "Artificial Intelligence is transforming global business, making intelligence the key driver of market leadership. Forum Invest helps organizations harness AI through advanced engineering, enterprise strategy, and global research collaboration. We build scalable, compliant, and cost-efficient intelligent systems that enhance productivity, reduce costs, unlock predictive insights, and create sustainable competitive advantages.",
+    name: "Mihael Jedvej",
+    position: "CEO",
+    image: "/images/testimonials/user.jpg",
+  },
+  {
+    id: 1,
+    text:
       "Artificial Intelligence is redefining global business. At Forum Invest, we combine advanced AI, engineering, and enterprise strategy to help organizations evolve into intelligent, adaptive ecosystems. Our focus is disciplined execution, scalable innovation, and strategic partnerships that create lasting competitive advantage.",
     name: "Ivan Jedvej",
-    position: "CEO",
+    position: "CFO",
     image: "/images/testimonials/user.jpg",
   },
   {
@@ -287,6 +295,7 @@ export const testimonial: TestimonialItem[] = [
     position: "CMO",
     image: "/images/testimonials/user3.jpg",
   },
+
 ];
 
 // =======================
@@ -985,7 +994,7 @@ export const team = [
   },
   {
     id: 0,
-    name: "Mr. Abdu Rahman Mohammad Sherif",
+    name: "Dr. Abdu Rahman Mohammad Sherif",
     post: "Business Analyst",
     image: "/images/team/business_analyst.jpg"
   },
