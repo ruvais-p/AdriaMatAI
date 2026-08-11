@@ -990,7 +990,7 @@ export const team = [
     id: -1,
     name: "Prof.(Dr.) Sasi Gopalan",
     post: "Chief Technology Officer",
-    image: "/images/team/team-1.jpeg"
+    image: ""
   },
   {
     id: 0,
@@ -1003,7 +1003,7 @@ export const team = [
     id: 1,
     name: "Dr. Sabu M K",
     post: "Generative AI",
-    image: "/images/team/team-2.jpeg"
+    image: ""
   },
   {
     id: 2,
@@ -1086,10 +1086,17 @@ export const team = [
   },
 
   {
-    id: 15,
-    name: "Dr. Lijin P",
-    post: "Computer Vision and Biomedical Image Analysis",
-    image: "/images/team/team-15.jpeg"
+    id: 16,
+    name: "Jayadev Sekhar C O",
+    post: "CCybersecurity Engineer",
+    image: "/images/team/jayadev.jpeg"
+  },
+
+  {
+    id: 17,
+    name: "Mariya Benny ",
+    post: "AI & Data Science",
+    image: "/images/team/maria.jpeg"
   },
 ]
 // =======================
