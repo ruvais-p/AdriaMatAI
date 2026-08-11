@@ -30,7 +30,8 @@ const Page = () => {
                                     Our Location
                                 </h4>
                                 <p className="text-pera-dark font-normal group-hover:text-white transition-colors duration-500">
-                                    993 Renner Burg, West Rond, MT 94251-030
+                                    Frankopanska 5
+                                    HR-48260, Krizevci, Croatia
                                 </p>
                             </div>
                         </div>
@@ -49,8 +50,7 @@ const Page = () => {
                                     Email us
                                 </h4>
                                 <p className="text-pera-dark font-normal group-hover:text-white transition-colors duration-500">
-                                    webexample@gmail.com <br />
-                                    webexample@gmail.com
+                                    ivanjedvaj1@gmail.com <br />
                                 </p>
                             </div>
                         </div>
@@ -69,13 +69,12 @@ const Page = () => {
                                     Call us
                                 </h4>
                                 <p className="text-pera-dark font-normal group-hover:text-white transition-colors duration-500">
-                                    +1 (009) 544-7818 <br />
-                                    +1 (009) 880-1810
+                                    +385 998182371
                                 </p>
                             </div>
                         </div>
 
-                        <div className="contact-item w-full bg-white shadow-xl space-y-6 p-5 rounded-xl border group hover:bg-prim transition duration-500 h-[230px] flex flex-col justify-between text-center">
+                        {/* <div className="contact-item w-full bg-white shadow-xl space-y-6 p-5 rounded-xl border group hover:bg-prim transition duration-500 h-[230px] flex flex-col justify-between text-center">
                             <div className="solution-icon border border-dark w-[70px] h-[70px] rounded-full mx-auto flex justify-center items-center prim-grident transition-transform duration-500 group-hover:rotate-y-360">
                                 <Icon
                                     icon="hugeicons:chat"
@@ -95,7 +94,7 @@ const Page = () => {
                                     </Link>
                                 </p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

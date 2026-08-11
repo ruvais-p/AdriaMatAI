@@ -16,22 +16,22 @@ const Footer = () => {
                         <div className="flex items-start text-foottext text-[15px]">
                             <Icon icon="weui:location-outlined" className="w-6 h-6 mr-3 mt-1" />
                             <div className="flex flex-col">
-                                <span>FD-3. Procube Complex</span>
-                                <span>Vadodara, Gujarat</span>
+                                <span>Frankopanska 5</span>
+                                <span>HR-48260, Krizevci, Croatia</span>
                             </div>
                         </div>
 
                         <div className="flex items-center gap-2 text-foottext">
                             <Icon icon="majesticons:phone-retro-line" className="w-6 h-6" />
                             <Link href="#" className="text-[15px] hover:text-prim">
-                                +1 (123) 123 1234
+                                +385 998182371
                             </Link>
                         </div>
 
                         <div className="flex items-center gap-2 text-foottext">
                             <Icon icon="clarity:email-line" className="w-6 h-6" />
                             <Link href="#" className="text-[15px] hover:text-prim">
-                                exampleweb@gmail.com
+                                ivanjedvaj1@gmail.com
                             </Link>
                         </div>
                     </div>
@@ -142,7 +142,7 @@ const Footer = () => {
                 {/* ===== Bottom Section ===== */}
                 <div className="flex flex-col sm:flex-row justify-between items-center border-t mt-10 pt-6 text-center sm:text-left">
                     <p className="text-[15px] text-foottext mb-3 sm:mb-0">
-                        © 2025. All rights reserved by{" "}
+                        © 2026. All rights reserved by{" "}
                         <Link
                             href="https://uicode.in/"
                             target="_blank"
