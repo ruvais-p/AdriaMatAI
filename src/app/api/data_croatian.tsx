@@ -159,7 +159,7 @@ export const testimonial: TestimonialItem[] = [
     id: 2,
     text:
       "Tehnološko vodstvo u eri umjetne inteligencije zahtijeva preciznost, sigurnu arhitekturu i kontinuirane inovacije. Forum Invest razvija inteligentne sustave koji integriraju AI, automatizaciju i analitiku u skalabilne infrastrukture. Vođeni istraživanjem, kibernetičkom sigurnošću i optimizacijom performansi isporučujemo pouzdana rješenja s dugoročnim učinkom.",
-    name: "Prof. Sasi Gopalan",
+    name: "",
     position: "CTO",
     image: "/images/testimonials/user2.jpg",
   },
@@ -264,7 +264,7 @@ export const blogs: Blog[] = [
     slug: "entrepreneur-mindset-success",
     title: "AI pokretana poslovna transformacija: Putokaz za rast",
     category: "Umjetna inteligencija",
-    author: "Prof. Sasi Gopalan",
+    author: "Rohith",
     date: "01 Lis 2026",
     image: "/images/blog/blog-3.jpg",
     description: "Otkrijte kako umjetna inteligencija mijenja industrije, povećava učinkovitost i stvara nove prilike za rast.",
@@ -273,7 +273,7 @@ export const blogs: Blog[] = [
     detailsParagraph2:
       "Izgradnja organizacije spremne za AI zahtijeva i tehnička ulaganja i strateško planiranje. Tvrtke moraju osigurati da su njihove podatkovne infrastrukture robusne i da su njihovi timovi opremljeni za rad uz inteligentne sustave. Fokus bi trebao biti na stvaranju mjerljive vrijednosti i poticanju kulture eksperimentiranja i inovacija temeljenih na podacima.",
     quote: "AI neće zamijeniti ljude, ali ljudi koji koriste AI zamijenit će one koji to ne čine.",
-    quoteAuthor: "Prof. Sasi Gopalan",
+    quoteAuthor: "Rohit",
     lessonTitle: "Uvidi u rast AI-a",
     lessonDescription: "Transformacija vašeg poslovanja pomoću AI-a zahtijeva pomak s intuicije na inteligenciju podržanu podacima.",
     lessonsList: [

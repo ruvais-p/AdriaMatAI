@@ -279,14 +279,14 @@ export const testimonial: TestimonialItem[] = [
     position: "CFO",
     image: "/images/testimonials/user.jpg",
   },
-  {
-    id: 2,
-    text:
-      "Technology leadership in the AI era demands precision, secure architecture, and continuous innovation. Forum Invest builds intelligent systems integrating AI, automation, and analytics into scalable infrastructures. Guided by research, cybersecurity, and performance optimization, we deliver reliable enterprise solutions designed for long-term impact.",
-    name: "Prof. Sasi Gopalan",
-    position: "CTO",
-    image: "/images/testimonials/user2.jpg",
-  },
+  // {
+  //   id: 2,
+  //   text:
+  //     "Technology leadership in the AI era demands precision, secure architecture, and continuous innovation. Forum Invest builds intelligent systems integrating AI, automation, and analytics into scalable infrastructures. Guided by research, cybersecurity, and performance optimization, we deliver reliable enterprise solutions designed for long-term impact.",
+  //   name: "Prof. Sasi Gopalan",
+  //   position: "CTO",
+  //   image: "/images/testimonials/user2.jpg",
+  // },
   {
     id: 3,
     text:
@@ -389,7 +389,7 @@ export const blogs: Blog[] = [
     slug: "entrepreneur-mindset-success",
     title: "AI-Driven Business Transformation: A Roadmap for Growth",
     category: "AI",
-    author: "Prof. Sasi Gopalan",
+    author: "Rohit",
     date: "01 Oct 2026",
     image: "/images/blog/blog-3.jpg",
     description: "Discover how AI is reshaping industries, driving efficiency, and creating new opportunities for growth.",
@@ -398,7 +398,7 @@ export const blogs: Blog[] = [
     detailsParagraph2:
       "Building an AI-ready organization requires both technical investment and strategic planning. Companies must ensure their data infrastructure is robust and their teams are equipped to work alongside intelligent systems. The focus should be on creating measurable value and fostering a culture of experimentation and data-driven innovation.",
     quote: "AI will not replace humans, but humans who use AI will replace those who do not.",
-    quoteAuthor: "Prof. Sasi Gopalan",
+    quoteAuthor: "Rohit",
     lessonTitle: "Insights into AI Growth",
     lessonDescription: "Transforming your business with AI requires a shift from intuition to data-backed intelligence.",
     lessonsList: [
@@ -988,7 +988,7 @@ export const team = [
   },
   {
     id: -1,
-    name: "Prof.(Dr.) Sasi Gopalan",
+    name: "",
     post: "Chief Technology Officer",
     image: ""
   },
