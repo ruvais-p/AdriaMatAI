@@ -840,53 +840,29 @@ export const protfolio = [
 ];
 
 export const team = [
-  {
-    id: 1,
-    name: "Eade Marren",
-    post: "Glavni izvršni direktor",
-    image: "/images/team/team-1.webp"
+ {
+    id: -3,
+    name: "Mr. Mihael Jedvaj",
+    post: "Chief Executive Officer",
+    image: "/images/team/mihael.png"
   },
   {
-    id: 2,
-    name: "Savannah Nguyen",
-    post: "Voditelj operacija",
-    image: "/images/team/team-2.webp"
+    id: -2,
+    name: "Dr. Ivan Jedvaj",
+    post: "Chief Financial Officer",
+    image: "/images/team/Ivan.png"
   },
   {
-    id: 3,
-    name: "Kristin Watson",
-    post: "Voditelj marketinga",
-    image: "/images/team/team-3.webp"
+    id: -1,
+    name: "",
+    post: "Chief Technology Officer",
+    image: ""
   },
   {
-    id: 4,
-    name: "Darlene Robertson",
-    post: "Poslovni direktor",
-    image: "/images/team/team-4.webp"
-  },
-  {
-    id: 5,
-    name: "Eade Marren",
-    post: "Glavni izvršni direktor",
-    image: "/images/team/team-5.webp"
-  },
-  {
-    id: 6,
-    name: "Darlene Robertson",
-    post: "Poslovni direktor",
-    image: "/images/team/team-7.webp"
-  },
-  {
-    id: 7,
-    name: "Kristin Watson",
-    post: "Voditelj marketinga",
-    image: "/images/team/team-6.webp"
-  },
-  {
-    id: 8,
-    name: "Savannah Nguyen",
-    post: "Voditelj operacija",
-    image: "/images/team/team-8.webp"
+    id: 0,
+    name: "Dr. Abdu Rahman Mohammad Sherif",
+    post: "Business Analyst",
+    image: "/images/team/sherif.png"
   },
 ]
 

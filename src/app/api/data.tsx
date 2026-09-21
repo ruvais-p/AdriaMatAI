@@ -978,13 +978,13 @@ export const team = [
     id: -3,
     name: "Mr. Mihael Jedvaj",
     post: "Chief Executive Officer",
-    image: "/images/team/ivan_ceo.jpeg"
+    image: "/images/team/mihael.png"
   },
   {
     id: -2,
     name: "Dr. Ivan Jedvaj",
     post: "Chief Financial Officer",
-    image: "/images/team/ivan_ceo2.jpeg"
+    image: "/images/team/Ivan.png"
   },
   {
     id: -1,
@@ -996,7 +996,7 @@ export const team = [
     id: 0,
     name: "Dr. Abdu Rahman Mohammad Sherif",
     post: "Business Analyst",
-    image: "/images/team/business_analyst.jpg"
+    image: "/images/team/sherif.png"
   },
 
   {
